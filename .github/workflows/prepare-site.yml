@@ -1,0 +1,48 @@
+name: Prepare published site
+on:
+  push:
+    branches: [main]
+    paths:
+      - kpss-map-timeweb-source.zip
+      - .github/workflows/prepare-site.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: prepare-site
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract website package
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import json, shutil
+          root = Path.cwd()
+          with ZipFile('kpss-map-timeweb-source.zip') as archive:
+              for item in archive.infolist():
+                  target = (root / item.filename).resolve()
+                  if not target.is_relative_to(root / 'site'):
+                      raise ValueError('Archive entry outside site/')
+              if (root / 'site').exists():
+                  shutil.rmtree(root / 'site')
+              archive.extractall(root)
+          assert (root / 'site/index.html').is_file()
+          index = json.loads((root / 'site/data/index.json').read_text())
+          entities = json.loads((root / 'site/data/entities.json').read_text())
+          for album_id in index['albums']:
+              album = json.loads((root / 'site/data/albums' / f'{album_id}.json').read_text())
+              for track in album['tracks']:
+                  for ref in track['refs']:
+                      assert ref['entity'] in entities
+          PY
+      - name: Commit publish directory
+        run: |
+          git add --all site
+          git diff --cached --quiet && exit 0
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Prepare website files from source package'
+          git push
