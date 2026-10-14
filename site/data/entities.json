@@ -1,0 +1,4865 @@
+{
+ "adolf-hitler": {
+  "label": "Адольф Гитлер",
+  "category": "history",
+  "what": "Диктатор нацистской Германии (1933–1945), символ тирании.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гитлер, Адольф"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Гитлер,_Адольф",
+  "img": "img/adolf-hitler.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0 de",
+   "url": "https://commons.wikimedia.org/wiki/File:Hitler_portrait_crop.jpg"
+  },
+  "cut": "cut/adolf-hitler.png",
+  "cut_w": 151,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "al-pacino": {
+  "label": "Аль Пачино",
+  "category": "screen",
+  "what": "Американский актёр; в «Праве на убийство» (2008) сыграл полицейского вместе с Робертом Де Ниро.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Пачино, Аль"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Пачино,_Аль",
+  "img": "img/al-pacino.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Al_Pacino_-_Killing_Castro_-_Q%26A_-_Tribeca_2026_-_by_@JJxFile-23_(cropped).jpg"
+  },
+  "cut": "cut/al-pacino.png",
+  "cut_w": 148,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "aleister-crowley": {
+  "label": "Алистер Кроули",
+  "category": "myth",
+  "what": "Британский оккультист и маг, основатель учения Телема.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Кроули, Алистер"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Кроули,_Алистер",
+  "img": "img/aleister-crowley.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Aleister_Crowley,_thinker.jpg"
+  },
+  "cut": "cut/aleister-crowley.png",
+  "cut_w": 160,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "aleksei-balabanov": {
+  "label": "Алексей Балабанов",
+  "category": "screen",
+  "what": "Режиссёр «Брата», «Груза 200» и «Про уродов и людей», мастер мрачного кино.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Балабанов, Алексей Октябринович"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Балабанов,_Алексей_Октябринович",
+  "img": "img/aleksei-balabanov.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Aleksei_Balabanov.JPG"
+  },
+  "cut": "cut/aleksei-balabanov.png",
+  "cut_w": 191,
+  "cut_h": 176,
+  "cut_kind": "subject"
+ },
+ "aleksei-german": {
+  "label": "Алексей Герман",
+  "category": "screen",
+  "what": "Режиссёр, снявший «Трудно быть богом» (2013) по повести Стругацких.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Герман, Алексей Юрьевич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Герман,_Алексей_Юрьевич",
+  "img": "img/aleksei-german.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Aleksei_German_(Russian_VOA)_(cropped).jpg"
+  },
+  "cut": "cut/aleksei-german.png",
+  "cut_w": 176,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "alexander-beglov": {
+  "label": "Александр Беглов",
+  "category": "history",
+  "what": "Губернатор Санкт-Петербурга с 2018 года.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Беглов, Александр Дмитриевич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Беглов,_Александр_Дмитриевич",
+  "img": "img/alexander-beglov.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Alexander_Beglov_(2026-01-26)_2.jpg"
+  },
+  "cut": "cut/alexander-beglov.png",
+  "cut_w": 166,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "alexander-pushkin": {
+  "label": "Александр Пушкин",
+  "category": "books",
+  "what": "Русский поэт; его послание «Во глубине сибирских руд» (1827) обращено к ссыльным декабристам.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Пушкин, Александр Сергеевич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B5%D0%B2%D0%B8%D1%87",
+  "img": "img/alexander-pushkin.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Kiprensky_Pushkin.jpg"
+  },
+  "cut": "cut/alexander-pushkin.png",
+  "cut_w": 154,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "alexei-navalny": {
+  "label": "Алексей Навальный",
+  "category": "history",
+  "what": "Российский оппозиционный политик, основатель ФБК; с 2021 года в заключении, погиб в колонии в феврале 2024 года.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Навальный, Алексей Анатольевич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87",
+  "img": "img/alexei-navalny.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Alexey_Navalny_2018_(cropped).png"
+  },
+  "cut": "cut/alexei-navalny.png",
+  "cut_w": 148,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "alice-in-wonderland": {
+  "label": "«Алиса в Стране чудес»",
+  "category": "books",
+  "what": "Сказка Льюиса Кэрролла (1865): Алиса падает в кроличью нору и попадает в абсурдный мир.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Алиса в Стране чудес"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B8%D1%81%D0%B0_%D0%B2_%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B5_%D1%87%D1%83%D0%B4%D0%B5%D1%81",
+  "img": "img/alice-in-wonderland.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Alice%27s_Adventures_in_Wonderland_cover_(1865).jpg"
+  },
+  "cut": "cut/alice-in-wonderland.png",
+  "cut_w": 131,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "alisa-freindlich": {
+  "label": "Алиса Фрейндлих",
+  "category": "screen",
+  "what": "Актриса, сыгравшая жену Сталкера в фильме Тарковского «Сталкер» (1979).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Фрейндлих, Алиса Бруновна"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Фрейндлих,_Алиса_Бруновна",
+  "img": "img/alisa-freindlich.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Alisa_Freyndlich.jpg"
+  },
+  "cut": "cut/alisa-freindlich.png",
+  "cut_w": 130,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "andrei-bely": {
+  "label": "Андрей Белый",
+  "category": "books",
+  "what": "Поэт-символист, автор романа «Петербург» (1913).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Андрей Белый"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Андрей_Белый",
+  "img": "img/andrei-bely.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Andrei_Bely_in_Brussels_(1912).jpg"
+  },
+  "cut": "cut/andrei-bely.png",
+  "cut_w": 149,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "andrey-pyrokinesis": {
+  "label": "Pyrokinesis",
+  "category": "music",
+  "what": "Российский рэп-исполнитель Андрей Пирокинезис.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Pyrokinesis"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Pyrokinesis",
+  "img": "img/andrey-pyrokinesis.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Pyrokinesis_%D0%B2_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%D0%B5_-_11_(17-10-2025).jpg"
+  },
+  "cut": "cut/andrey-pyrokinesis.png",
+  "cut_w": 150,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "animal-farm": {
+  "label": "«Скотный двор»",
+  "category": "books",
+  "what": "Повесть-притча Джорджа Оруэлла (1945) о революции животных, переродившейся в диктатуру.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Скотный двор"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Скотный_двор",
+  "img": "img/animal-farm.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Animal_Farm_-_1st_edition.jpg"
+  },
+  "cut": "cut/animal-farm.png",
+  "cut_w": 133,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "atomic-heart": {
+  "label": "Atomic Heart",
+  "category": "games",
+  "what": "Российский шутер 2023 года об альтернативном СССР — ретрофутуристической утопии роботов, обернувшейся кошмаром.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Atomic Heart"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Atomic_Heart",
+  "img": "img/atomic-heart.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Atomic_Heart_logo.svg"
+  },
+  "cut": "cut/atomic-heart.png",
+  "cut_w": 191,
+  "cut_h": 71,
+  "cut_kind": "subject"
+ },
+ "babangida": {
+  "label": "babangida",
+  "category": "music",
+  "what": "Российский андеграундный рэп-исполнитель, повлиявший на творчество Славы КПСС.",
+  "image": null,
+  "wiki": null
+ },
+ "basic-instinct": {
+  "label": "«Основной инстинкт»",
+  "category": "screen",
+  "what": "Эротический триллер Пола Верховена (1992) с Шэрон Стоун.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Основной инстинкт"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Основной_инстинкт",
+  "img": "img/basic-instinct.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Basic_Instinct_logo.svg"
+  },
+  "cut": "img/basic-instinct.svg",
+  "cut_w": 510,
+  "cut_h": 298,
+  "cut_kind": "logo"
+ },
+ "beer-hall-putsch": {
+  "label": "Пивной путч",
+  "category": "history",
+  "what": "Неудачная попытка Гитлера и нацистов захватить власть в Мюнхене в ноябре 1923 года.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Пивной путч"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Пивной_путч",
+  "img": "img/beer-hall-putsch.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0 de",
+   "url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_119-1486,_Hitler-Putsch,_M%C3%BCnchen,_Marienplatz.jpg"
+  },
+  "cut": "cut/beer-hall-putsch.png",
+  "cut_w": 192,
+  "cut_h": 131,
+  "cut_kind": "card"
+ },
+ "benjamin-griveaux": {
+  "label": "Бенжамен Гриво",
+  "category": "history",
+  "what": "Французский политик, соратник Макрона; в 2020 году снялся с выборов мэра Парижа после утечки интимного видео.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гриво, Бенжамен"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Гриво,_Бенжамен",
+  "img": "img/benjamin-griveaux.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Benjamin_Griveaux_(40581872673)_(cropped).jpg"
+  },
+  "cut": "cut/benjamin-griveaux.png",
+  "cut_w": 133,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "birdman": {
+  "label": "«Бёрдмэн»",
+  "category": "screen",
+  "what": "Чёрная комедия Алехандро Г. Иньярриту (2014) о забытом актёре, сыгравшем супергероя.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Бёрдмэн"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Бёрдмэн",
+  "img": "img/birdman.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Birdman_logo.png"
+  },
+  "cut": "cut/birdman.png",
+  "cut_w": 192,
+  "cut_h": 62,
+  "cut_kind": "card"
+ },
+ "bo-burnham": {
+  "label": "Бо Бёрнем",
+  "category": "screen",
+  "what": "Американский комик, музыкант и режиссёр, автор спецшоу «Внутри» (2021).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Бернем, Бо"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Бернем,_Бо",
+  "img": "img/bo-burnham.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bo_Burnham_Montaclair_Film_Festival_(cropped).jpg"
+  },
+  "cut": "cut/bo-burnham.png",
+  "cut_w": 146,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "boris-savinkov": {
+  "label": "Борис Савинков",
+  "category": "history",
+  "what": "Эсер, один из руководителей Боевой организации, организатор покушений на сановников, писатель.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Савинков, Борис Викторович"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Савинков,_Борис_Викторович",
+  "img": "img/boris-savinkov.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:SavinkovViceministroDeDefensa1917_(cropped).jpg"
+  },
+  "cut": "cut/boris-savinkov.png",
+  "cut_w": 152,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "borjomi": {
+  "label": "Боржоми",
+  "category": "brands",
+  "what": "Грузинская минеральная вода; символ Грузии и героиня поговорки о том, что пить её бывает уже поздно.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Боржоми (минеральная вода)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D1%80%D0%B6%D0%BE%D0%BC%D0%B8_(%D0%BC%D0%B8%D0%BD%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B2%D0%BE%D0%B4%D0%B0)",
+  "img": "img/borjomi.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Borjomi_1,0L.tif"
+  },
+  "aka": [
+   "Боржоми"
+  ],
+  "cut": "cut/borjomi.png",
+  "cut_w": 54,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "borodino-lermontov": {
+  "label": "«Бородино» Лермонтова",
+  "category": "books",
+  "what": "Стихотворение Михаила Лермонтова (1837) о Бородинском сражении 1812 года.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Бородино (стихотворение)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D0%BE_(%D1%81%D1%82%D0%B8%D1%85%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D0%B5)",
+  "img": "img/borodino-lermontov.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Lermontov-Borodino-Sovremennik1837.jpg"
+  },
+  "cut": "cut/borodino-lermontov.png",
+  "cut_w": 143,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "boulevard-depo": {
+  "label": "Boulevard Depo",
+  "category": "music",
+  "what": "Российский рэпер, одна из ключевых фигур «новой школы» 2010-х и объединения YungRussia.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Boulevard Depo"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Boulevard_Depo",
+  "img": "img/boulevard-depo.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Boulevard_d.jpg"
+  },
+  "cut": "cut/boulevard-depo.png",
+  "cut_w": 191,
+  "cut_h": 135,
+  "cut_kind": "subject"
+ },
+ "brat-film": {
+  "label": "«Брат»",
+  "category": "screen",
+  "what": "Культовый фильм Алексея Балабанова (1997) о Даниле Багрове с Сергеем Бодровым.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Брат (фильм, 1997)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Брат_(фильм,_1997)"
+ },
+ "brawl-stars": {
+  "label": "Brawl Stars",
+  "category": "games",
+  "what": "Мобильная игра Supercell (2018); генерал Гавс — русское имя бойца Colonel Ruffs.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Brawl Stars"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Brawl_Stars",
+  "img": "img/brawl-stars.jpg",
+  "img_credit": {
+   "text": "Иконка приложения, Apple App Store (Brawl Stars)",
+   "url": "https://apps.apple.com/us/search?term=Brawl%20Stars"
+  },
+  "img_free": false,
+  "cut": "cut/brawl-stars.png",
+  "cut_w": 192,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "bucephalus": {
+  "label": "Буцефал",
+  "category": "history",
+  "what": "Легендарный конь Александра Македонского.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Буцефал"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Буцефал",
+  "img": "img/bucephalus.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:The_taming_of_Bucephalus_by_Andre_Castaigne_(1898-1899).jpg"
+  },
+  "cut": "cut/bucephalus.png",
+  "cut_w": 107,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "caligula": {
+  "label": "Калигула",
+  "category": "history",
+  "what": "Римский император I века, символ безумной тирании; по легенде, собирался сделать своего коня консулом.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Калигула"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BB%D0%B8%D0%B3%D1%83%D0%BB%D0%B0",
+  "img": "img/caligula.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Caligula.Carlsberg_Glyptotek.(cropped)_(cropped).jpg"
+  },
+  "cut": "cut/caligula.png",
+  "cut_w": 145,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "canon-eos-5d-mark-ii": {
+  "label": "Canon EOS 5D Mark II",
+  "category": "brands",
+  "what": "Полнокадровая зеркальная камера Canon (2008), популярная у видеографов.",
+  "image": {
+   "kind": "simple-icons",
+   "slug": "canon"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Canon_EOS_5D_Mark_II",
+  "img": "img/canon-eos-5d-mark-ii.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Canon_EOS_5D_Mark_II_with_50mm_1.4_edit1.jpg"
+  },
+  "cut": "cut/canon-eos-5d-mark-ii.png",
+  "cut_w": 191,
+  "cut_h": 162,
+  "cut_kind": "subject"
+ },
+ "carlos-castaneda": {
+  "label": "Карлос Кастанеда",
+  "category": "books",
+  "what": "Писатель-антрополог, автор книг о мистическом учителе-индейце доне Хуане.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Кастанеда, Карлос"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Кастанеда,_Карлос",
+  "img": "img/carlos-castaneda.jpg",
+  "img_credit": {
+   "text": "Обложка, Open Library («The Teachings of Don Juan»)",
+   "url": "https://openlibrary.org/search?q=teachings+of+don+juan+castaneda"
+  },
+  "img_free": false,
+  "cut": "cut/carlos-castaneda.png",
+  "cut_w": 131,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "charon": {
+  "label": "Харон",
+  "category": "myth",
+  "what": "Перевозчик душ умерших через реки подземного царства в греческой мифологии.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Харон"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Харон",
+  "img": "img/charon.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Charon_by_Dore.jpg"
+  },
+  "cut": "cut/charon.png",
+  "cut_w": 185,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "cheburashka": {
+  "label": "Чебурашка и Крокодил Гена",
+  "category": "screen",
+  "what": "Герои книг Эдуарда Успенского и советских мультфильмов Романа Качанова — символ доброго детства.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Чебурашка"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D0%B1%D1%83%D1%80%D0%B0%D1%88%D0%BA%D0%B0",
+  "img": "img/cheburashka.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:RR5111-0439R_3_%D1%80%D1%83%D0%B1%D0%BB%D1%8F_%D1%81%D0%B5%D1%80%D0%B5%D0%B1%D1%80%D0%BE_2020_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D0%B8%D0%BF%D0%BB%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F_%D0%9A%D1%80%D0%BE%D0%BA%D0%BE%D0%B4%D0%B8%D0%BB_%D0%93%D0%B5%D0%BD%D0%B0_%D1%80%D0%B5%D0%B2%D0%B5%D1%80%D1%81.png"
+  },
+  "cut": "cut/cheburashka.png",
+  "cut_w": 191,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "chorny-obelisk": {
+  "label": "Чёрный Обелиск",
+  "category": "music",
+  "what": "Советская и российская метал-группа, основанная в 1986 году.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Чёрный Обелиск (группа)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Чёрный_Обелиск_(группа)",
+  "img": "img/chorny-obelisk.jpg",
+  "img_credit": {
+   "text": "Обложка альбома «Революция», Apple Music",
+   "url": "https://music.apple.com/ru/search?term=Чёрный%20обелиск"
+  },
+  "img_free": false,
+  "cut": "cut/chorny-obelisk.png",
+  "cut_w": 192,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "cicero": {
+  "label": "Цицерон",
+  "category": "ideas",
+  "what": "Римский оратор, политик и философ I века до н. э., ставивший даже несправедливый мир выше справедливой войны.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Цицерон"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A6%D0%B8%D1%86%D0%B5%D1%80%D0%BE%D0%BD",
+  "img": "img/cicero.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bust_of_Cicero_(1st-cent._BC)_-_Palazzo_Nuovo_-_Musei_Capitolini_-_Rome_2016.jpg"
+  },
+  "cut": "cut/cicero.png",
+  "cut_w": 143,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "colosseum": {
+  "label": "Колизей",
+  "category": "history",
+  "what": "Древнеримский амфитеатр для гладиаторских боёв; сегодня — знаменитые руины в центре Рима.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Колизей"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D0%B8%D0%B7%D0%B5%D0%B9",
+  "img": "img/colosseum.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg"
+  },
+  "cut": "cut/colosseum.png",
+  "cut_w": 191,
+  "cut_h": 132,
+  "cut_kind": "subject"
+ },
+ "colour-revolution": {
+  "label": "Цветные революции",
+  "category": "history",
+  "what": "Ненасильственные смены власти в постсоветских странах; российская пропаганда объявляет их внешними заговорами.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Цветная революция"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Цветная_революция",
+  "img": "img/colour-revolution.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Morning_first_day_of_Orange_Revolution.jpg"
+  },
+  "cut": "cut/colour-revolution.png",
+  "cut_w": 192,
+  "cut_h": 146,
+  "cut_kind": "card"
+ },
+ "confucius": {
+  "label": "Конфуций",
+  "category": "ideas",
+  "what": "Древнекитайский мыслитель; ему приписывают множество популярных афоризмов, часто апокрифических.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Конфуций"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%84%D1%83%D1%86%D0%B8%D0%B9",
+  "img": "img/confucius.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Konfuzius-1770.jpg"
+  },
+  "cut": "cut/confucius.png",
+  "cut_w": 121,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "covid-19-pandemic": {
+  "label": "Пандемия COVID-19",
+  "category": "history",
+  "what": "Глобальная пандемия коронавируса 2020–2023 годов.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Пандемия COVID-19"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Пандемия_COVID-19",
+  "img": "img/covid-19-pandemic.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:COVID-19_Nurse_(cropped).jpg"
+  },
+  "cut": "cut/covid-19-pandemic.png",
+  "cut_w": 191,
+  "cut_h": 171,
+  "cut_kind": "subject"
+ },
+ "danse-macabre": {
+  "label": "Пляска смерти",
+  "category": "myth",
+  "what": "Средневековый аллегорический сюжет: Смерть ведёт в хороводе людей всех сословий.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Пляска смерти"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Пляска_смерти",
+  "img": "img/danse-macabre.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Wolgemut_-_1493_-_tanz_der_gerippe_(coloriert).jpg"
+  },
+  "cut": "cut/danse-macabre.png",
+  "cut_w": 192,
+  "cut_h": 167,
+  "cut_kind": "card"
+ },
+ "davay-do-svidaniya": {
+  "label": "«Ты кто такой? Давай, до свидания!»",
+  "category": "internet",
+  "what": "Мем из вирусного любительского видео — фраза для бесцеремонного выпроваживания собеседника.",
+  "image": null,
+  "wiki": null
+ },
+ "david-fincher": {
+  "label": "Дэвид Финчер",
+  "category": "screen",
+  "what": "Американский режиссёр: «Семь», «Бойцовский клуб», психологический триллер «Игра» (1997).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Финчер, Дэвид"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Финчер,_Дэвид",
+  "img": "img/david-fincher.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:TheKillerBFILFF051023_(8_of_22)_(53255176376)_(cropped2).jpg"
+  },
+  "cut": "cut/david-fincher.png",
+  "cut_w": 145,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "ddt-poslednyaya-osen": {
+  "label": "ДДТ — «Последняя осень»",
+  "category": "music",
+  "what": "Песня Юрия Шевчука и группы ДДТ о прощании с уходящей эпохой.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "ДДТ (группа)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%94%D0%94%D0%A2_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0)",
+  "img": "img/ddt-poslednyaya-osen.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:DDT_Caesarea_2012.JPG"
+  },
+  "cut": "cut/ddt-poslednyaya-osen.png",
+  "cut_w": 191,
+  "cut_h": 128,
+  "cut_kind": "subject"
+ },
+ "demons-dostoevsky": {
+  "label": "«Бесы» (Достоевский)",
+  "category": "books",
+  "what": "Роман Достоевского (1871–1872) о революционной ячейке; в финале Ставрогин кончает с собой.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Бесы"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D1%81%D1%8B",
+  "img": "img/demons-dostoevsky.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:The_first_edition_of_Dostoevsky%27s_novel_Demons_Petersburg_1873.JPG"
+  },
+  "cut": "cut/demons-dostoevsky.png",
+  "cut_w": 192,
+  "cut_h": 160,
+  "cut_kind": "card"
+ },
+ "dmitry-galkovsky": {
+  "label": "Дмитрий Галковский",
+  "category": "ideas",
+  "what": "Философ и писатель, автор «Бесконечного тупика» и словечка «новиоп».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Галковский, Дмитрий Евгеньевич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Галковский,_Дмитрий_Евгеньевич"
+ },
+ "dmitry-gordon": {
+  "label": "Дмитрий Гордон",
+  "category": "internet",
+  "what": "Украинский журналист, автор многочасовых интервью «В гостях у Гордона».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гордон, Дмитрий Ильич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Гордон,_Дмитрий_Ильич",
+  "img": "img/dmitry-gordon.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9_%D0%93%D0%BE%D1%80%D0%B4%D0%BE%D0%BD_(cropped).jpg"
+  },
+  "cut": "cut/dmitry-gordon.png",
+  "cut_w": 143,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "dmitry-puchkov": {
+  "label": "Дмитрий «Гоблин» Пучков",
+  "category": "internet",
+  "what": "Переводчик фильмов, блогер и публицист, известный под псевдонимом «Гоблин».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Пучков, Дмитрий Юрьевич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Пучков,_Дмитрий_Юрьевич",
+  "img": "img/dmitry-puchkov.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%83%D1%87%D0%BA%D0%BE%D0%B2_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9_%D0%AE%D1%80%D1%8C%D0%B5%D0%B2%D0%B8%D1%87.jpg"
+  },
+  "cut": "cut/dmitry-puchkov.png",
+  "cut_w": 154,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "donnie-darko": {
+  "label": "«Донни Дарко»",
+  "category": "screen",
+  "what": "Культовый фильм Ричарда Келли (2001) о подростке, которому являются видения о конце света.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Донни Дарко"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Донни_Дарко",
+  "img": "img/donnie-darko.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Richard_Kelly_1.jpg"
+  },
+  "cut": "cut/donnie-darko.png",
+  "cut_w": 160,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "drake": {
+  "label": "Дрейк",
+  "category": "music",
+  "what": "Канадский рэпер и певец, один из самых коммерчески успешных артистов 2010-х.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Дрейк (рэпер)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Дрейк_(рэпер)",
+  "img": "img/drake.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Drake_July_2016.jpg"
+  },
+  "cut": "cut/drake.png",
+  "cut_w": 158,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "dungeons-and-dragons": {
+  "label": "Dungeons & Dragons",
+  "category": "games",
+  "what": "Настольная ролевая игра (с 1974 года), где мастер ведёт игроков через фэнтезийные приключения по броскам кубиков.",
+  "image": {
+   "kind": "simple-icons",
+   "slug": "dungeonsanddragons"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Dungeons_%26_Dragons",
+  "img": "img/dungeons-and-dragons.svg",
+  "img_credit": {
+   "text": "Simple Icons (CC0)",
+   "url": "https://simpleicons.org/?q=dungeonsanddragons"
+  },
+  "brand_hex": "#ED1C24",
+  "cut": "img/dungeons-and-dragons.svg",
+  "cut_w": 24,
+  "cut_h": 24,
+  "cut_kind": "logo"
+ },
+ "dva-stula": {
+  "label": "«Два стула»",
+  "category": "internet",
+  "what": "Тюремная загадка о выборе между двумя одинаково ужасными вариантами, ставшая интернет-мемом.",
+  "image": null,
+  "wiki": null
+ },
+ "dvach": {
+  "label": "Двач",
+  "category": "internet",
+  "what": "Крупнейшая русскоязычная анонимная имиджборда, известная токсичностью и мемами.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Двач"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Двач",
+  "img": "img/dvach.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Dvach_logo.svg"
+  },
+  "cut": "img/dvach.svg",
+  "cut_w": 509.9,
+  "cut_h": 188.5,
+  "cut_kind": "logo"
+ },
+ "eduard-starkov": {
+  "label": "Эдуард Старков",
+  "category": "music",
+  "what": "Лидер петербургской андеграунд-группы «Химера» (1969–1997), покончил с собой в 27 лет.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Старков, Эдуард Сергеевич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Старков,_Эдуард_Сергеевич"
+ },
+ "egor-kreed": {
+  "label": "Егор Крид",
+  "category": "music",
+  "what": "Российский поп- и рэп-исполнитель, бывший артист Black Star.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Крид, Егор"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Крид,_Егор",
+  "img": "img/egor-kreed.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%95%D0%B3%D0%BE%D1%80_%D0%9A%D1%80%D0%B8%D0%B4_%D0%BD%D0%B0_VK_Fest_2025_%D0%B2_%D0%A1%D0%9F%D0%B1.jpg"
+  },
+  "cut": "cut/egor-kreed.png",
+  "cut_w": 121,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "egor-letov": {
+  "label": "Егор Летов",
+  "category": "music",
+  "what": "Лидер «Гражданской обороны», панк-поэт и анархист, один из основателей НБП.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Летов, Егор"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D1%82%D0%BE%D0%B2,_%D0%95%D0%B3%D0%BE%D1%80",
+  "img": "img/egor-letov.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Egor_Letov_Nature_(cropped).jpg"
+  },
+  "cut": "cut/egor-letov.png",
+  "cut_w": 161,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "egor-prosvirnin": {
+  "label": "Егор Просвирнин",
+  "category": "history",
+  "what": "Русский националист-публицист (1987–2021), основатель издания «Спутник и Погром»; погиб, выпав из окна.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Спутник и Погром"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Спутник_и_Погром",
+  "img": "img/egor-prosvirnin.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Egor_Prosvirnin_2021-07-13.jpg"
+  },
+  "cut": "cut/egor-prosvirnin.png",
+  "cut_w": 136,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "ekaterina-schulman": {
+  "label": "Екатерина Шульман",
+  "category": "history",
+  "what": "Российский политолог и популярный лектор, ставшая интернет-иконой у либеральной аудитории.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Шульман, Екатерина Михайловна"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Шульман,_Екатерина_Михайловна",
+  "img": "img/ekaterina-schulman.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, FAL",
+   "url": "https://commons.wikimedia.org/wiki/File:Ekaterina_Schulman_asv2024-09.jpg"
+  },
+  "cut": "cut/ekaterina-schulman.png",
+  "cut_w": 156,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "ekhal-greka": {
+  "label": "«Ехал Грека через реку»",
+  "category": "myth",
+  "what": "Русская народная скороговорка о Греке и раке.",
+  "image": null,
+  "wiki": null
+ },
+ "entourage": {
+  "label": "«Красавцы» (Entourage)",
+  "category": "screen",
+  "what": "Сериал HBO (2004–2011) о молодой кинозвезде Винсе Чейзе и его свите друзей.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Красавцы"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Красавцы"
+ },
+ "epic-fail-guy": {
+  "label": "Epic Fail Guy",
+  "category": "internet",
+  "what": "Мем-персонаж с имиджборда 4chan: вечный неудачник в маске Гая Фокса.",
+  "image": null,
+  "wiki": null
+ },
+ "epistles-to-the-corinthians": {
+  "label": "Послания к Коринфянам",
+  "category": "myth",
+  "what": "Послания апостола Павла христианской общине Коринфа, книги Нового Завета.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Первое послание к Коринфянам"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%B5_%D0%BF%D0%BE%D1%81%D0%BB%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA_%D0%9A%D0%BE%D1%80%D0%B8%D0%BD%D1%84%D1%8F%D0%BD%D0%B0%D0%BC",
+  "img": "img/epistles-to-the-corinthians.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:St._Petersburg,_Russian_National_Library_Ms_Gr._258A_(Papyrus_11)_Fragment_1_verso_-_1_Corinthians_1,_20-22.jpg"
+  },
+  "cut": "cut/epistles-to-the-corinthians.png",
+  "cut_w": 114,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "euromaidan": {
+  "label": "Евромайдан",
+  "category": "history",
+  "what": "Протесты в Украине 2013–2014 годов; среди их кричалок была речёвка про москаля, который не скачет.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Евромайдан"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Евромайдан",
+  "img": "img/euromaidan.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Euromaidan_collage.jpg"
+  },
+  "cut": "cut/euromaidan.png",
+  "cut_w": 192,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "fatboy-slim": {
+  "label": "Fatboy Slim",
+  "category": "music",
+  "what": "Британский диджей и продюсер, звезда биг-бита.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Fatboy Slim"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Fatboy_Slim",
+  "img": "img/fatboy-slim.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Fatboy_Slim_in_2004.jpg"
+  },
+  "cut": "cut/fatboy-slim.png",
+  "cut_w": 127,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "felicita": {
+  "label": "Al Bano & Romina Power — «Felicità»",
+  "category": "music",
+  "what": "Итальянский поп-хит 1982 года о «счастье», очень популярный в СССР и России.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Felicità"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Felicit%C3%A0",
+  "img": "img/felicita.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Al_Bano_and_Romina_Power_1975.jpg"
+  },
+  "cut": "cut/felicita.png",
+  "cut_w": 191,
+  "cut_h": 166,
+  "cut_kind": "subject"
+ },
+ "felix-guattari": {
+  "label": "Феликс Гваттари",
+  "category": "ideas",
+  "what": "Французский психоаналитик и философ, соавтор Жиля Делёза по книге «Капитализм и шизофрения».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гваттари, Феликс"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Гваттари,_Феликс",
+  "img": "img/felix-guattari.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%E3%83%95%E3%82%A7%E3%83%AA%E3%83%83%E3%82%AF%E3%82%B9%E3%83%BB%E3%82%AC%E3%82%BF%E3%83%AA.jpg"
+  },
+  "cut": "cut/felix-guattari.png",
+  "cut_w": 191,
+  "cut_h": 178,
+  "cut_kind": "subject"
+ },
+ "ferdinand-waldo-demara": {
+  "label": "Фердинанд Уолдо Демара",
+  "category": "history",
+  "what": "Американский самозванец (1921–1982), выдававший себя за хирурга, монаха, учителя и других.",
+  "image": {
+   "kind": "wiki",
+   "lang": "en",
+   "title": "Ferdinand Waldo Demara"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Демара,_Фердинанд_Уолдо",
+  "img": "img/ferdinand-waldo-demara.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Ferdinand_Waldo_Demara_in_1951_Navy_photo.jpg"
+  },
+  "cut": "cut/ferdinand-waldo-demara.png",
+  "cut_w": 130,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "five-nights-at-freddys": {
+  "label": "Five Nights at Freddy’s",
+  "category": "games",
+  "what": "Инди-хоррор (2014) об оживающих аниматрониках во главе с медведем Фредди Фазбером.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Five Nights at Freddy’s"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Five_Nights_at_Freddy’s",
+  "img": "img/five-nights-at-freddys.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Five_Nights_at_Freddy%27s.svg"
+  },
+  "cut": "cut/five-nights-at-freddys.png",
+  "cut_w": 191,
+  "cut_h": 99,
+  "cut_kind": "subject"
+ },
+ "flowers-for-algernon": {
+  "label": "«Цветы для Элджернона»",
+  "category": "books",
+  "what": "Научно-фантастический рассказ и роман Дэниела Киза о человеке и лабораторной мыши, ставших умнее после операции.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Цветы для Элджернона"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Цветы_для_Элджернона",
+  "img": "img/flowers-for-algernon.jpg",
+  "img_credit": {
+   "text": "Обложка, Open Library",
+   "url": "https://openlibrary.org/search?q=flowers+for+algernon+keyes"
+  },
+  "img_free": false,
+  "cut": "cut/flowers-for-algernon.png",
+  "cut_w": 131,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "freemasonry": {
+  "label": "Масонство",
+  "category": "history",
+  "what": "Тайное братство, возникшее в XVIII веке; любимый объект теорий заговора.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Масонство"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Масонство",
+  "img": "img/freemasonry.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Square_and_Compasses_no_G.svg"
+  },
+  "cut": "img/freemasonry.svg",
+  "cut_w": 804.49,
+  "cut_h": 846.6,
+  "cut_kind": "logo"
+ },
+ "friedrich-nietzsche": {
+  "label": "Фридрих Ницше",
+  "category": "ideas",
+  "what": "Немецкий философ, автор «Так говорил Заратустра».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Ницше, Фридрих"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Ницше,_Фридрих",
+  "img": "img/friedrich-nietzsche.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Nietzsche187a.jpg"
+  },
+  "cut": "cut/friedrich-nietzsche.png",
+  "cut_w": 146,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "friendzona": {
+  "label": "Френдзона",
+  "category": "music",
+  "what": "Российская поп-панк-группа конца 2010-х; МэйкЛав — один из её участников.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Френдзона (группа)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Френдзона_(группа)",
+  "img": "img/friendzona.jpg",
+  "img_credit": {
+   "text": "Обложка сингла «Последний экзамен», Apple Music",
+   "url": "https://music.apple.com/ru/search?term=Френдзона"
+  },
+  "img_free": false,
+  "cut": "cut/friendzona.png",
+  "cut_w": 192,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "from-dusk-till-dawn": {
+  "label": "«От заката до рассвета»",
+  "category": "screen",
+  "what": "Фильм Роберта Родригеса по сценарию Квентина Тарантино (1996): криминальный боевик, превращающийся в хоррор о вампирах.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "От заката до рассвета"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9E%D1%82_%D0%B7%D0%B0%D0%BA%D0%B0%D1%82%D0%B0_%D0%B4%D0%BE_%D1%80%D0%B0%D1%81%D1%81%D0%B2%D0%B5%D1%82%D0%B0",
+  "img": "img/from-dusk-till-dawn.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:From_Dusk_Till_Dawn_logo.png"
+  },
+  "cut": "cut/from-dusk-till-dawn.png",
+  "cut_w": 182,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "fyodor-dostoevsky": {
+  "label": "Фёдор Достоевский",
+  "category": "books",
+  "what": "Классик русской литературы, автор романа «Униженные и оскорблённые» (1861).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Достоевский, Фёдор Михайлович"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Достоевский,_Фёдор_Михайлович",
+  "img": "img/fyodor-dostoevsky.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg"
+  },
+  "cut": "cut/fyodor-dostoevsky.png",
+  "cut_w": 162,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "game-of-thrones": {
+  "label": "«Игра престолов»",
+  "category": "screen",
+  "what": "Сериал HBO по книгам Мартина; Кхалиси — титул Дейенерис Таргариен, в финале ставшей тираном.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Игра престолов (телесериал)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Игра_престолов_(телесериал)",
+  "img": "img/game-of-thrones.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Game_of_Thrones_(HBO_television_series)_logo.svg"
+  },
+  "cut": "cut/game-of-thrones.png",
+  "cut_w": 191,
+  "cut_h": 89,
+  "cut_kind": "subject"
+ },
+ "gde-vy-byli-vosem-let": {
+  "label": "«Где вы были восемь лет?»",
+  "category": "internet",
+  "what": "Пропагандистское клише 2022 года: сторонники войны отвечают им на критику, ссылаясь на Донбасс с 2014-го.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Где вы были восемь лет?"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D0%B4%D0%B5_%D0%B2%D1%8B_%D0%B1%D1%8B%D0%BB%D0%B8_%D0%B2%D0%BE%D1%81%D0%B5%D0%BC%D1%8C_%D0%BB%D0%B5%D1%82%3F"
+ },
+ "georg-hegel": {
+  "label": "Георг Гегель",
+  "category": "ideas",
+  "what": "Немецкий философ-идеалист, автор учения об абсолютном духе, развёртывающемся в истории.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гегель, Георг Вильгельм Фридрих"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D0%B3%D0%B5%D0%BB%D1%8C,_%D0%93%D0%B5%D0%BE%D1%80%D0%B3_%D0%92%D0%B8%D0%BB%D1%8C%D0%B3%D0%B5%D0%BB%D1%8C%D0%BC_%D0%A4%D1%80%D0%B8%D0%B4%D1%80%D0%B8%D1%85",
+  "img": "img/georg-hegel.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Hegel_by_Schlesinger.jpg"
+  },
+  "cut": "cut/georg-hegel.png",
+  "cut_w": 176,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "georgiy-daneliya": {
+  "label": "Георгий Данелия",
+  "category": "screen",
+  "what": "Советский и российский кинорежиссёр: «Я шагаю по Москве», «Мимино», «Кин-дза-дза!».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Данелия, Георгий Николаевич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%94%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8%D1%8F,_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B9_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%B8%D1%87",
+  "img": "img/georgiy-daneliya.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Danelia.jpg"
+  },
+  "cut": "cut/georgiy-daneliya.png",
+  "cut_w": 174,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "givenchy": {
+  "label": "Givenchy",
+  "category": "brands",
+  "what": "Французский дом моды и парфюмерии.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Givenchy"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Givenchy",
+  "img": "img/givenchy.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Givenchy_GeorgeV.jpg"
+  },
+  "cut": "cut/givenchy.png",
+  "cut_w": 191,
+  "cut_h": 135,
+  "cut_kind": "subject"
+ },
+ "gnessin-academy": {
+  "label": "Гнесинка",
+  "category": "music",
+  "what": "Российская академия музыки имени Гнесиных в Москве — одна из главных музыкальных школ страны.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Российская академия музыки имени Гнесиных"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F_%D0%BC%D1%83%D0%B7%D1%8B%D0%BA%D0%B8_%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8_%D0%93%D0%BD%D0%B5%D1%81%D0%B8%D0%BD%D1%8B%D1%85",
+  "img": "img/gnessin-academy.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Povarskaya_Street_32.jpg"
+  },
+  "cut": "cut/gnessin-academy.png",
+  "cut_w": 131,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "golden-resort": {
+  "label": "Golden Resort",
+  "category": "oxxxymiron",
+  "what": "Выдуманная Оксимироном на Versus 2017 история об отеле, где Слава якобы развлекался с трансвеститом; мем баттла.",
+  "image": null,
+  "wiki": null
+ },
+ "golgotha": {
+  "label": "Голгофа",
+  "category": "myth",
+  "what": "Холм в Иерусалиме, где, по Евангелиям, был распят Иисус Христос; символ крестного пути.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Голгофа"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%B3%D0%BE%D1%84%D0%B0",
+  "img": "img/golgotha.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Jerusalem_Holy_Sepulchre_BW_4.JPG"
+  },
+  "cut": "cut/golgotha.png",
+  "cut_w": 192,
+  "cut_h": 131,
+  "cut_kind": "card"
+ },
+ "gorgons": {
+  "label": "Горгоны",
+  "category": "myth",
+  "what": "Чудовища греческих мифов со змеями вместо волос, чей взгляд обращал в камень; самая известная — Медуза.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Горгоны"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Горгоны",
+  "img": "img/gorgons.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:GV45.jpg"
+  },
+  "cut": "cut/gorgons.png",
+  "cut_w": 191,
+  "cut_h": 162,
+  "cut_kind": "subject"
+ },
+ "goya-sleep-of-reason": {
+  "label": "Гойя — «Сон разума рождает чудовищ»",
+  "category": "ideas",
+  "what": "Офорт Гойи (1797–1799) из серии «Капричос» — сатира на общество; у Оксимирона он вытатуирован на плече.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Сон разума рождает чудовищ"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Сон_разума_рождает_чудовищ",
+  "img": "img/goya-sleep-of-reason.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Le_songe_de_la_raison.jpg"
+  },
+  "cut": "cut/goya-sleep-of-reason.png",
+  "cut_w": 132,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "gravitys-rainbow": {
+  "label": "«Радуга тяготения»",
+  "category": "books",
+  "what": "Постмодернистский роман Томаса Пинчона (1973) о Второй мировой и ракетах Фау-2.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Радуга тяготения"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Радуга_тяготения",
+  "img": "img/gravitys-rainbow.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Gravity%27s_Rainbow_(1973_1st_ed_cover).jpg"
+  },
+  "cut": "cut/gravitys-rainbow.png",
+  "cut_w": 135,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "great-flood": {
+  "label": "Всемирный потоп",
+  "category": "myth",
+  "what": "Библейский и общемифологический сюжет о потопе, которым Бог уничтожил грешный мир.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Всемирный потоп"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Всемирный_потоп",
+  "img": "img/great-flood.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Aivazovsky_-_Deluge.jpg"
+  },
+  "cut": "cut/great-flood.png",
+  "cut_w": 192,
+  "cut_h": 151,
+  "cut_kind": "card"
+ },
+ "grinch": {
+  "label": "Гринч",
+  "category": "books",
+  "what": "Зелёный ворчун из книги Доктора Сьюза «Как Гринч украл Рождество!» (1957) и её экранизаций.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гринч (персонаж)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Гринч_(персонаж)",
+  "img": "img/grinch.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Ted_Geisel_NYWTS.jpg"
+  },
+  "cut": "cut/grinch.png",
+  "cut_w": 191,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "grob-zoopark": {
+  "label": "Гражданская оборона — «Зоопарк»",
+  "category": "music",
+  "what": "Песня Егора Летова и «Гражданской обороны» о том, как безумцы и изгои уходят из зоопарка на волю.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гражданская оборона (группа)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%BD%D0%B0_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0)",
+  "img": "img/grob-zoopark.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Egor_Letov_2000-11-04_Nuernberg.jpg"
+  },
+  "cut": "cut/grob-zoopark.png",
+  "cut_w": 156,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "guf": {
+  "label": "Гуф",
+  "category": "music",
+  "what": "Российский рэпер Алексей Долматов; фейковые новости о его смерти породили мем «Гуф умер».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гуф"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Гуф",
+  "img": "img/guf.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Guf3_(cropped).jpg"
+  },
+  "aka": [
+   "Гуф"
+  ],
+  "cut": "cut/guf.png",
+  "cut_w": 140,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "gulag": {
+  "label": "ГУЛАГ",
+  "category": "history",
+  "what": "Система исправительно-трудовых лагерей СССР, через которую прошли миллионы заключённых.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "ГУЛАГ"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D0%A3%D0%9B%D0%90%D0%93",
+  "img": "img/gulag.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Vorkuta.jpg"
+  },
+  "cut": "cut/gulag.png",
+  "cut_w": 191,
+  "cut_h": 123,
+  "cut_kind": "subject"
+ },
+ "half-life-2": {
+  "label": "Half-Life 2",
+  "category": "games",
+  "what": "Шутер Valve (2004); начинается с того, что загадочный G-Man будит Гордона Фримена.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Half-Life 2"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Half-Life_2",
+  "img": "img/half-life-2.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Half-Life_Lambda.svg"
+  },
+  "cut": "img/half-life-2.svg",
+  "cut_w": 148.94,
+  "cut_h": 148.94,
+  "cut_kind": "logo"
+ },
+ "hans-christian-andersen": {
+  "label": "Ханс Кристиан Андерсен",
+  "category": "books",
+  "what": "Датский сказочник, автор «Принцессы на горошине», «Гадкого утёнка», «Снежной королевы».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Андерсен, Ханс Кристиан"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D0%B5%D1%80%D1%81%D0%B5%D0%BD,_%D0%A5%D0%B0%D0%BD%D1%81_%D0%9A%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%B0%D0%BD",
+  "img": "img/hans-christian-andersen.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Hans_Christian_Andersen_by_Thora_Hallager_1869.jpg"
+  },
+  "cut": "cut/hans-christian-andersen.png",
+  "cut_w": 152,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "happy-end-2017": {
+  "label": "«Хэппи-энд» (2017)",
+  "category": "screen",
+  "what": "Фильм Михаэля Ханеке о буржуазной семье из Кале; вопреки названию — мрачная драма, в том числе о желании уйти из жизни.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Хэппи-энд (фильм, 2017)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A5%D1%8D%D0%BF%D0%BF%D0%B8-%D1%8D%D0%BD%D0%B4_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_2017)"
+ },
+ "harry-potter": {
+  "label": "«Гарри Поттер»",
+  "category": "books",
+  "what": "Серия романов Джоан Роулинг о юном волшебнике; змеиный язык там называется парселтанг.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гарри Поттер"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Гарри_Поттер",
+  "img": "img/harry-potter.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:HP_-_Harry_Potter_wordmark.svg"
+  },
+  "cut": "img/harry-potter.svg",
+  "cut_w": 590.79,
+  "cut_h": 646.59,
+  "cut_kind": "logo"
+ },
+ "hassan-i-sabbah": {
+  "label": "Хасан ибн Саббах",
+  "category": "history",
+  "what": "Проповедник XI века, основатель низаритского государства в Аламуте и легендарной секты ассасинов.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Хасан ибн Саббах"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Хасан_ибн_Саббах",
+  "img": "img/hassan-i-sabbah.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Asabah2.jpg"
+  },
+  "cut": "cut/hassan-i-sabbah.png",
+  "cut_w": 164,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "hel": {
+  "label": "Хельхейм",
+  "category": "myth",
+  "what": "Мир мёртвых в германо-скандинавской мифологии, которым правит Хель.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Хельхейм"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Хельхейм",
+  "img": "img/hel.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Odin_rides_to_Hel.jpg"
+  },
+  "cut": "cut/hel.png",
+  "cut_w": 192,
+  "cut_h": 130,
+  "cut_kind": "card"
+ },
+ "hiroshima-bombing": {
+  "label": "Бомбардировка Хиросимы",
+  "category": "history",
+  "what": "Атомный удар США по Хиросиме 6 августа 1945 года.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Атомные бомбардировки Хиросимы и Нагасаки"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Атомные_бомбардировки_Хиросимы_и_Нагасаки",
+  "img": "img/hiroshima-bombing.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Atomic_cloud_over_Hiroshima_(cropped1to1).jpg"
+  },
+  "cut": "cut/hiroshima-bombing.png",
+  "cut_w": 92,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "holodomor": {
+  "label": "Голодомор",
+  "category": "history",
+  "what": "Массовый голод 1932–1933 годов в Украине и других регионах СССР, вызванный коллективизацией.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Голодомор"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Голодомор",
+  "img": "img/holodomor.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Holodomor_Genocide_Memorial_Kyiv.JPG"
+  },
+  "cut": "cut/holodomor.png",
+  "cut_w": 192,
+  "cut_h": 130,
+  "cut_kind": "card"
+ },
+ "holy-trinity": {
+  "label": "Святая Троица",
+  "category": "myth",
+  "what": "Христианский догмат о едином Боге в трёх лицах: Отец, Сын и Святой Дух.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Троица"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%B0",
+  "img": "img/holy-trinity.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Andrej_Rubl%C3%ABv_001.jpg"
+  },
+  "cut": "cut/holy-trinity.png",
+  "cut_w": 157,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "house-of-saud": {
+  "label": "Саудиты",
+  "category": "history",
+  "what": "Правящая королевская династия Саудовской Аравии.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Саудиты"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D1%8B",
+  "img": "img/house-of-saud.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Emblem_of_Saudi_Arabia.svg"
+  },
+  "cut": "img/house-of-saud.svg",
+  "cut_w": 610,
+  "cut_h": 662.42,
+  "cut_kind": "logo"
+ },
+ "husky": {
+  "label": "Хаски",
+  "category": "music",
+  "what": "Российский рэпер Дмитрий Кузнецов, один из самых мрачных авторов русского рэпа.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Хаски (рэпер)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Хаски_(рэпер)",
+  "img": "img/husky.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Rapper_Haski_on_Stereoleto_2020.jpg"
+  },
+  "cut": "cut/husky.png",
+  "cut_w": 191,
+  "cut_h": 176,
+  "cut_kind": "subject"
+ },
+ "hydra-market": {
+  "label": "Hydra",
+  "category": "internet",
+  "what": "Крупнейший русскоязычный даркнет-рынок запрещённых веществ, закрытый в апреле 2022 года.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Hydra (даркнет-рынок)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Hydra_(даркнет-рынок)"
+ },
+ "icarus": {
+  "label": "Икар",
+  "category": "myth",
+  "what": "Герой греческого мифа, взлетевший на восковых крыльях слишком близко к солнцу и упавший в море.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Икар"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%98%D0%BA%D0%B0%D1%80",
+  "img": "img/icarus.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gaziantep_Zeugma_Museum_Daedalus_mosaic_1873.jpg"
+  },
+  "cut": "cut/icarus.png",
+  "cut_w": 192,
+  "cut_h": 131,
+  "cut_kind": "card"
+ },
+ "ikea": {
+  "label": "IKEA",
+  "category": "brands",
+  "what": "Шведская сеть мебели для самостоятельной сборки; в 2022 году ушла из России.",
+  "image": {
+   "kind": "simple-icons",
+   "slug": "ikea"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/IKEA",
+  "img": "img/ikea.svg",
+  "brand_hex": "#0058A3",
+  "img_credit": {
+   "text": "Simple Icons (CC0)",
+   "url": "https://simpleicons.org/?q=ikea"
+  },
+  "aka": [
+   "Икея",
+   "Икеа"
+  ],
+  "cut": "img/ikea.svg",
+  "cut_w": 24,
+  "cut_h": 24,
+  "cut_kind": "logo"
+ },
+ "ilya-maddyson": {
+  "label": "Илья Мэддисон",
+  "category": "internet",
+  "what": "Стример и видеоблогер Илья Давыдов, автор игровых обзоров и мемов.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Мэддисон, Илья"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Мэддисон,_Илья",
+  "img": "img/ilya-maddyson.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ilya_Maddyson.png"
+  },
+  "aka": [
+   "Мэддисон",
+   "Мэд"
+  ],
+  "cut": "cut/ilya-maddyson.png",
+  "cut_w": 191,
+  "cut_h": 175,
+  "cut_kind": "subject"
+ },
+ "ilya-yashin": {
+  "label": "Илья Яшин",
+  "category": "history",
+  "what": "Российский оппозиционный политик; в 2022 году получил 8,5 года за слова о войне, освобождён при обмене в 2024-м.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Яшин, Илья Валерьевич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%AF%D1%88%D0%B8%D0%BD,_%D0%98%D0%BB%D1%8C%D1%8F_%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D1%8C%D0%B5%D0%B2%D0%B8%D1%87",
+  "img": "img/ilya-yashin.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, FAL",
+   "url": "https://commons.wikimedia.org/wiki/File:Ilya_Yashin%27s_Mauerpark_Meeting_asv2024-08_img11.jpg"
+  },
+  "cut": "cut/ilya-yashin.png",
+  "cut_w": 161,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "immanuel-kant": {
+  "label": "Иммануил Кант",
+  "category": "ideas",
+  "what": "Немецкий философ, автор «Критики чистого разума» и понятия «вещь в себе».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Кант, Иммануил"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Кант,_Иммануил",
+  "img": "img/immanuel-kant.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Immanuel_Kant_-_Gemaelde_1.jpg"
+  },
+  "cut": "cut/immanuel-kant.png",
+  "cut_w": 140,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "instasamka": {
+  "label": "INSTASAMKA",
+  "category": "music",
+  "what": "Российская рэп-исполнительница; её трек «За деньги да» (2022) стал вирусным хитом.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Инстасамка"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%81%D1%82%D0%B0%D1%81%D0%B0%D0%BC%D0%BA%D0%B0",
+  "img": "img/instasamka.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Instasamka_%D0%BD%D0%B0_VK_Fest_2023_%D0%B2_%D0%A1%D0%9F%D0%B1_(vertical)_(cropped).jpg"
+  },
+  "cut": "cut/instasamka.png",
+  "cut_w": 147,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "israeli-palestinian-conflict": {
+  "label": "Палестино-израильский конфликт",
+  "category": "history",
+  "what": "Многолетнее противостояние Израиля и палестинцев, в том числе за Иерусалим.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Палестино-израильский конфликт"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Палестино-израильский_конфликт",
+  "img": "img/israeli-palestinian-conflict.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Map_of_Israel,_neighbours_and_occupied_territories-V3-en.png"
+  },
+  "cut": "cut/israeli-palestinian-conflict.png",
+  "cut_w": 110,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "itpedia": {
+  "label": "Айтипедия",
+  "category": "internet",
+  "what": "YouTube-блогер Алексей Шевцов, известный ироничными роликами о технике и жизни в России.",
+  "image": null,
+  "wiki": null
+ },
+ "ivanhoe": {
+  "label": "«Айвенго»",
+  "category": "books",
+  "what": "Исторический роман Вальтера Скотта (1819) о рыцаре времён Ричарда Львиное Сердце.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Айвенго"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Айвенго",
+  "img": "img/ivanhoe.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_The_Abduction_of_Rebecca_-_WGA6226.jpg"
+  },
+  "cut": "cut/ivanhoe.png",
+  "cut_w": 159,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "jacques-cousteau": {
+  "label": "Жак-Ив Кусто",
+  "category": "ideas",
+  "what": "Французский исследователь океана, соавтор акваланга и автор подводных фильмов.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Кусто, Жак-Ив"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Кусто,_Жак-Ив",
+  "img": "img/jacques-cousteau.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Cousteau1972_(cropped).jpg"
+  },
+  "cut": "cut/jacques-cousteau.png",
+  "cut_w": 154,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "jacques-lacan": {
+  "label": "Жак Лакан",
+  "category": "ideas",
+  "what": "Французский психоаналитик и философ, одна из главных фигур психоанализа XX века.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Лакан, Жак"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Лакан,_Жак",
+  "img": "img/jacques-lacan.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Jacques_Lacan.jpg"
+  },
+  "cut": "cut/jacques-lacan.png",
+  "cut_w": 144,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "jahannam": {
+  "label": "Джаханнам",
+  "category": "myth",
+  "what": "Ад, геенна огненная в исламской традиции.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Джаханнам"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Джаханнам"
+ },
+ "jan-kounen": {
+  "label": "Ян Кунен",
+  "category": "screen",
+  "what": "Французский режиссёр, автор боевика «Доберман» (1997) и «99 франков».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Кунен, Ян"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Кунен,_Ян",
+  "img": "img/jan-kounen.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Jan_Kounen_2010_a.jpg"
+  },
+  "cut": "cut/jan-kounen.png",
+  "cut_w": 164,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "jean-claude-van-damme": {
+  "label": "Жан-Клод Ван Дамм",
+  "category": "screen",
+  "what": "Бельгийский актёр боевиков, звезда фильма «Кровавый спорт» (1988).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Ван Дамм, Жан-Клод"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Ван_Дамм,_Жан-Клод",
+  "img": "img/jean-claude-van-damme.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Jean-Claude_Van_Damme_at_Brussels_Comic_Con_2023_DSC19480_Kiri_DxO.jpg"
+  },
+  "cut": "cut/jean-claude-van-damme.png",
+  "cut_w": 182,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "jonah": {
+  "label": "Иона",
+  "category": "myth",
+  "what": "Библейский пророк, проведший три дня и три ночи во чреве кита и выпущенный живым.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Иона (пророк)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Иона_(пророк)",
+  "img": "img/jonah.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:137.Jonah_Is_Spewed_Forth_by_the_Whale.jpg"
+  },
+  "cut": "cut/jonah.png",
+  "cut_w": 155,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "jubilee": {
+  "label": "Jubilee",
+  "category": "music",
+  "what": "Российский рэпер, давний оппонент Славы КПСС: оба выпускали друг на друга дисс-треки.",
+  "image": null,
+  "wiki": null
+ },
+ "judas-iscariot": {
+  "label": "Иуда Искариот",
+  "category": "myth",
+  "what": "Апостол, предавший Христа за тридцать сребреников; имя стало синонимом предателя.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Иуда Искариот"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Иуда_Искариот",
+  "img": "img/judas-iscariot.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Almeida_J%C3%BAnior_-_Remorso_de_Judas,_1880.jpg"
+  },
+  "cut": "cut/judas-iscariot.png",
+  "cut_w": 128,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "k-pop": {
+  "label": "K-pop",
+  "category": "music",
+  "what": "Южнокорейская поп-музыка с айдол-группами, яркими образами и хореографией.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "K-pop"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/K-pop",
+  "img": "img/k-pop.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:K-pop_boybands.jpg"
+  },
+  "cut": "cut/k-pop.png",
+  "cut_w": 192,
+  "cut_h": 131,
+  "cut_kind": "card"
+ },
+ "kanye-west": {
+  "label": "Канье Уэст",
+  "category": "music",
+  "what": "Американский рэпер и продюсер, известный эпатажными выходками.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Уэст, Канье"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Уэст,_Канье",
+  "img": "img/kanye-west.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Kanye_West_at_the_2009_Tribeca_Film_Festival.jpg"
+  },
+  "cut": "cut/kanye-west.png",
+  "cut_w": 181,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "karl-marx": {
+  "label": "Карл Маркс",
+  "category": "ideas",
+  "what": "Немецкий философ и экономист, автор «Капитала», основоположник марксизма.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Маркс, Карл"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Маркс,_Карл",
+  "img": "img/karl-marx.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored_(cropped).png"
+  },
+  "cut": "cut/karl-marx.png",
+  "cut_w": 152,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "kasta": {
+  "label": "Каста",
+  "category": "music",
+  "what": "Ростовская хип-хоп-группа, ветераны русского рэпа; в составе — Влади, Шым, Хамиль, Змей.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Каста (группа)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Каста_(группа)",
+  "img": "img/kasta.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:1_%D0%9A%D0%B0%D1%81%D1%82%D0%B0_photo_@katya_mozina_001.jpg"
+  },
+  "cut": "cut/kasta.png",
+  "cut_w": 191,
+  "cut_h": 142,
+  "cut_kind": "subject"
+ },
+ "ken-kaneki": {
+  "label": "Кэн Канеки",
+  "category": "screen",
+  "what": "Главный герой манги и аниме «Токийский гуль»: студент, против воли ставший получеловеком-гулем.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Токийский гуль"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BA%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D1%83%D0%BB%D1%8C",
+  "img": "img/ken-kaneki.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Cosplay_of_Ken_Kaneki_from_Tokyo_Ghoul_at_Kuantan_CosWalk_2015,_010_(16913607835).jpg"
+  },
+  "cut": "cut/ken-kaneki.png",
+  "cut_w": 86,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "knut-hamsun": {
+  "label": "Кнут Гамсун",
+  "category": "books",
+  "what": "Норвежский писатель, нобелевский лауреат, автор романа «Голод» о нищем голодающем литераторе.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гамсун, Кнут"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Гамсун,_Кнут",
+  "img": "img/knut-hamsun.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Hamsun_bldsa_HA0269.jpg"
+  },
+  "cut": "cut/knut-hamsun.png",
+  "cut_w": 152,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "krylatye-kacheli": {
+  "label": "«Крылатые качели»",
+  "category": "music",
+  "what": "Песня Евгения Крылатова на стихи Юрия Энтина из фильма «Приключения Электроника» (1979).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Крылатые качели"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%8B%D0%BB%D0%B0%D1%82%D1%8B%D0%B5_%D0%BA%D0%B0%D1%87%D0%B5%D0%BB%D0%B8",
+  "img": "img/krylatye-kacheli.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%95%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87_%D0%9A%D1%80%D1%8B%D0%BB%D0%B0%D1%82%D0%BE%D0%B2.jpg"
+  },
+  "cut": "cut/krylatye-kacheli.png",
+  "cut_w": 179,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "kung-fu-panda": {
+  "label": "«Кунг-фу панда»",
+  "category": "screen",
+  "what": "Анимационный фильм DreamWorks (2008) о панде По, ставшем мастером кунг-фу.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Кунг-фу панда"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Кунг-фу_панда",
+  "img": "img/kung-fu-panda.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Kung_Fu_Panda_logo.svg"
+  },
+  "cut": "img/kung-fu-panda.svg",
+  "cut_w": 300,
+  "cut_h": 87.82,
+  "cut_kind": "logo"
+ },
+ "kuzma-gridin": {
+  "label": "Кузьма Гридин",
+  "category": "internet",
+  "what": "Российский видеоблогер и стример Никита «Кузьма» Гридин.",
+  "image": null,
+  "wiki": null
+ },
+ "lavrentiy-beria": {
+  "label": "Лаврентий Берия",
+  "category": "history",
+  "what": "Глава советских органов госбезопасности при Сталине; после смерти вождя арестован и расстрелян в 1953 году.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Берия, Лаврентий Павлович"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D1%80%D0%B8%D1%8F,_%D0%9B%D0%B0%D0%B2%D1%80%D0%B5%D0%BD%D1%82%D0%B8%D0%B9_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87",
+  "img": "img/lavrentiy-beria.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Lavrentiy_Beria_portrait_2.jpg"
+  },
+  "cut": "cut/lavrentiy-beria.png",
+  "cut_w": 159,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "lil-peep": {
+  "label": "Lil Peep",
+  "category": "music",
+  "what": "Американский эмо-рэпер, умерший от передозировки в 2017 году в 21 год.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Lil Peep"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Lil_Peep",
+  "img": "img/lil-peep.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Lil-Peep_PrettyPuke_Photoshoot.png"
+  },
+  "cut": "cut/lil-peep.png",
+  "cut_w": 155,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "lion-and-lamb": {
+  "label": "Лев и агнец (пророчество Исаии)",
+  "category": "myth",
+  "what": "Библейский образ грядущего мира из Книги Исаии: хищники и их жертвы мирно живут вместе.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Книга пророка Исаии"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0_%D0%BF%D1%80%D0%BE%D1%80%D0%BE%D0%BA%D0%B0_%D0%98%D1%81%D0%B0%D0%B8%D0%B8",
+  "img": "img/lion-and-lamb.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Edward_Hicks,_Peaceable_Kingdom,_c._1834,_NGA_59908FXD.jpg"
+  },
+  "cut": "cut/lion-and-lamb.png",
+  "cut_w": 192,
+  "cut_h": 161,
+  "cut_kind": "card"
+ },
+ "little-italy": {
+  "label": "Маленькая Италия",
+  "category": "history",
+  "what": "Итальянские иммигрантские кварталы в городах США и других стран; нарицательно — землячества эмигрантов.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Маленькая Италия"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Маленькая_Италия",
+  "img": "img/little-italy.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Littleitaly_worldcup.JPG"
+  },
+  "cut": "cut/little-italy.png",
+  "cut_w": 192,
+  "cut_h": 146,
+  "cut_kind": "card"
+ },
+ "macarena": {
+  "label": "«Macarena»",
+  "category": "music",
+  "what": "Танцевальный хит испанского дуэта Los del Río (1993).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Macarena"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Macarena",
+  "img": "img/macarena.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Remix_of_Los_Del_Rio%27s_Macarena_by_The_Bayside_Boys_European_CD.jpeg"
+  },
+  "cut": "cut/macarena.png",
+  "cut_w": 192,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "madagascar": {
+  "label": "«Мадагаскар»",
+  "category": "screen",
+  "what": "Мультфильм DreamWorks (2005) о зверях из нью-йоркского зоопарка, сбежавших на волю и попавших на Мадагаскар.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Мадагаскар (мультфильм)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B4%D0%B0%D0%B3%D0%B0%D1%81%D0%BA%D0%B0%D1%80_(%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)",
+  "img": "img/madagascar.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Madagascar_(2005_film)_logo.svg"
+  },
+  "cut": "img/madagascar.svg",
+  "cut_w": 300,
+  "cut_h": 84.18,
+  "cut_kind": "logo"
+ },
+ "maddy-murk": {
+  "label": "MaddyMurk",
+  "category": "internet",
+  "what": "Стример Михаил Белкин, ставший известным из-за внешнего сходства с Ильёй Мэддисоном.",
+  "image": null,
+  "wiki": null
+ },
+ "mahatma-gandhi": {
+  "label": "Махатма Ганди",
+  "category": "history",
+  "what": "Лидер борьбы Индии за независимость, проповедник ненасилия; убит индуистским националистом в 1948 году.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Махатма Ганди"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%85%D0%B0%D1%82%D0%BC%D0%B0_%D0%93%D0%B0%D0%BD%D0%B4%D0%B8",
+  "img": "img/mahatma-gandhi.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Mahatma-Gandhi,_studio,_1931.jpg"
+  },
+  "cut": "cut/mahatma-gandhi.png",
+  "cut_w": 141,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "mandela-effect": {
+  "label": "Эффект Манделы",
+  "category": "internet",
+  "what": "Ложная коллективная память; назван так, потому что многие «помнили» смерть Нельсона Манделы в тюрьме в 1980-х.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Эффект Манделы"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%AD%D1%84%D1%84%D0%B5%D0%BA%D1%82_%D0%9C%D0%B0%D0%BD%D0%B4%D0%B5%D0%BB%D1%8B",
+  "img": "img/mandela-effect.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, No restrictions",
+   "url": "https://commons.wikimedia.org/wiki/File:Nelson_Mandela,_2000_(5)_(cropped).jpg"
+  },
+  "cut": "cut/mandela-effect.png",
+  "cut_w": 148,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "mark-david-chapman": {
+  "label": "Марк Чепмен",
+  "category": "history",
+  "what": "Американец, застреливший Джона Леннона в Нью-Йорке в декабре 1980 года.",
+  "image": {
+   "kind": "wiki",
+   "lang": "en",
+   "title": "Mark David Chapman"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Чепмен,_Марк",
+  "img": "img/mark-david-chapman.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Mark_David_Chapman,_NYPD_mugshot.jpg"
+  },
+  "cut": "cut/mark-david-chapman.png",
+  "cut_w": 148,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "master-and-margarita": {
+  "label": "«Мастер и Маргарита»",
+  "category": "books",
+  "what": "Роман Михаила Булгакова о визите в Москву дьявола Воланда и его свиты.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Мастер и Маргарита"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Мастер_и_Маргарита",
+  "img": "img/master-and-margarita.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:MasterandMargaritaFirstEdition.jpg"
+  },
+  "cut": "cut/master-and-margarita.png",
+  "cut_w": 143,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "meduza": {
+  "label": "«Медуза»",
+  "category": "internet",
+  "what": "Независимое русскоязычное интернет-издание, работающее из Риги.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Meduza"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Meduza",
+  "img": "img/meduza.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Meduza_M_Logo.png"
+  },
+  "cut": "cut/meduza.png",
+  "cut_w": 191,
+  "cut_h": 118,
+  "cut_kind": "subject"
+ },
+ "michael-haneke": {
+  "label": "Михаэль Ханеке",
+  "category": "screen",
+  "what": "Австрийский кинорежиссёр, дважды лауреат «Золотой пальмовой ветви», известный жёсткими и безрадостными фильмами.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Ханеке, Михаэль"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%BD%D0%B5%D0%BA%D0%B5,_%D0%9C%D0%B8%D1%85%D0%B0%D1%8D%D0%BB%D1%8C",
+  "img": "img/michael-haneke.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Michael_Haneke_2009.jpg"
+  },
+  "cut": "cut/michael-haneke.png",
+  "cut_w": 143,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "midjourney": {
+  "label": "Midjourney",
+  "category": "brands",
+  "what": "Нейросеть, рисующая картинки по текстовому описанию; символ ИИ-изображений 2022–2023 годов.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Midjourney"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Midjourney",
+  "img": "img/midjourney.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Midjourney_Emblem.svg"
+  },
+  "cut": "img/midjourney.svg",
+  "cut_w": 1024,
+  "cut_h": 1024,
+  "cut_kind": "logo"
+ },
+ "mikhail-gorbachev": {
+  "label": "Михаил Горбачёв",
+  "category": "history",
+  "what": "Последний руководитель СССР, автор перестройки, при котором Союз распался.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Горбачёв, Михаил Сергеевич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Горбачёв,_Михаил_Сергеевич",
+  "img": "img/mikhail-gorbachev.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:GorbachevMS.jpg"
+  },
+  "cut": "cut/mikhail-gorbachev.png",
+  "cut_w": 144,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "mikhail-svetov": {
+  "label": "Михаил Светов",
+  "category": "internet",
+  "what": "Российский либертарианский политик и блогер, известный риторикой о государстве как узаконенном грабеже.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Светов, Михаил Владимирович"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D0%B5%D1%82%D0%BE%D0%B2,_%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87",
+  "img": "img/mikhail-svetov.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Mikhail_Svetov_in_Volgograd,_November_2018.jpg"
+  },
+  "cut": "cut/mikhail-svetov.png",
+  "cut_w": 181,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "mirko-cro-cop": {
+  "label": "Мирко Кро Коп",
+  "category": "history",
+  "what": "Хорватский кикбоксер и боец MMA (PRIDE, UFC); в 2015 году попался на допинге.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Филипович, Мирко"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Филипович,_Мирко",
+  "img": "img/mirko-cro-cop.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Mirko_Cro_Cop.png"
+  },
+  "cut": "cut/mirko-cro-cop.png",
+  "cut_w": 191,
+  "cut_h": 174,
+  "cut_kind": "subject"
+ },
+ "mistress-of-the-copper-mountain": {
+  "label": "Хозяйка Медной горы",
+  "category": "books",
+  "what": "Персонаж уральских сказов Павла Бажова — хранительница горных богатств и малахита.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Хозяйка Медной горы"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A5%D0%BE%D0%B7%D1%8F%D0%B9%D0%BA%D0%B0_%D0%9C%D0%B5%D0%B4%D0%BD%D0%BE%D0%B9_%D0%B3%D0%BE%D1%80%D1%8B",
+  "img": "img/mistress-of-the-copper-mountain.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Stamps_of_Russia_2004_No_912-914_crop.jpg"
+  },
+  "cut": "cut/mistress-of-the-copper-mountain.png",
+  "cut_w": 112,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "mordor": {
+  "label": "Мордор",
+  "category": "books",
+  "what": "Тёмная страна Саурона во «Властелине колец» Толкина; в интернете — ироничное прозвище России.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Мордор"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Мордор",
+  "img": "img/mordor.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Mordor_SVG.svg"
+  },
+  "cut": "cut/mordor.png",
+  "cut_w": 191,
+  "cut_h": 109,
+  "cut_kind": "subject"
+ },
+ "mount-gerizim": {
+  "label": "Гора Гаризим",
+  "category": "myth",
+  "what": "Священная гора самаритян в Самарии, упоминаемая в Библии.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гризим"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Гризим",
+  "img": "img/mount-gerizim.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D7%A8%D7%9B%D7%A1_%D7%94%D7%A8_%D7%92%D7%A8%D7%99%D7%96%D7%99%D7%9D.jpg"
+  },
+  "cut": "cut/mount-gerizim.png",
+  "cut_w": 192,
+  "cut_h": 131,
+  "cut_kind": "card"
+ },
+ "mountain-in-labour": {
+  "label": "«Гора родила мышь»",
+  "category": "books",
+  "what": "Крылатое выражение из басни Эзопа и «Науки поэзии» Горация: громкие ожидания с ничтожным итогом.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гора родила мышь"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%B0_%D1%80%D0%BE%D0%B4%D0%B8%D0%BB%D0%B0_%D0%BC%D1%8B%D1%88%D1%8C",
+  "img": "img/mountain-in-labour.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Delierre_la-montagne-qui-accouche_1883.jpg"
+  },
+  "cut": "cut/mountain-in-labour.png",
+  "cut_w": 146,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "mr-burns": {
+  "label": "Мистер Бёрнс",
+  "category": "screen",
+  "what": "Жадный престарелый владелец атомной станции из мультсериала «Симпсоны».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Чарльз Монтгомери Бёрнс"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Чарльз_Монтгомери_Бёрнс"
+ },
+ "murat-nasyrov": {
+  "label": "Мурат Насыров",
+  "category": "music",
+  "what": "Поп-певец 90-х, исполнитель хита «Мальчик хочет в Тамбов».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Насыров, Мурат Исмаилович"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Насыров,_Мурат_Исмаилович",
+  "img": "img/murat-nasyrov.jpg",
+  "img_credit": {
+   "text": "Обложка альбома «Моя история», Apple Music",
+   "url": "https://music.apple.com/ru/search?term=Мурат%20Насыров"
+  },
+  "img_free": false,
+  "cut": "cut/murat-nasyrov.png",
+  "cut_w": 192,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "national-bolshevik-party": {
+  "label": "НБП (нацболы)",
+  "category": "history",
+  "what": "Национал-большевистская партия Эдуарда Лимонова (1990-е), известная эпатажными акциями; запрещена в 2007 году.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Национал-большевистская партия"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5%D0%B2%D0%B8%D1%81%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D1%8F",
+  "img": "img/national-bolshevik-party.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:National_Bolshevik_Party_flag.svg"
+  },
+  "cut": "img/national-bolshevik-party.svg",
+  "cut_w": 400,
+  "cut_h": 240,
+  "cut_kind": "logo"
+ },
+ "netflix": {
+  "label": "Netflix",
+  "category": "brands",
+  "what": "Американский стриминговый сервис фильмов и сериалов.",
+  "image": {
+   "kind": "simple-icons",
+   "slug": "netflix"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Netflix",
+  "img": "img/netflix.svg",
+  "img_credit": {
+   "text": "Simple Icons (CC0)",
+   "url": "https://simpleicons.org/?q=netflix"
+  },
+  "brand_hex": "#E50914",
+  "aka": [
+   "Нетфликс"
+  ],
+  "cut": "img/netflix.svg",
+  "cut_w": 24,
+  "cut_h": 24,
+  "cut_kind": "logo"
+ },
+ "niko-bellic": {
+  "label": "Нико Беллик",
+  "category": "games",
+  "what": "Главный герой GTA IV (2008) — ветеран балканской войны, приехавший в Либерти-Сити за «американской мечтой».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Нико Беллик"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D0%BA%D0%BE_%D0%91%D0%B5%D0%BB%D0%BB%D0%B8%D0%BA",
+  "img": "img/niko-bellic.jpg",
+  "img_credit": {
+   "text": "Обложка, Steam (Grand Theft Auto IV)",
+   "url": "https://store.steampowered.com/app/12210/"
+  },
+  "img_free": false,
+  "cut": "cut/niko-bellic.png",
+  "cut_w": 131,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "notre-dame-de-paris": {
+  "label": "Собор Парижской Богоматери",
+  "category": "history",
+  "what": "Готический собор в Париже, сильно пострадавший от пожара 15 апреля 2019 года.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Пожар в соборе Парижской Богоматери"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Собор_Парижской_Богоматери",
+  "img": "img/notre-dame-de-paris.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Incendie_Notre_Dame_de_Paris.jpg"
+  },
+  "cut": "cut/notre-dame-de-paris.png",
+  "cut_w": 145,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "novichok": {
+  "label": "«Новичок»",
+  "category": "history",
+  "what": "Семейство боевых отравляющих веществ; применялось против Скрипалей (2018) и Навального (2020).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Новичок (отравляющие вещества)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Новичок_(отравляющие_вещества)",
+  "img": "img/novichok.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Novichok_A230_(Mirzayanov_2009).svg"
+  },
+  "cut": "img/novichok.svg",
+  "cut_w": 66.29,
+  "cut_h": 43.37,
+  "cut_kind": "logo"
+ },
+ "obladaet": {
+  "label": "OBLADAET",
+  "category": "music",
+  "what": "Российский рэпер, одна из звёзд трэп-сцены конца 2010-х.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Obladaet"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Obladaet",
+  "img": "img/obladaet.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:OBLADAET_%D0%BD%D0%B0_VK_Fest_5_(cropped).jpg"
+  },
+  "cut": "cut/obladaet.png",
+  "cut_w": 133,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "otto-von-bismarck": {
+  "label": "Отто фон Бисмарк",
+  "category": "history",
+  "what": "«Железный канцлер», объединивший Германию в 1871 году.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Бисмарк, Отто фон"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Бисмарк,_Отто_фон",
+  "img": "img/otto-von-bismarck.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Otto_F%C3%BCrst_von_Bismarck_(cropped2).JPG"
+  },
+  "cut": "cut/otto-von-bismarck.png",
+  "cut_w": 138,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "overwatch": {
+  "label": "Overwatch",
+  "category": "games",
+  "what": "Командный шутер Blizzard; Ангел, Раматтра и Роковая вдова — его герои.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Overwatch"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Overwatch",
+  "img": "img/overwatch.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Overwatch_2_logo.svg"
+  },
+  "cut": "img/overwatch.svg",
+  "cut_w": 50,
+  "cut_h": 36.29,
+  "cut_kind": "logo"
+ },
+ "oxxxymiron": {
+  "label": "Oxxxymiron",
+  "category": "oxxxymiron",
+  "what": "Мирон Фёдоров — рэпер, автор «Горгорода» и соперник Славы КПСС по баттлу 2017 года.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Oxxxymiron"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Oxxxymiron",
+  "img": "img/oxxxymiron.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, FAL",
+   "url": "https://commons.wikimedia.org/wiki/File:Oxxxymiron_RAW_Berlin_asv2022-04_img14_(cropped).jpg"
+  },
+  "aka": [
+   "Оксимирон",
+   "Окси",
+   "Мирон",
+   "Мирон Фёдоров"
+  ],
+  "cut": "cut/oxxxymiron.png",
+  "cut_w": 151,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "oxxxymiron-bashnya-iz-slonovoy-kosti": {
+  "label": "«Башня из слоновой кости»",
+  "category": "oxxxymiron",
+  "what": "Трек «Горгорода» (2015): помилованный Марк выходит из мэрии и спрашивает себя, может ли художник быть нейтральным.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Горгород"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%B3%D0%BE%D1%80%D0%BE%D0%B4#%D0%91%D0%B0%D1%88%D0%BD%D1%8F_%D0%B8%D0%B7_%D1%81%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2%D0%BE%D0%B9_%D0%BA%D0%BE%D1%81%D1%82%D0%B8"
+ },
+ "oxxxymiron-bassline-business": {
+  "label": "«Bassline Business»",
+  "category": "oxxxymiron",
+  "what": "Первый дисс Оксимирона на Моргенштерна (2022).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Oxxxymiron"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/The_Story_of_Alisher"
+ },
+ "oxxxymiron-bezumie": {
+  "label": "«Безумие»",
+  "category": "oxxxymiron",
+  "what": "Совместный трек ЛСП и Оксимирона о любви как безумии.",
+  "image": null,
+  "wiki": null
+ },
+ "oxxxymiron-devochka-pizdets": {
+  "label": "«Девочка Пиздец»",
+  "category": "oxxxymiron",
+  "what": "Трек «Горгорода» о роковой девушке Алисе, в которую влюбляется Марк.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Горгород"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Горгород"
+ },
+ "oxxxymiron-do-zimy": {
+  "label": "«До зимы»",
+  "category": "oxxxymiron",
+  "what": "Трек Оксимирона.",
+  "image": null,
+  "wiki": null
+ },
+ "oxxxymiron-dreydl": {
+  "label": "«Дрейдл»",
+  "category": "oxxxymiron",
+  "what": "Заключительный трек альбома Оксимирона «Красота и уродство» (2021); его последняя строчка стала мемом.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Красота и уродство"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Красота_и_уродство"
+ },
+ "oxxxymiron-espresso-tonik": {
+  "label": "«Эспрессо Тоник»",
+  "category": "oxxxymiron",
+  "what": "Трек с альбома Оксимирона «Красота и уродство» (2021).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Красота и уродство"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Красота_и_уродство"
+ },
+ "oxxxymiron-gde-nas-net": {
+  "label": "«Где нас нет»",
+  "category": "oxxxymiron",
+  "what": "Финальный трек «Горгорода» (2015), последний текст Марка — мечта о прекрасном далёком месте.",
+  "image": null,
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%B3%D0%BE%D1%80%D0%BE%D0%B4#%D0%93%D0%B4%D0%B5_%D0%BD%D0%B0%D1%81_%D0%BD%D0%B5%D1%82"
+ },
+ "oxxxymiron-gorgorod": {
+  "label": "«Горгород»",
+  "category": "oxxxymiron",
+  "what": "Концептуальный альбом Оксимирона (2015) о писателе Марке в городе Мэра; «ГОРГОРОД 2» — его пародийное продолжение.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Горгород"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%B3%D0%BE%D1%80%D0%BE%D0%B4"
+ },
+ "oxxxymiron-gorod-pod-podoshvoy": {
+  "label": "«Город под подошвой»",
+  "category": "oxxxymiron",
+  "what": "Сингл Оксимирона 2015 года, давший имя туру; Слава цитировал его строчки на Versus.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Город под подошвой"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Город_под_подошвой"
+ },
+ "oxxxymiron-kem-ty-stal": {
+  "label": "«Кем ты стал»",
+  "category": "oxxxymiron",
+  "what": "Трек «Горгорода» (2015): фанат дозванивается до Марка и обвиняет кумира в том, что тот продался.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Горгород"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%B3%D0%BE%D1%80%D0%BE%D0%B4#%D0%9A%D0%B5%D0%BC_%D1%82%D1%8B_%D1%81%D1%82%D0%B0%D0%BB"
+ },
+ "oxxxymiron-kto-ubil-marka": {
+  "label": "«Кто убил Марка?»",
+  "category": "oxxxymiron",
+  "what": "Девятиминутный сингл 2021 года, где Оксимирон разбирает свой путь после «Горгорода» и баттла со Славой.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Кто убил Марка?"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Кто_убил_Марка%3F"
+ },
+ "oxxxymiron-mokh": {
+  "label": "«Мох»",
+  "category": "oxxxymiron",
+  "what": "Трек 2021 года, открывающий микстейп «Смутное время»; Слава высмеивал его на стриме.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "MiXXXtape III: Смутное время"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/MiXXXtape_III:_Смутное_время"
+ },
+ "oxxxymiron-my-vse-umryom": {
+  "label": "«Мы все умрём»",
+  "category": "oxxxymiron",
+  "what": "Трек Оксимирона с альбома «Красота и уродство» (2021), где упоминается рэпер Талиб Квели.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Oxxxymiron"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B0%D1%81%D0%BE%D1%82%D0%B0_%D0%B8_%D1%83%D1%80%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE"
+ },
+ "oxxxymiron-nakanune": {
+  "label": "«Накануне»",
+  "category": "oxxxymiron",
+  "what": "Лирический трек «Горгорода» о встрече Марка и Алисы, известный вычурными образами.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Горгород"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Горгород"
+ },
+ "oxxxymiron-ne-s-nachala": {
+  "label": "«Не с начала»",
+  "category": "oxxxymiron",
+  "what": "Открывающий трек «Горгорода»: рассказ начинается с флешфорварда и отматывается назад.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Горгород"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Горгород"
+ },
+ "oxxxymiron-nevalyashka": {
+  "label": "«Неваляшка»",
+  "category": "oxxxymiron",
+  "what": "Песня Оксимирона, в которой звучит мысль о том, что однажды детство просто заканчивается.",
+  "image": null,
+  "wiki": null
+ },
+ "oxxxymiron-oyda": {
+  "label": "«ОЙДА»",
+  "category": "oxxxymiron",
+  "what": "Песня Оксимирона 2022 года об эмиграции и войне; её припев обещает когда-нибудь собрать разрушенное заново.",
+  "image": null,
+  "wiki": null
+ },
+ "oxxxymiron-pereplateno": {
+  "label": "«Переплетено»",
+  "category": "oxxxymiron",
+  "what": "Трек «Горгорода» (2015): Гуру излагает Марку теорию о том, что все люди и события в городе связаны.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Горгород"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%B3%D0%BE%D1%80%D0%BE%D0%B4#%D0%9F%D0%B5%D1%80%D0%B5%D0%BF%D0%BB%D0%B5%D1%82%D0%B5%D0%BD%D0%BE"
+ },
+ "oxxxymiron-poligon": {
+  "label": "«Полигон»",
+  "category": "oxxxymiron",
+  "what": "Трек «Горгорода» о городе как ловушке, из которой невозможно уехать.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Горгород"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Горгород"
+ },
+ "oxxxymiron-slovo-mera": {
+  "label": "«Слово мэра»",
+  "category": "oxxxymiron",
+  "what": "Трек «Горгорода» (2015) от лица Мэра — правителя города, подавившего восстание и схватившего Марка.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Горгород"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%B3%D0%BE%D1%80%D0%BE%D0%B4#%D0%A1%D0%BB%D0%BE%D0%B2%D0%BE_%D0%BC%D1%8D%D1%80%D0%B0"
+ },
+ "oxxxymiron-stereocoma": {
+  "label": "«Stereocoma»",
+  "category": "oxxxymiron",
+  "what": "Совместный трек Томаса Мраза и Оксимирона, где звучит образ бездонной кроличьей норы.",
+  "image": null,
+  "wiki": null
+ },
+ "oxxxymiron-tentakli": {
+  "label": "«Тентакли»",
+  "category": "oxxxymiron",
+  "what": "Трек Оксимирона, построенный на образах японского хентая.",
+  "image": null,
+  "wiki": null
+ },
+ "oxxxymiron-the-story-of-alisher": {
+  "label": "«The Story of Alisher»",
+  "category": "oxxxymiron",
+  "what": "Второй дисс Оксимирона на Моргенштерна (2022), известный игрой с перевёртыванием имени Алишер.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "The Story of Alisher"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/The_Story_of_Alisher"
+ },
+ "oxxxymiron-vechny-zhid": {
+  "label": "«Вечный жид»",
+  "category": "oxxxymiron",
+  "what": "Дебютный альбом Оксимирона (2011) и его заглавный трек.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Вечный жид (альбом)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Вечный_жид_(альбом)"
+ },
+ "oxxxymiron-vostochny-mordor": {
+  "label": "«Восточный Мордор»",
+  "category": "oxxxymiron",
+  "what": "Открывающий трек и первый сингл альбома «Вечный жид» (2011), отсылающий к Толкину.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Вечный жид (альбом)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Вечный_жид_(альбом)"
+ },
+ "oxxxymiron-vsego-lish-pisatel": {
+  "label": "«Всего лишь писатель»",
+  "category": "oxxxymiron",
+  "what": "Трек «Горгорода» (2015), где Марк отвечает на упрёки фаната и не видит смысла бороться с властью.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Горгород"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%B3%D0%BE%D1%80%D0%BE%D0%B4#%D0%92%D1%81%D0%B5%D0%B3%D0%BE_%D0%BB%D0%B8%D1%88%D1%8C_%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D1%8C"
+ },
+ "pathologic": {
+  "label": "«Мор. Утопия»",
+  "category": "games",
+  "what": "Российская игра Ice-Pick Lodge (2005) о городе, охваченном эпидемией; действие длится 12 дней.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Мор (Утопия)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Мор_(Утопия)",
+  "img": "img/pathologic.jpg",
+  "img_credit": {
+   "text": "Обложка, Steam (Pathologic Classic HD)",
+   "url": "https://store.steampowered.com/app/384110/"
+  },
+  "img_free": false,
+  "cut": "cut/pathologic.png",
+  "cut_w": 131,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "pewdiepie": {
+  "label": "PewDiePie",
+  "category": "internet",
+  "what": "Шведский видеоблогер, один из крупнейших на YouTube; его фирменное приветствие — «брофист».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Пьюдипай"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9F%D1%8C%D1%8E%D0%B4%D0%B8%D0%BF%D0%B0%D0%B9",
+  "img": "img/pewdiepie.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Pewdiepie_head_shot.jpg"
+  },
+  "cut": "cut/pewdiepie.png",
+  "cut_w": 161,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "putin-amphorae": {
+  "label": "Амфоры Путина",
+  "category": "history",
+  "what": "Эпизод 2011 года: Путин с аквалангом «нашёл» на дне у Тамани античные амфоры; потом выяснилось, что находку подготовили.",
+  "image": null,
+  "wiki": null
+ },
+ "putins-palace": {
+  "label": "«Дворец для Путина»",
+  "category": "history",
+  "what": "Фильм-расследование ФБК (январь 2021) о резиденции под Геленджиком, которую связывают с Путиным.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Дворец для Путина. История самой большой взятки"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86_%D0%B4%D0%BB%D1%8F_%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0._%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D1%81%D0%B0%D0%BC%D0%BE%D0%B9_%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9_%D0%B2%D0%B7%D1%8F%D1%82%D0%BA%D0%B8",
+  "img": "img/putins-palace.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Putin_palace_courtyard.jpg"
+  },
+  "cut": "cut/putins-palace.png",
+  "cut_w": 192,
+  "cut_h": 146,
+  "cut_kind": "card"
+ },
+ "radovan-karadzic": {
+  "label": "Радован Караджич",
+  "category": "history",
+  "what": "Лидер боснийских сербов в войне 1990-х, осуждённый международным трибуналом за геноцид.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Караджич, Радован"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Караджич,_Радован",
+  "img": "img/radovan-karadzic.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Initial_appearance_Radovan_Karad%C5%BEi%C4%87_at_his_trial_-_31_July_2008.jpg"
+  },
+  "cut": "cut/radovan-karadzic.png",
+  "cut_w": 154,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "ragnarok": {
+  "label": "Рагнарёк",
+  "category": "myth",
+  "what": "Гибель богов и мира в германо-скандинавской мифологии.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Рагнарёк"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Рагнарёк",
+  "img": "img/ragnarok.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Johannes_gehrts_ragnarok_mindre.JPG"
+  },
+  "cut": "cut/ragnarok.png",
+  "cut_w": 192,
+  "cut_h": 141,
+  "cut_kind": "card"
+ },
+ "rambo": {
+  "label": "Рэмбо",
+  "category": "screen",
+  "what": "Джон Рэмбо — герой боевиков с Сильвестром Сталлоне, от «Первой крови» (1982) до «Последней крови» (2019).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Джон Рэмбо"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%94%D0%B6%D0%BE%D0%BD_%D0%A0%D1%8D%D0%BC%D0%B1%D0%BE",
+  "img": "img/rambo.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:John_Rambo.jpg"
+  },
+  "cut": "cut/rambo.png",
+  "cut_w": 121,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "rhizome": {
+  "label": "Ризома (Делёз и Гваттари)",
+  "category": "ideas",
+  "what": "Понятие философов Делёза и Гваттари: сеть без центра, верха и низа — противоположность иерархичному «дереву».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Ризома"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B8%D0%B7%D0%BE%D0%BC%D0%B0",
+  "img": "img/rhizome.jpg",
+  "img_credit": {
+   "text": "Обложка, Open Library («Mille plateaux»)",
+   "url": "https://openlibrary.org/search?q=mille+plateaux+deleuze"
+  },
+  "img_free": false,
+  "cut": "cut/rhizome.png",
+  "cut_w": 131,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "roland-barthes": {
+  "label": "Ролан Барт",
+  "category": "ideas",
+  "what": "Французский философ и семиотик, теоретик интертекста и «смерти автора».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Барт, Ролан"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Барт,_Ролан",
+  "img": "img/roland-barthes.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Roland_Barthes_ca_1970.jpg"
+  },
+  "cut": "cut/roland-barthes.png",
+  "cut_w": 118,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "romeo-and-juliet": {
+  "label": "«Ромео и Джульетта»",
+  "category": "books",
+  "what": "Трагедия Шекспира о влюблённых из враждующих семей.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Ромео и Джульетта"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Ромео_и_Джульетта",
+  "img": "img/romeo-and-juliet.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Romeo_and_juliet_brown.jpg"
+  },
+  "cut": "cut/romeo-and-juliet.png",
+  "cut_w": 134,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "rosemarys-baby": {
+  "label": "«Ребёнок Розмари»",
+  "category": "screen",
+  "what": "Фильм ужасов Романа Полански (1968) о женщине, вынашивающей сына дьявола.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Ребёнок Розмари"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Ребёнок_Розмари",
+  "img": "img/rosemarys-baby.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Mia_Farrow_-_Rosemary%27s_Baby.jpg"
+  },
+  "cut": "cut/rosemarys-baby.png",
+  "cut_w": 143,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "royal-v-kustakh": {
+  "label": "Рояль в кустах",
+  "category": "books",
+  "what": "Выражение о нарочитой сюжетной случайности; пошло из юмористической миниатюры Арканова и Горина.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Рояль в кустах"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Рояль_в_кустах",
+  "img": "img/royal-v-kustakh.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%BE%D1%8F%D0%BB%D1%8C_%D0%B2_%D0%BA%D1%83%D1%81%D1%82%D0%B0%D1%85_%D0%A4%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%D1%8C_%D0%9F%D0%B0%D0%BB%D0%B8%D1%82%D1%80%D0%B0_%D1%80%D0%B5%D0%BC%D1%91%D1%81%D0%B5%D0%BB_2024_%D0%A1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D0%B2.jpg"
+  },
+  "cut": "cut/royal-v-kustakh.png",
+  "cut_w": 178,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "ruki-vverh": {
+  "label": "Руки Вверх!",
+  "category": "music",
+  "what": "Поп-группа Сергея Жукова, главный танцевальный бренд 90-х.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Руки вверх!"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Руки_вверх!",
+  "img": "img/ruki-vverh.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%A0%D1%83%D0%BA%D0%B8_%D0%B2%D0%B2%D0%B5%D1%80%D1%85.jpg"
+  },
+  "cut": "cut/ruki-vverh.png",
+  "cut_w": 191,
+  "cut_h": 119,
+  "cut_kind": "subject"
+ },
+ "saint-patrick": {
+  "label": "Святой Патрик",
+  "category": "myth",
+  "what": "Христианский святой V века, просветитель и небесный покровитель Ирландии.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Святой Патрик"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D1%8F%D1%82%D0%BE%D0%B9_%D0%9F%D0%B0%D1%82%D1%80%D0%B8%D0%BA",
+  "img": "img/saint-patrick.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Icon_of_Saint_Patrick,_Christ_the_Saviour_Church.jpg"
+  },
+  "cut": "cut/saint-patrick.png",
+  "cut_w": 110,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "scrooge-mcduck": {
+  "label": "Скрудж Макдак",
+  "category": "screen",
+  "what": "Селезень-миллиардер из комиксов Disney и «Утиных историй», символ скупости.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Скрудж Макдак"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Скрудж_Макдак"
+ },
+ "seneca": {
+  "label": "Сенека",
+  "category": "ideas",
+  "what": "Римский философ-стоик, наставник Нерона; по приказу императора покончил с собой.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Луций Анней Сенека"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9B%D1%83%D1%86%D0%B8%D0%B9_%D0%90%D0%BD%D0%BD%D0%B5%D0%B9_%D0%A1%D0%B5%D0%BD%D0%B5%D0%BA%D0%B0",
+  "img": "img/seneca.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Duble_herma_of_Socrates_and_Seneca_Antikensammlung_Berlin_07.jpg"
+  },
+  "cut": "cut/seneca.png",
+  "cut_w": 157,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "sergey-druzhko": {
+  "label": "Сергей Дружко",
+  "category": "internet",
+  "what": "Ведущий «Необъяснимо, но факт», в конце 2010-х вернувшийся с мемным YouTube-шоу.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Дружко, Сергей Евгеньевич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Дружко,_Сергей_Евгеньевич",
+  "img": "img/sergey-druzhko.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Premia_Runeta_2017_0641.jpg"
+  },
+  "cut": "cut/sergey-druzhko.png",
+  "cut_w": 191,
+  "cut_h": 153,
+  "cut_kind": "subject"
+ },
+ "shalimar-the-clown": {
+  "label": "«Клоун Шалимар»",
+  "category": "books",
+  "what": "Роман Салмана Рушди (2005) об акробате из Кашмира, ставшем убийцей на фоне индо-пакистанского конфликта.",
+  "image": {
+   "kind": "wiki",
+   "lang": "en",
+   "title": "Shalimar the Clown"
+  },
+  "wiki": "https://en.wikipedia.org/wiki/Shalimar_the_Clown",
+  "img": "img/shalimar-the-clown.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Salman_Rushdie_2014_(cropped).jpg"
+  },
+  "cut": "cut/shalimar-the-clown.png",
+  "cut_w": 152,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "shue": {
+  "label": "ШУЕ",
+  "category": "internet",
+  "what": "Мем рунета: аббревиатура «Шизофренический уклад един», шуточное «движение» в защиту шизофреников.",
+  "image": null,
+  "wiki": null
+ },
+ "sigmund-freud": {
+  "label": "Зигмунд Фрейд",
+  "category": "ideas",
+  "what": "Австрийский психиатр, основатель психоанализа.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Фрейд, Зигмунд"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Фрейд,_Зигмунд",
+  "img": "img/sigmund-freud.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Sigmund_Freud,_by_Max_Halberstadt_(cropped).jpg"
+  },
+  "cut": "cut/sigmund-freud.png",
+  "cut_w": 136,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "sleeping-beauty": {
+  "label": "«Спящая красавица»",
+  "category": "books",
+  "what": "Сказка (в версии Шарля Перро 1697 года) о принцессе, проспавшей сто лет.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Спящая красавица"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Спящая_красавица",
+  "img": "img/sleeping-beauty.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Prince_Florimund_finds_the_Sleeping_Beauty_-_Project_Gutenberg_etext_19993.jpg"
+  },
+  "cut": "cut/sleeping-beauty.png",
+  "cut_w": 136,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "solaris": {
+  "label": "«Солярис» (Станислав Лем)",
+  "category": "books",
+  "what": "Фантастический роман Станислава Лема (1961) о мыслящем океане планеты, непостижимом для людей.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Солярис (роман)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%BB%D1%8F%D1%80%D0%B8%D1%81_(%D1%80%D0%BE%D0%BC%D0%B0%D0%BD)",
+  "img": "img/solaris.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Solaris,_various_editions_02.jpg"
+  },
+  "cut": "cut/solaris.png",
+  "cut_w": 191,
+  "cut_h": 178,
+  "cut_kind": "subject"
+ },
+ "sots-art": {
+  "label": "Соц-арт",
+  "category": "history",
+  "what": "Направление советского нонконформистского искусства 1970-х, пародирующее язык официальной агитации.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Соц-арт"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Соц-арт",
+  "img": "img/sots-art.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0 de",
+   "url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F088809-0038,_Berlin,_East_Side_Gallery.jpg"
+  },
+  "cut": "cut/sots-art.png",
+  "cut_w": 192,
+  "cut_h": 131,
+  "cut_kind": "card"
+ },
+ "spongebob-squarepants": {
+  "label": "«Губка Боб Квадратные Штаны»",
+  "category": "screen",
+  "what": "Мультсериал Nickelodeon о губке Бобе и его друге, морской звезде Патрике, из подводного городка Бикини Боттом.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Губка Боб Квадратные Штаны"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%93%D1%83%D0%B1%D0%BA%D0%B0_%D0%91%D0%BE%D0%B1_%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B5_%D0%A8%D1%82%D0%B0%D0%BD%D1%8B",
+  "img": "img/spongebob-squarepants.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:SpongeBob_SquarePants_Logo_(2008).svg"
+  },
+  "cut": "cut/spongebob-squarepants.png",
+  "cut_w": 191,
+  "cut_h": 105,
+  "cut_kind": "subject"
+ },
+ "stanley-kubrick": {
+  "label": "Стэнли Кубрик",
+  "category": "screen",
+  "what": "Американский режиссёр, снявший «Заводной апельсин» (1971) по роману Бёрджесса.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Кубрик, Стэнли"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Кубрик,_Стэнли",
+  "img": "img/stanley-kubrick.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_in_Dr._Strangelove_Trailer_(4)_Cropped.jpg"
+  },
+  "cut": "cut/stanley-kubrick.png",
+  "cut_w": 165,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "stary-oskol": {
+  "label": "Старый Оскол",
+  "category": "history",
+  "what": "Промышленный город в Белгородской области.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Старый Оскол"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Старый_Оскол",
+  "img": "img/stary-oskol.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C_%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D1%8B_%D0%A1_%D0%9E%D1%81%D0%BA%D0%BE%D0%BB.jpg"
+  },
+  "cut": "cut/stary-oskol.png",
+  "cut_w": 192,
+  "cut_h": 131,
+  "cut_kind": "card"
+ },
+ "stationary-bandit": {
+  "label": "Теория оседлого бандита",
+  "category": "ideas",
+  "what": "Концепция экономиста Мансура Олсона: государство как «оседлый» бандит, грабящий регулярно через налоги вместо набегов.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Олсон, Мансур"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%BE%D1%81%D0%B5%D0%B4%D0%BB%D0%BE%D0%B3%D0%BE_%D0%B1%D0%B0%D0%BD%D0%B4%D0%B8%D1%82%D0%B0",
+  "img": "img/stationary-bandit.jpg",
+  "img_credit": {
+   "text": "Обложка, Open Library («Power and Prosperity»)",
+   "url": "https://openlibrary.org/search?q=power+and+prosperity+olson"
+  },
+  "img_free": false,
+  "cut": "cut/stationary-bandit.png",
+  "cut_w": 131,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "storming-of-the-bastille": {
+  "label": "Взятие Бастилии",
+  "category": "history",
+  "what": "Штурм парижской крепости-тюрьмы 14 июля 1789 года, с которого началась Великая французская революция.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Взятие Бастилии"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%92%D0%B7%D1%8F%D1%82%D0%B8%D0%B5_%D0%91%D0%B0%D1%81%D1%82%D0%B8%D0%BB%D0%B8%D0%B8",
+  "img": "img/storming-of-the-bastille.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Prise_de_la_Bastille.jpg"
+  },
+  "cut": "cut/storming-of-the-bastille.png",
+  "cut_w": 192,
+  "cut_h": 148,
+  "cut_kind": "card"
+ },
+ "super-mario": {
+  "label": "Super Mario",
+  "category": "games",
+  "what": "Серия игр Nintendo о водопроводчике Марио, который прыгает на врагов-грибов гумб.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Super Mario"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Super_Mario",
+  "img": "img/super-mario.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Mario_Series_Logo.svg"
+  },
+  "cut": "img/super-mario.svg",
+  "cut_w": 10883.2,
+  "cut_h": 5095.7,
+  "cut_kind": "logo"
+ },
+ "tale-of-igors-campaign": {
+  "label": "«Слово о полку Игореве»",
+  "category": "books",
+  "what": "Памятник древнерусской литературы XII века; в нём есть знаменитый плач Ярославны.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Слово о полку Игореве"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Слово_о_полку_Игореве",
+  "img": "img/tale-of-igors-campaign.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Slovo_o_polku_igoreve_1800.djvu"
+  },
+  "cut": "cut/tale-of-igors-campaign.png",
+  "cut_w": 137,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "talib-kweli": {
+  "label": "Талиб Квели",
+  "category": "music",
+  "what": "Американский рэпер, участник дуэта Black Star; в 2020-х прославился скандальными выходками в соцсетях.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Квели, Талиб"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Квели,_Талиб",
+  "img": "img/talib-kweli.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Talibkweli.jpg"
+  },
+  "cut": "cut/talib-kweli.png",
+  "cut_w": 166,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "the-angry-beavers": {
+  "label": "«Крутые бобры»",
+  "category": "screen",
+  "what": "Мультсериал Nickelodeon (1997–2001) о двух братьях-бобрах; в России шёл по ТВ в 2000-х.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Крутые бобры"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Крутые_бобры",
+  "img": "img/the-angry-beavers.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Angry_Beavers.jpg"
+  },
+  "cut": "cut/the-angry-beavers.png",
+  "cut_w": 191,
+  "cut_h": 73,
+  "cut_kind": "subject"
+ },
+ "the-autumn-of-the-patriarch": {
+  "label": "«Осень патриарха»",
+  "category": "books",
+  "what": "Роман Габриэля Гарсиа Маркеса (1975) о дряхлеющем диктаторе вымышленной латиноамериканской страны.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Осень патриарха"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D0%B5%D0%BD%D1%8C_%D0%BF%D0%B0%D1%82%D1%80%D0%B8%D0%B0%D1%80%D1%85%D0%B0",
+  "img": "img/the-autumn-of-the-patriarch.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:El_oto%C3%B1o_del_patriarca.png"
+  },
+  "cut": "cut/the-autumn-of-the-patriarch.png",
+  "cut_w": 131,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "the-big-blue": {
+  "label": "«Голубая бездна»",
+  "category": "screen",
+  "what": "Фильм Люка Бессона (1988) о соперничестве ныряльщиков-фридайверов.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Голубая бездна (фильм, 1988)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Голубая_бездна_(фильм,_1988)",
+  "img": "img/the-big-blue.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Luc_Besson-3729.jpg"
+  },
+  "cut": "cut/the-big-blue.png",
+  "cut_w": 139,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "the-count-of-monte-cristo": {
+  "label": "«Граф Монте-Кристо»",
+  "category": "books",
+  "what": "Роман Александра Дюма (1844–1846) о узнике, который сбегает, богатеет и мстит обидчикам.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Граф Монте-Кристо"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Граф_Монте-Кристо",
+  "img": "img/the-count-of-monte-cristo.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Louis_Fran%C3%A7ais-Dant%C3%A8s_sur_son_rocher.jpg"
+  },
+  "cut": "cut/the-count-of-monte-cristo.png",
+  "cut_w": 131,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "the-disaster-artist": {
+  "label": "«Горе-творец» (The Disaster Artist)",
+  "category": "screen",
+  "what": "Фильм Джеймса Франко (2017) о съёмках «Комнаты» Томми Вайсо.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Горе-творец"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Горе-творец",
+  "img": "img/the-disaster-artist.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:James_Franco_4,_2013.jpg"
+  },
+  "cut": "cut/the-disaster-artist.png",
+  "cut_w": 135,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "the-last-supper": {
+  "label": "Тайная вечеря",
+  "category": "myth",
+  "what": "Последняя трапеза Христа с апостолами, на которой он предсказал предательство; сюжет росписи Леонардо да Винчи.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Тайная вечеря (роспись Леонардо да Винчи)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Тайная_вечеря",
+  "img": "img/the-last-supper.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg"
+  },
+  "cut": "cut/the-last-supper.png",
+  "cut_w": 192,
+  "cut_h": 100,
+  "cut_kind": "card"
+ },
+ "the-matrix": {
+  "label": "«Матрица»",
+  "category": "screen",
+  "what": "Фильм Вачовски (1999) о хакере Нео, которого пробуждают от иллюзии компьютерного мира.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Матрица (фильм)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)",
+  "img": "img/the-matrix.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Attribution",
+   "url": "https://commons.wikimedia.org/wiki/File:The.Matrix.glmatrix.1.png"
+  },
+  "cut": "cut/the-matrix.png",
+  "cut_w": 192,
+  "cut_h": 147,
+  "cut_kind": "card"
+ },
+ "the-room": {
+  "label": "«Комната» (The Room)",
+  "category": "screen",
+  "what": "Фильм Томми Вайсо (2003), прозванный «лучшим худшим фильмом»; герой Вайсо дружит с неким Марком.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Комната (фильм, 2003)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Комната_(фильм,_2003)",
+  "img": "img/the-room.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tommy-Wiseau-1.jpg"
+  },
+  "cut": "cut/the-room.png",
+  "cut_w": 150,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "the-simpsons": {
+  "label": "«Симпсоны»",
+  "category": "screen",
+  "what": "Американский мультсериал; Гомер в нём регулярно душит сына Барта.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Симпсоны"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Симпсоны",
+  "img": "img/the-simpsons.svg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Simpsons_yellow_logo.svg"
+  },
+  "cut": "img/the-simpsons.svg",
+  "cut_w": 1920,
+  "cut_h": 1080,
+  "cut_kind": "logo"
+ },
+ "the-snow-queen": {
+  "label": "«Снежная королева»",
+  "category": "books",
+  "what": "Сказка Ганса Христиана Андерсена (1844) о Герде, спасающей Кая с ледяным осколком в сердце.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Снежная королева"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Снежная_королева",
+  "img": "img/the-snow-queen.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Rudolf_Koivu_-_Lumikuningatar.jpg"
+  },
+  "cut": "cut/the-snow-queen.png",
+  "cut_w": 122,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "the-sopranos": {
+  "label": "«Клан Сопрано»",
+  "category": "screen",
+  "what": "Сериал HBO о мафиози Тони Сопрано; Биг Пусси — его друг, оказавшийся информатором ФБР.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Клан Сопрано"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Клан_Сопрано",
+  "img": "img/the-sopranos.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:James_Gandolfini_in_Kuwait_City_2010_(cropped).jpg"
+  },
+  "cut": "cut/the-sopranos.png",
+  "cut_w": 161,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "the-witcher": {
+  "label": "«Ведьмак»",
+  "category": "books",
+  "what": "Фэнтези-сага Анджея Сапковского и игры CD Projekt; Нильфгаард — агрессивная южная империя.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Ведьмак (серия книг)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Ведьмак_(серия_книг)",
+  "img": "img/the-witcher.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Kolekcjonerskie_wydanie_sagi_o_wied%C5%BAminie.jpg"
+  },
+  "cut": "cut/the-witcher.png",
+  "cut_w": 146,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "three-billboards": {
+  "label": "«Три билборда на границе Эббинга, Миссури»",
+  "category": "screen",
+  "what": "Драма Мартина Макдонаха (2017) о матери, требующей найти убийцу дочери с помощью трёх билбордов.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Три билборда на границе Эббинга, Миссури"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Три_билборда_на_границе_Эббинга,_Миссури",
+  "img": "img/three-billboards.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Logo_Three_Billboards_Outside_Ebbing,_Missouri_grau.svg"
+  },
+  "cut": "cut/three-billboards.png",
+  "cut_w": 191,
+  "cut_h": 140,
+  "cut_kind": "subject"
+ },
+ "tima-belorusskikh": {
+  "label": "Тима Белорусских",
+  "category": "music",
+  "what": "Белорусский поп-исполнитель, автор хита «Мокрые кроссы» (2018).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Белорусских, Тима"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Белорусских,_Тима",
+  "img": "img/tima-belorusskikh.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B8%D0%BC%D0%B0_%D0%91%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D1%85_%D0%BD%D0%B0_Slime%26Play_Fest_(3)_(cropped).jpg"
+  },
+  "cut": "cut/tima-belorusskikh.png",
+  "cut_w": 178,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "timati": {
+  "label": "Тимати",
+  "category": "music",
+  "what": "Российский рэпер и бизнесмен; его фиты «Москва» (с Гуфом) и «Лондон» (с Лепсом) стали мемами.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Тимати"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Тимати",
+  "img": "img/timati.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B8%D0%BC%D0%B0%D1%82%D0%B8_%D0%BD%D0%B0_Big_Love_Show_2018_%D0%B2_%D0%A1%D0%9F%D0%B1_.jpg"
+  },
+  "aka": [
+   "Тимати"
+  ],
+  "cut": "cut/timati.png",
+  "cut_w": 105,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "tony-stark": {
+  "label": "Тони Старк",
+  "category": "screen",
+  "what": "Гений-миллиардер, он же Железный человек из комиксов и фильмов Marvel.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Железный человек"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Железный_человек",
+  "img": "img/tony-stark.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Iron_Man_transparent_background.png"
+  },
+  "cut": "cut/tony-stark.png",
+  "cut_w": 106,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "tor-project": {
+  "label": "Tor",
+  "category": "brands",
+  "what": "Сеть анонимного доступа; сайты с адресами .onion открываются только через неё.",
+  "image": {
+   "kind": "simple-icons",
+   "slug": "torproject"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Tor",
+  "img": "img/tor-project.svg",
+  "img_credit": {
+   "text": "Simple Icons (CC0)",
+   "url": "https://simpleicons.org/?q=torproject"
+  },
+  "brand_hex": "#7D4698",
+  "cut": "img/tor-project.svg",
+  "cut_w": 24,
+  "cut_h": 24,
+  "cut_kind": "logo"
+ },
+ "tower-of-babel": {
+  "label": "Вавилонская башня",
+  "category": "myth",
+  "what": "Библейская башня до небес, которую люди строили из гордыни; Бог смешал их языки, и стройка остановилась.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Вавилонская башня"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B0%D1%88%D0%BD%D1%8F",
+  "img": "img/tower-of-babel.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project.jpg"
+  },
+  "cut": "cut/tower-of-babel.png",
+  "cut_w": 191,
+  "cut_h": 151,
+  "cut_kind": "subject"
+ },
+ "toyota-mark-ii": {
+  "label": "Toyota Mark II",
+  "category": "brands",
+  "what": "Японский седан (1968–2004), культовый в России, особенно на Дальнем Востоке.",
+  "image": {
+   "kind": "simple-icons",
+   "slug": "toyota"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Toyota_Mark_II",
+  "img": "img/toyota-mark-ii.svg",
+  "img_credit": {
+   "text": "Simple Icons (CC0)",
+   "url": "https://simpleicons.org/?q=toyota"
+  },
+  "brand_hex": "#EB0A1E",
+  "cut": "img/toyota-mark-ii.svg",
+  "cut_w": 24,
+  "cut_h": 24,
+  "cut_kind": "logo"
+ },
+ "tri-dnya-dozhdya": {
+  "label": "Три дня дождя",
+  "category": "music",
+  "what": "Российская рок-группа Глеба Викторова.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Три дня дождя"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Три_дня_дождя",
+  "img": "img/tri-dnya-dozhdya.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%A2%D1%80%D0%B8_%D0%B4%D0%BD%D1%8F_%D0%B4%D0%BE%D0%B6%D0%B4%D1%8F_%D0%BD%D0%B0_VK_Fest_2025_%D0%B2_%D0%A1%D0%9F%D0%B1.jpg"
+  },
+  "cut": "cut/tri-dnya-dozhdya.png",
+  "cut_w": 130,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "tripoli": {
+  "label": "Триполи",
+  "category": "history",
+  "what": "Столица Ливии, сильно пострадавшая в гражданской войне после свержения Каддафи.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Триполи"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B8%D0%BF%D0%BE%D0%BB%D0%B8",
+  "img": "img/tripoli.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D8%B7%D8%B1%D8%A7%D8%A8%D9%84%D8%B3_%D9%84%D9%8A%D8%A8%D9%8A%D8%A7_%D9%83%D9%86%D9%8A%D8%B3%D8%A9_%D9%85%D8%B1%D9%8A%D9%85_%D8%A7%D9%84%D8%B9%D8%B0%D8%B1%D8%A7%D8%A1.jpg"
+  },
+  "cut": "cut/tripoli.png",
+  "cut_w": 192,
+  "cut_h": 131,
+  "cut_kind": "card"
+ },
+ "tuapse": {
+  "label": "Туапсе",
+  "category": "history",
+  "what": "Портовый город на черноморском побережье Краснодарского края.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Туапсе"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Туапсе",
+  "img": "img/tuapse.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%A2I%D1%83%D0%B0%D0%BF%D1%81%D1%8B.jpg"
+  },
+  "cut": "cut/tuapse.png",
+  "cut_w": 192,
+  "cut_h": 140,
+  "cut_kind": "card"
+ },
+ "tupac-shakur": {
+  "label": "Тупак Шакур",
+  "category": "music",
+  "what": "Американский рэпер (1971–1996), убитый в Лас-Вегасе; о нём до сих пор ходят слухи, что он жив.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Шакур, Тупак"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Шакур,_Тупак",
+  "img": "img/tupac-shakur.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:2pac_edit_cropped_further.jpg"
+  },
+  "cut": "cut/tupac-shakur.png",
+  "cut_w": 150,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "uebermarginal": {
+  "label": "uebermarginal",
+  "category": "internet",
+  "what": "Российский ютубер и стример политической тематики, герой многих мемов своего комьюнити.",
+  "image": null,
+  "wiki": null,
+  "img": "img/uebermarginal.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Uebermarginal.jpg"
+  },
+  "cut": "cut/uebermarginal.png",
+  "cut_w": 191,
+  "cut_h": 182,
+  "cut_kind": "subject"
+ },
+ "uncharted": {
+  "label": "Uncharted",
+  "category": "games",
+  "what": "Серия приключенческих игр Naughty Dog об охотнике за сокровищами Натане Дрейке.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Uncharted"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Uncharted",
+  "img": "img/uncharted.jpg",
+  "img_credit": {
+   "text": "Обложка, Steam (Uncharted: Legacy of Thieves Collection)",
+   "url": "https://store.steampowered.com/app/1659420/"
+  },
+  "img_free": false,
+  "cut": "cut/uncharted.png",
+  "cut_w": 131,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "valentin-gaft": {
+  "label": "Валентин Гафт",
+  "category": "screen",
+  "what": "Советский и российский актёр, сыгравший Воланда в «Мастере и Маргарите» Юрия Кары.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гафт, Валентин Иосифович"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Гафт,_Валентин_Иосифович",
+  "img": "img/valentin-gaft.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Valentin_Gaft_(mos.ru,_cropped)_01.jpg"
+  },
+  "cut": "cut/valentin-gaft.png",
+  "cut_w": 148,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "valery-todorovsky": {
+  "label": "Валерий Тодоровский",
+  "category": "screen",
+  "what": "Режиссёр и продюсер, автор фильма «Страна глухих» (1998).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Тодоровский, Валерий Петрович"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Тодоровский,_Валерий_Петрович",
+  "img": "img/valery-todorovsky.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:TodorovskyVP.jpg"
+  },
+  "cut": "cut/valery-todorovsky.png",
+  "cut_w": 134,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "varg-vikernes": {
+  "label": "Варг Викернес",
+  "category": "music",
+  "what": "Норвежский музыкант, создатель блэк-метал-проекта Burzum, осуждённый за убийство.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Викернес, Варг"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Викернес,_Варг",
+  "img": "img/varg-vikernes.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Varg_Vikernes-2.jpg"
+  },
+  "cut": "cut/varg-vikernes.png",
+  "cut_w": 191,
+  "cut_h": 176,
+  "cut_kind": "subject"
+ },
+ "vasily-chapayev": {
+  "label": "Василий Чапаев",
+  "category": "history",
+  "what": "Красный командир Гражданской войны (1887–1919), главный герой советских анекдотов вместе с Петькой.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Чапаев, Василий Иванович"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Чапаев,_Василий_Иванович",
+  "img": "img/vasily-chapayev.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Vasily_Chapayev_001.jpg"
+  },
+  "cut": "cut/vasily-chapayev.png",
+  "cut_w": 113,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "versus-oxxxymiron-vs-johnyboy": {
+  "label": "Versus: Oxxxymiron vs Johnyboy",
+  "category": "oxxxymiron",
+  "what": "Баттл Versus 2015 года, в котором Оксимирон разгромно победил Johnyboy.",
+  "image": null,
+  "wiki": "https://ru.wikipedia.org/wiki/Versus_Battle"
+ },
+ "versus-oxxxymiron-vs-slava-kpss": {
+  "label": "Versus: Oxxxymiron vs Слава КПСС",
+  "category": "oxxxymiron",
+  "what": "Баттл 13 августа 2017 года, в котором Слава КПСС победил Оксимирона; одно из главных событий русского рэпа.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Рэп-баттл между Оксимироном и Гнойным"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Versus_Battle",
+  "aka": [
+   "Версус",
+   "баттл"
+  ]
+ },
+ "vladimir-lenin": {
+  "label": "Владимир Ленин",
+  "category": "history",
+  "what": "Лидер большевиков и основатель советского государства.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Ленин, Владимир Ильич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Ленин,_Владимир_Ильич",
+  "img": "img/vladimir-lenin.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Vladimir_Lenin_in_July_1920_by_Pavel_Zhukov.jpg"
+  },
+  "cut": "cut/vladimir-lenin.png",
+  "cut_w": 148,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "vladimir-mayakovsky": {
+  "label": "Владимир Маяковский",
+  "category": "books",
+  "what": "Поэт-футурист; ему приписывают хулиганскую эпиграмму о жизни денди в Париже.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Маяковский, Владимир Владимирович"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Маяковский,_Владимир_Владимирович",
+  "img": "img/vladimir-mayakovsky.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9C%D0%B0%D1%8F%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_1930.jpg"
+  },
+  "cut": "cut/vladimir-mayakovsky.png",
+  "cut_w": 139,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "vsya-vlast-sovetam": {
+  "label": "«Вся власть Советам!»",
+  "category": "history",
+  "what": "Главный лозунг большевиков в 1917 году.",
+  "image": null,
+  "wiki": null,
+  "img": "img/vsya-vlast-sovetam.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%92%D1%81%D1%8F_%D0%B2%D0%BB%D0%B0%D1%81%D1%82%D1%8C_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D0%B0%D0%BC.jpg"
+  },
+  "cut": "cut/vsya-vlast-sovetam.png",
+  "cut_w": 192,
+  "cut_h": 146,
+  "cut_kind": "card"
+ },
+ "wagner-group": {
+  "label": "ЧВК «Вагнер»",
+  "category": "history",
+  "what": "Российская частная военная компания, воевавшая в Ливии, Сирии и Украине; в июне 2023 года подняла мятеж.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "ЧВК «Вагнер»"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/ЧВК_«Вагнер»",
+  "img": "img/wagner-group.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Hugs_with_a_soldier_of_PMCs_Wagner.jpg"
+  },
+  "cut": "cut/wagner-group.png",
+  "cut_w": 192,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "war-and-peace": {
+  "label": "«Война и мир»",
+  "category": "books",
+  "what": "Роман-эпопея Льва Толстого о войнах с Наполеоном и о том, как война ощущается изнутри.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Война и мир"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B9%D0%BD%D0%B0_%D0%B8_%D0%BC%D0%B8%D1%80",
+  "img": "img/war-and-peace.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:T25-011.jpg"
+  },
+  "cut": "cut/war-and-peace.png",
+  "cut_w": 132,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "wheres-your-head-at": {
+  "label": "Basement Jaxx — «Where's Your Head At»",
+  "category": "music",
+  "what": "Хит британского электронного дуэта Basement Jaxx (2001).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Basement Jaxx"
+  },
+  "wiki": "https://en.wikipedia.org/wiki/Where's_Your_Head_At",
+  "img": "img/wheres-your-head-at.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Basement_Jaxx.jpg"
+  },
+  "cut": "cut/wheres-your-head-at.png",
+  "cut_w": 147,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "william-faulkner": {
+  "label": "Уильям Фолкнер",
+  "category": "books",
+  "what": "Американский писатель, нобелевский лауреат, автор романов «Шум и ярость» и «Свет в августе».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Фолкнер, Уильям"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Фолкнер,_Уильям",
+  "img": "img/william-faulkner.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Carl_Van_Vechten_-_William_Faulkner.jpg"
+  },
+  "cut": "cut/william-faulkner.png",
+  "cut_w": 154,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "winnie-the-pooh": {
+  "label": "Винни-Пух",
+  "category": "screen",
+  "what": "Советский мультфильм Фёдора Хитрука (1969) по сказке Милна: медвежонок летит на шаре за мёдом.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Винни-Пух (мультфильм)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Винни-Пух_(мультфильм)",
+  "img": "img/winnie-the-pooh.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Soviet_Union_1988_CPA_5916_stamp_(Winnie-the-Pooh).jpg"
+  },
+  "cut": "cut/winnie-the-pooh.png",
+  "cut_w": 191,
+  "cut_h": 124,
+  "cut_kind": "subject"
+ },
+ "world-of-tanks": {
+  "label": "World of Tanks",
+  "category": "games",
+  "what": "Танковая онлайн-игра Wargaming; голосовое сообщение о пробитии брони стало мемом.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "World of Tanks"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/World_of_Tanks",
+  "img": "img/world-of-tanks.jpg",
+  "img_credit": {
+   "text": "Обложка, Steam (World of Tanks)",
+   "url": "https://store.steampowered.com/app/1407200/"
+  },
+  "img_free": false,
+  "cut": "cut/world-of-tanks.png",
+  "cut_w": 131,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "world-turtle": {
+  "label": "Мировая черепаха",
+  "category": "myth",
+  "what": "Мифологический образ мироздания: плоская Земля лежит на слонах, стоящих на гигантской черепахе.",
+  "image": {
+   "kind": "wiki",
+   "lang": "en",
+   "title": "World Turtle"
+  },
+  "wiki": "https://en.wikipedia.org/wiki/World_Turtle",
+  "img": "img/world-turtle.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:PSM_V10_D562_The_hindoo_earth.jpg"
+  },
+  "cut": "cut/world-turtle.png",
+  "cut_w": 191,
+  "cut_h": 136,
+  "cut_kind": "subject"
+ },
+ "wuthering-heights": {
+  "label": "«Грозовой перевал»",
+  "category": "books",
+  "what": "Роман Эмили Бронте (1847) о разрушительной страсти Хитклиффа и Кэтрин в мрачном поместье.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Грозовой перевал"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Грозовой_перевал",
+  "img": "img/wuthering-heights.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Houghton_Lowell_1238.5_(A)_-_Wuthering_Heights,_1847.jpg"
+  },
+  "cut": "cut/wuthering-heights.png",
+  "cut_w": 131,
+  "cut_h": 192,
+  "cut_kind": "card"
+ },
+ "ya-shagayu-po-moskve": {
+  "label": "«Я шагаю по Москве»",
+  "category": "screen",
+  "what": "Лирическая комедия Георгия Данелии (1964) об одном беззаботном дне молодых людей в Москве.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Я шагаю по Москве"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%AF_%D1%88%D0%B0%D0%B3%D0%B0%D1%8E_%D0%BF%D0%BE_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5"
+ },
+ "yaroslav-dronov": {
+  "label": "SHAMAN",
+  "category": "music",
+  "what": "Российский певец Ярослав Дронов, выпускник Гнесинки; с 2022 года — лицо патриотической эстрады.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Shaman"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Shaman",
+  "img": "img/yaroslav-dronov.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%A8%D0%B0%D0%BC%D0%B0%D0%BD_%D0%BD%D0%B0_%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D0%B8_%22%D0%A8%D0%B0%D0%BD%D1%81%D0%BE%D0%BD_%D0%B3%D0%BE%D0%B4%D0%B0_%E2%80%93_2025%22_(12-04-2025)_(cropped).jpg"
+  },
+  "cut": "cut/yaroslav-dronov.png",
+  "cut_w": 149,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "yevgeny-roizman": {
+  "label": "Евгений Ройзман",
+  "category": "history",
+  "what": "Бывший мэр Екатеринбурга, устраивавший пробежки с горожанами; оппозиционный политик.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Ройзман, Евгений Вадимович"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Ройзман,_Евгений_Вадимович",
+  "img": "img/yevgeny-roizman.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Roizman_Yevgeny.png"
+  },
+  "cut": "cut/yevgeny-roizman.png",
+  "cut_w": 157,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "yuri-gagarin": {
+  "label": "Юрий Гагарин",
+  "category": "history",
+  "what": "Первый космонавт; мемное обращение к нему о том, что всё потеряно, — символ ностальгии по СССР.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Гагарин, Юрий Алексеевич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Гагарин,_Юрий_Алексеевич",
+  "img": "img/yuri-gagarin.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Yuri_Gagarin_with_awards.jpg"
+  },
+  "cut": "cut/yuri-gagarin.png",
+  "cut_w": 127,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "yuri-loza": {
+  "label": "Юрий Лоза",
+  "category": "music",
+  "what": "Советский и российский певец («Плот»), ставший интернет-мемом из-за сомнений в шарообразности Земли и полётах в космос.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Лоза, Юрий Эдуардович"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%B7%D0%B0,_%D0%AE%D1%80%D0%B8%D0%B9_%D0%AD%D0%B4%D1%83%D0%B0%D1%80%D0%B4%D0%BE%D0%B2%D0%B8%D1%87",
+  "img": "img/yuri-loza.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:LozaY.jpg"
+  },
+  "cut": "cut/yuri-loza.png",
+  "cut_w": 128,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "yuri-mamleev": {
+  "label": "Юрий Мамлеев",
+  "category": "books",
+  "what": "Писатель-мистик, автор романа «Шатуны» о маньяке Фёдоре Соннове, ищущем душу.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Мамлеев, Юрий Витальевич"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Мамлеев,_Юрий_Витальевич",
+  "img": "img/yuri-mamleev.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%AE%D1%80%D0%B8%D0%B9_%D0%9C%D0%B0%D0%BC%D0%BB%D0%B5%D0%B5%D0%B2.JPG"
+  },
+  "cut": "cut/yuri-mamleev.png",
+  "cut_w": 191,
+  "cut_h": 129,
+  "cut_kind": "subject"
+ },
+ "yury-dud": {
+  "label": "Юрий Дудь",
+  "category": "internet",
+  "what": "Журналист, автор YouTube-интервью и документальных фильмов, в том числе о ВИЧ в России (2020).",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Дудь, Юрий Александрович"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Дудь,_Юрий_Александрович",
+  "img": "img/yury-dud.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%AE%D1%80%D0%B8%D0%B9_%D0%94%D1%83%D0%B4%D1%8C_%D0%B2_2018_%D0%B3%D0%BE%D0%B4%D1%83_(cropped).jpg"
+  },
+  "cut": "cut/yury-dud.png",
+  "cut_w": 136,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "zakhar-prilepin": {
+  "label": "Захар Прилепин",
+  "category": "books",
+  "what": "Писатель и политик, бывший нацбол; составитель сборника «Лимонка в тюрьму».",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Прилепин, Захар"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Прилепин,_Захар",
+  "img": "img/zakhar-prilepin.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:%D0%97%D0%B0%D1%85%D0%B0%D1%80_%D0%9F%D1%80%D0%B8%D0%BB%D0%B5%D0%BF%D0%B8%D0%BD_(Spravedlivo.ru)_(cropped).jpg"
+  },
+  "cut": "cut/zakhar-prilepin.png",
+  "cut_w": 147,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "zhdi-menya": {
+  "label": "«Жди меня»",
+  "category": "screen",
+  "what": "Телепередача о поиске пропавших родных; названа по стихотворению Константина Симонова.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Жди меня (телепередача)"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Жди_меня_(телепередача)"
+ },
+ "zhmil": {
+  "label": "Жмиль",
+  "category": "internet",
+  "what": "Российский провоенный политический блогер Владислав Жмилевский.",
+  "image": null,
+  "wiki": null
+ },
+ "zhuangzi": {
+  "label": "Чжуан-цзы",
+  "category": "ideas",
+  "what": "Древнекитайский философ-даос, автор притчи о сне про бабочку.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Чжуан-цзы"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Чжуан-цзы",
+  "img": "img/zhuangzi.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:%E7%8E%84%E9%96%80%E5%8D%81%E5%AD%90%E5%9C%96_%E8%8E%8A%E5%AD%90.jpg"
+  },
+  "cut": "cut/zhuangzi.png",
+  "cut_w": 105,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ },
+ "zmey-gorynych": {
+  "label": "Змей Горыныч",
+  "category": "myth",
+  "what": "Многоголовый огнедышащий змей из русских былин и сказок.",
+  "image": {
+   "kind": "wiki",
+   "lang": "ru",
+   "title": "Змей Горыныч"
+  },
+  "wiki": "https://ru.wikipedia.org/wiki/Змей_Горыныч",
+  "img": "img/zmey-gorynych.jpg",
+  "img_credit": {
+   "text": "Wikimedia Commons, Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Ivan_Bilibin_065.jpg"
+  },
+  "cut": "cut/zmey-gorynych.png",
+  "cut_w": 145,
+  "cut_h": 191,
+  "cut_kind": "subject"
+ }
+}

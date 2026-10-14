@@ -1,0 +1,1833 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Интерактивная карта песен и культурных отсылок Славы КПСС. Поиск, категории и связи между треками.">
+<title>Карта отсылок КПСС</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Sans+Narrow:wght@700&display=swap">
+<style>
+/* Layout: full-screen map with floating search and filters, and a lettered coordinate frame. Songs are numbered dots in tracklist order, references
+   radiate from them as pictures or category glyphs. Details dock right on desktop, bottom sheet on phone. */
+:root {
+  /* paper & ink */
+  --bg: #dfe5eb;            /* concrete around the sheet */
+  --map: #eef1f4;           /* map paper */
+  --panel: #f8f9fb;         /* card / panel paper */
+  --ink: #15213a;           /* navy ink */
+  --ink-2: #44526b;
+  --ink-3: #5c6980;
+  --rule: #c3ccd7;
+  --rule-soft: #d9dfe6;
+  --grid-minor: #e6eaef;
+  --grid-major: #d8dfe7;
+  --district: rgba(21, 33, 58, .075);
+  /* songs & selection */
+  --accent: #1e3a72;
+  --accent-ink: #ffffff;
+  --focus: #1f63d6;
+  --logo-disc: #fbfcfd;
+  --sticker: #ffffff;       /* outline around logo cut-outs, both themes */
+  --edge-op: .5;
+  --wash: rgba(30, 58, 114, .07);
+  --shadow: 0 12px 32px rgba(21, 33, 58, .16);
+  /* 10 categories — validated order (adjacent CVD ΔE ≥ 9.2 light / 8.5 dark); glyph = second channel */
+  --c-oxxxymiron: #e34948; --c-music: #2a78d6; --c-screen: #eb6834; --c-internet: #1baf7a; --c-ideas: #4a3aa7;
+  --c-books: #008300; --c-games: #0f8fb3; --c-history: #9c5a1f; --c-brands: #e87ba4; --c-myth: #eda100; --c-other: #77818f;
+  --glyph-l: #ffffff; --glyph-d: #14203a;
+  --gi-oxxxymiron: var(--glyph-l); --gi-music: var(--glyph-l); --gi-screen: var(--glyph-d); --gi-internet: var(--glyph-d);
+  --gi-ideas: var(--glyph-l); --gi-books: var(--glyph-l); --gi-games: var(--glyph-l); --gi-history: var(--glyph-l);
+  --gi-brands: var(--glyph-d); --gi-myth: var(--glyph-d); --gi-other: var(--glyph-l);
+  /* type */
+  --font-display: "PT Sans Narrow", "Arial Narrow", Arial, system-ui, sans-serif;
+  --font-body: "PT Sans", Arial, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --panel-w: min(420px, 44%);
+  --ruler: 22px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c1118; --map: #141a23; --panel: #19202a; --ink: #e5eaf1; --ink-2: #aab4c3; --ink-3: #8b97a9;
+    --rule: #2b3543; --rule-soft: #212a35; --grid-minor: #171e27; --grid-major: #1f2833; --district: rgba(229, 234, 241, .05);
+    --accent: #f0a443; --accent-ink: #141a23; --focus: #f6c27a; --logo-disc: #eef1f5;
+    --edge-op: .5; --wash: rgba(240, 164, 67, .09); --shadow: 0 12px 32px rgba(0, 0, 0, .45);
+    --c-oxxxymiron: #e66767; --c-music: #3987e5; --c-screen: #d95926; --c-internet: #199e70; --c-ideas: #9a7cf0;
+    --c-books: #2f9a2f; --c-games: #1aa0c4; --c-history: #b8763a; --c-brands: #d55181; --c-myth: #c98500; --c-other: #8a94a3;
+    --glyph-l: #0e131b; --glyph-d: #0e131b;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1118; --map: #141a23; --panel: #19202a; --ink: #e5eaf1; --ink-2: #aab4c3; --ink-3: #8b97a9;
+  --rule: #2b3543; --rule-soft: #212a35; --grid-minor: #171e27; --grid-major: #1f2833; --district: rgba(229, 234, 241, .05);
+  --accent: #f0a443; --accent-ink: #141a23; --focus: #f6c27a; --logo-disc: #eef1f5;
+  --edge-op: .5; --wash: rgba(240, 164, 67, .09); --shadow: 0 12px 32px rgba(0, 0, 0, .45);
+  --c-oxxxymiron: #e66767; --c-music: #3987e5; --c-screen: #d95926; --c-internet: #199e70; --c-ideas: #9a7cf0;
+  --c-books: #2f9a2f; --c-games: #1aa0c4; --c-history: #b8763a; --c-brands: #d55181; --c-myth: #c98500; --c-other: #8a94a3;
+  --glyph-l: #0e131b; --glyph-d: #0e131b;
+  color-scheme: dark;
+}
+
+html { height: 100%; box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+body {
+  height: 100%; margin: 0; overflow: hidden;
+  background: var(--bg); color: var(--ink);
+  font: 400 15px/1.5 var(--font-body);
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+}
+h1 { margin: 0; font: 700 28px/1.1 var(--font-display); }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.ico { width: 16px; height: 16px; flex: none; display: inline-block; vertical-align: middle; }
+[hidden] { display: none !important; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.app { height: 100%; height: 100dvh; }
+.stage { height: 100%; --controls-bottom: 128px; }
+
+/* Floating map controls */
+.map-controls {
+  position: absolute; z-index: 10;
+  top: max(34px, env(safe-area-inset-top)); left: max(34px, env(safe-area-inset-left));
+  right: max(16px, env(safe-area-inset-right));
+  display: flex; flex-direction: column; align-items: flex-start; gap: 10px;
+  pointer-events: none;
+}
+.map-controls > * { pointer-events: auto; }
+.tools { display: flex; align-items: center; gap: 10px; max-width: 100%; }
+.map-notice { margin: 0; padding: 6px 10px; border-radius: 8px; background: var(--panel); color: var(--ink-2); box-shadow: var(--shadow); font-size: 13px; }
+.badge { display: inline-block; margin-right: 8px; }
+.search { position: relative; width: 360px; min-width: 0; }
+.search > .ico { position: absolute; left: 14px; top: 14px; color: var(--ink-3); pointer-events: none; }
+.search input {
+  width: 100%; height: 44px; padding: 0 14px 0 40px;
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; box-shadow: var(--shadow); outline: none;
+}
+.search input::placeholder { color: var(--ink-3); }
+.search input:focus-visible { border-color: var(--focus); box-shadow: 0 0 0 2px var(--focus); outline: none; }
+.results {
+  position: absolute; z-index: 40; top: 50px; left: 0; right: 0; margin: 0; padding: 4px; list-style: none;
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 8px; box-shadow: var(--shadow);
+  max-height: min(360px, 60vh); overflow: auto;
+}
+.results li { display: flex; align-items: center; gap: 10px; padding: 7px 8px; border-radius: 5px; cursor: pointer; min-width: 0; }
+.results li:hover { background: var(--wash); }
+.results li[aria-selected="true"] { background: var(--wash); box-shadow: inset 3px 0 0 var(--focus); }
+.results .r-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 400; }
+.results .r-kind { font: 400 12px var(--font-body); color: var(--ink-3); white-space: nowrap; }
+.results .r-empty { color: var(--ink-3); cursor: default; }
+.results .r-empty:hover { background: none; }
+
+.seg { display: inline-flex; box-shadow: var(--shadow); padding: 4px; gap: 2px; border: 1px solid var(--rule); border-radius: 7px; background: var(--panel); }
+.seg button {
+  display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 12px;
+  border: 0; border-radius: 5px; background: transparent; color: var(--ink-2); font-weight: 400; font-size: 14px;
+}
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--map); }
+
+/* ── filter row ─────────────────────────────────────── */
+.filters {
+  display: flex; flex-wrap: nowrap; align-items: center; gap: 8px; min-width: 0;
+  max-width: 100%; padding: 8px 10px; overflow-x: auto; scrollbar-width: thin;
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; box-shadow: var(--shadow);
+}
+.filters > * { flex: none; }
+.sep { width: 1px; height: 22px; background: var(--rule); }
+.chip {
+  display: inline-flex; align-items: center; gap: 7px; height: 30px; padding: 0 11px 0 5px;
+  border: 1px solid var(--rule); border-radius: 15px; background: var(--panel);
+  font-size: 14px; font-weight: 400; white-space: nowrap;
+}
+.chip .sw { width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; background: var(--c); color: var(--gi); border: 1.5px solid var(--c); }
+.chip .sw .ico { width: 12px; height: 12px; }
+.chip .n { font: 400 12px var(--font-body); color: var(--ink-3); }
+.chip[aria-pressed="false"] { background: transparent; color: var(--ink-3); border-style: dashed; }
+.chip[aria-pressed="false"] .sw { background: transparent; color: var(--c); }
+.chip:disabled { opacity: .42; cursor: default; }
+.switch { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 400; white-space: nowrap; cursor: pointer; }
+.switch input { appearance: none; -webkit-appearance: none; margin: 0; width: 30px; height: 18px; border-radius: 9px; background: var(--rule); position: relative; cursor: pointer; transition: background .15s; }
+.switch input::after { content: ""; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: var(--panel); transition: transform .15s; }
+.switch input:checked { background: var(--accent); }
+.switch input:checked::after { transform: translateX(12px); }
+.switch .n { font: 400 12px var(--font-body); color: var(--ink-3); }
+.album-pick { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--ink-2); }
+.album-pick select { height: 30px; padding: 0 8px; border: 1px solid var(--rule); border-radius: 6px; background: var(--panel); font-weight: 400; color: var(--ink); }
+
+/* ── stage / map sheet ──────────────────────────────── */
+.stage { position: relative; min-height: 0; min-width: 0; }
+.sheet, .list {
+  position: absolute; inset: 0; background: var(--map);
+  border: 0; border-radius: 0; overflow: hidden;
+}
+#svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; }
+#svg:active { cursor: grabbing; }
+.ruler { position: absolute; background: var(--map); pointer-events: none; font: 400 11px/1 var(--font-body); color: var(--ink-3); z-index: 2; }
+.ruler span { position: absolute; }
+.ruler-top { left: var(--ruler); right: 0; top: 0; height: var(--ruler); border-bottom: 1px solid var(--rule-soft); }
+.ruler-top span { top: 6px; transform: translateX(-50%); }
+.ruler-left { top: var(--ruler); bottom: 0; left: 0; width: var(--ruler); border-right: 1px solid var(--rule-soft); }
+.ruler-left span { left: 0; right: 0; text-align: center; transform: translateY(-50%); }
+.corner { position: absolute; left: 0; top: 0; width: var(--ruler); height: var(--ruler); z-index: 3; display: grid; place-items: center; border-right: 1px solid var(--rule-soft); border-bottom: 1px solid var(--rule-soft); background: var(--map); font: 700 11px var(--font-body); color: var(--ink-2); pointer-events: none; }
+
+.zoombar {
+  position: absolute; right: 12px; bottom: 12px; z-index: 6;
+  display: flex; flex-direction: column; background: var(--panel);
+  border: 1px solid var(--rule); border-radius: 7px; overflow: hidden; transition: right .2s;
+}
+.zoombar button { width: 36px; height: 36px; display: grid; place-items: center; border: 0; background: transparent; color: var(--ink); }
+.zoombar button + button { border-top: 1px solid var(--rule-soft); }
+.zoombar button:hover { background: var(--wash); }
+
+.legend {
+  position: absolute; left: calc(var(--ruler) + 10px); bottom: 12px; z-index: 6; max-width: 270px;
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 7px; font-size: 13px; color: var(--ink-2);
+}
+.legend summary { cursor: pointer; padding: 8px 12px; font: 700 13px/1.4 var(--font-body); color: var(--ink); list-style: none; display: flex; align-items: center; gap: 8px; }
+.legend summary::-webkit-details-marker { display: none; }
+.legend summary::after { content: ""; width: 6px; height: 6px; border-right: 1.6px solid var(--ink-2); border-bottom: 1.6px solid var(--ink-2); transform: rotate(-135deg) translate(-1px, -1px); transition: transform .15s; }
+.legend[open] summary::after { transform: rotate(45deg) translate(-1px, -1px); }
+.legend ul { margin: 0; padding: 0 12px 10px; list-style: none; display: grid; gap: 7px; }
+.legend li { display: grid; grid-template-columns: 40px 1fr; align-items: center; gap: 8px; line-height: 1.3; }
+.legend svg { width: 40px; height: 26px; display: block; overflow: visible; }
+.legend .lg-num { font: 700 11px var(--font-display); fill: var(--accent-ink); text-anchor: middle; dominant-baseline: central; }
+.legend .lg-count { font: 700 8.5px var(--font-body); fill: var(--map); text-anchor: middle; dominant-baseline: central; }
+.legend .hint { grid-template-columns: 1fr; color: var(--ink-3); font-size: 12.5px; padding-top: 2px; border-top: 1px solid var(--rule-soft); }
+
+.status { position: absolute; inset: 0; z-index: 30; display: grid; place-items: center; padding: 24px; text-align: center; background: var(--map); border: 1px solid var(--rule); border-radius: 3px; }
+.status-box { max-width: 52ch; display: grid; gap: 8px; }
+.status h2 { margin: 0; font: 700 22px/1.3 var(--font-display); }
+.status p { margin: 0; color: var(--ink-2); }
+.status code { font: 13px var(--font-body); }
+
+/* ── SVG map ────────────────────────────────────────── */
+.district { font-family: var(--font-display); font-weight: 700; fill: var(--district); pointer-events: none; }
+.album-universe { pointer-events: none; }
+.album-cover { pointer-events: none; }
+.universe-title { font: 600 38px var(--font-display); fill: var(--ink); text-anchor: middle; }
+.universe-meta { font: 400 24px var(--font-body); fill: var(--ink-2); text-anchor: middle; }
+.link { stroke: var(--c); stroke-opacity: var(--edge-op); stroke-width: 1.5; fill: none; transition: stroke-opacity .15s; }
+.link.possible { stroke-dasharray: 5 4; }
+.node { cursor: pointer; outline: none; transition: opacity .15s; }
+.node .hit { fill: transparent; }
+.node .gap { fill: var(--map); }
+.node .disc { fill: var(--c); }
+.node .logo { fill: var(--logo-disc); }
+.node .ring { fill: none; stroke: var(--c); stroke-width: 2.5; }
+.node .glyph { color: var(--gi); pointer-events: none; }
+.node .sel-ring, .node .focus-ring { fill: none; stroke: transparent; stroke-width: 3; }
+.node.sel .sel-ring { stroke: var(--accent); }
+.node:focus-visible .focus-ring { stroke: var(--focus); stroke-width: 2; stroke-dasharray: 4 3; }
+/* picture nodes: the cut-out itself is the node; glow only on the one active node */
+.node .cut-g { transition: filter .15s; }
+.ent.sel .cut-g, .ent.hov .cut-g { filter: drop-shadow(0 0 1.5px var(--accent)) drop-shadow(0 0 5px var(--accent)); }
+.node .cat-dot { fill: var(--c); stroke: var(--map); stroke-width: 1.6; }
+.node .count-bg { fill: var(--ink); stroke: var(--map); stroke-width: 1.6; }
+.node .count-t { font: 700 10px var(--font-body); fill: var(--map); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+svg.far .count-t { display: none; }   /* far out the digits would be < 6px: keep the dot, skip the text layout */
+.sticker-flood { flood-color: var(--sticker); }
+.song .song-disc { fill: var(--accent); }
+.song .song-num { font: 700 17px var(--font-display); fill: var(--accent-ink); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.song:hover .sel-ring { stroke: var(--accent); stroke-opacity: .45; }
+.song.sel .sel-ring { stroke: var(--accent); stroke-opacity: 1; }
+.lbl {
+  font-family: var(--font-body); font-weight: 700; font-size: calc(12px / var(--k, 1));
+  fill: var(--ink); text-anchor: middle; dominant-baseline: hanging; pointer-events: none;
+  paint-order: stroke; stroke: var(--map); stroke-width: calc(4px / var(--k, 1)); stroke-linejoin: round;
+}
+.song-lbl { font-family: var(--font-display); font-weight: 700; font-size: calc(15px / var(--k, 1)); }
+.is-hidden { display: none; }
+svg.focusing .link:not(.lit) { stroke-opacity: .06; }
+svg.focusing .link.lit { stroke-opacity: 1; stroke-width: 2.2; }
+svg.focusing .node:not(.lit) { opacity: .16; }
+svg.focusing .song-lbl:not(.lit) { opacity: .35; }
+svg.focusing .ent-lbl:not(.lit) { opacity: .2; }
+/* a song is selected: only its own references stay interactive */
+svg.song-focus .ent:not(.rel) { cursor: default; }   /* handlers ignore them; a tap on one must not fall through and close the song */
+
+/* ── list view ──────────────────────────────────────── */
+.list { overflow: auto; padding: calc(var(--controls-bottom) + 8px) clamp(16px, 4vw, 44px) 48px; overscroll-behavior: contain; }
+.list-inner { max-width: 860px; }
+.l-album { padding-block: 18px 6px; }
+.l-album h2 { margin: 0; font: 700 26px/1.2 var(--font-display); }
+.l-album p { margin: 4px 0 0; color: var(--ink-2); max-width: 70ch; }
+.l-track { padding-block: 18px; border-top: 1px solid var(--rule); display: grid; gap: 8px; }
+.l-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+.l-num { font: 700 14px var(--font-body); color: var(--ink-3); }
+.l-title { font: 700 21px/1.25 var(--font-display); background: none; border: 0; padding: 0; text-align: left; color: var(--ink); }
+.l-title:hover { text-decoration: underline; text-underline-offset: 3px; }
+.l-summary { margin: 0; color: var(--ink-2); max-width: 68ch; }
+.l-refs { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 2px; }
+.l-ref { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 2px 10px; padding: 8px 0; border-top: 1px solid var(--rule-soft); }
+
+.l-ref-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; min-width: 0; }
+.l-ref-name { font-weight: 700; background: none; border: 0; padding: 0; text-align: left; color: var(--ink); }
+.l-ref-name:hover { text-decoration: underline; text-underline-offset: 3px; }
+.l-ref-meta { font: 400 12px var(--font-body); color: var(--ink-3); }
+.l-ref-how { margin: 0; color: var(--ink-2); font-size: 14px; max-width: 68ch; min-width: 0; }
+.l-ref .quote { grid-column: 2; }
+.l-empty { color: var(--ink-3); padding: 6px 0; margin: 0; }
+
+/* ── shared pieces ──────────────────────────────────── */
+.dot { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; background: var(--c); color: var(--gi); flex: none; }
+.dot .ico { width: 13px; height: 13px; }
+.pic { width: 64px; height: 64px; border-radius: 50%; flex: none; display: grid; place-items: center; overflow: hidden; border: 3px solid var(--c); background: var(--c); color: var(--gi); }
+.pic .ico { width: 30px; height: 30px; }
+.pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pic.logo { background: var(--logo-disc); }
+.pic.logo img { width: 62%; height: 62%; object-fit: contain; }
+.mini { width: 26px; height: 26px; border-width: 2px; }
+.mini .ico { width: 14px; height: 14px; }
+/* cut-out pictures in cards and lists: the picture itself, no frame (size is set inline from cut_w/cut_h) */
+.cutpic { flex: none; display: grid; place-items: center; }
+.cutpic img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.cutpic.logo img { filter: drop-shadow(0 0 1px var(--sticker)) drop-shadow(0 0 1px var(--sticker)) drop-shadow(0 0 .5px var(--sticker)); }
+.pic-slot { width: 30px; display: grid; place-items: center; grid-row: span 2; align-self: start; }
+.ext {
+  display: inline-flex; align-items: center; gap: 5px; height: 30px; padding: 0 12px;
+  border: 1px solid var(--rule); border-radius: 15px; text-decoration: none; font-size: 13px; font-weight: 400; color: var(--ink); background: var(--panel);
+}
+.ext:hover { border-color: var(--ink-3); }
+.ext .ico { width: 13px; height: 13px; }
+.tag { font: 400 13px/1.5 var(--font-body); color: var(--ink-2); white-space: nowrap; }
+.tag.possible { border: 1px dashed var(--ink-3); border-radius: 4px; padding: 0 6px; font-size: 12px; }
+.quote { display: block; margin: 0; padding: 8px 12px; background: var(--map); border-radius: 4px; font-weight: 400; color: var(--ink); }
+.quote::before { content: "«"; } .quote::after { content: "»"; }
+.glink { font-size: 14px; color: var(--ink-2); text-underline-offset: 3px; }
+.glink .ico { width: 12px; height: 12px; margin-left: 3px; vertical-align: -1px; }
+.glink:hover { color: var(--ink); }
+
+/* ── panel ──────────────────────────────────────────── */
+.panel {
+  position: absolute; z-index: 20; top: 0; right: 0; bottom: 0; width: var(--panel-w);
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 12px 0 0 12px;
+  overflow: auto; overscroll-behavior: contain; box-shadow: var(--shadow);
+}
+.panel-bar {
+  position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 8px 10px; background: var(--panel); border-bottom: 1px solid var(--rule-soft);
+}
+.icon-btn { display: inline-flex; align-items: center; gap: 6px; height: 32px; min-width: 32px; padding: 0 8px; justify-content: center; border: 0; border-radius: 6px; background: transparent; color: var(--ink-2); font-size: 13px; }
+.icon-btn:hover { background: var(--wash); color: var(--ink); }
+.panel-body { padding: 18px 20px 32px; display: grid; gap: 16px; }
+.p-head { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.p-head > div { min-width: 0; display: grid; gap: 6px; }
+.p-kicker { font: 400 14px/1.3 var(--font-body); color: var(--ink-3); margin: 0; }
+.p-title { margin: 0; font: 700 24px/1.2 var(--font-body); text-wrap: balance; overflow-wrap: anywhere; outline: none; }
+.p-title.song-t { font: 700 30px/1.1 var(--font-display); }
+.p-cat { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--ink-2); }
+.p-cat i { width: 10px; height: 10px; border-radius: 50%; background: var(--c); display: inline-block; }
+.p-text { margin: 0; font-size: 15.5px; color: var(--ink); max-width: 62ch; }
+.p-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.p-credit { margin: -8px 0 0; font-size: 12.5px; color: var(--ink-3); }
+.p-sec { margin: 6px 0 0; font: 700 15px/1.3 var(--font-body); color: var(--ink-2); border-top: 1px solid var(--rule); padding-top: 14px; }
+.mentions { list-style: none; margin: 0; padding: 0; display: grid; }
+.mention { padding-block: 12px; border-top: 1px solid var(--rule-soft); display: grid; gap: 7px; }
+.mention:first-child { border-top: 0; padding-top: 2px; }
+.m-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 10px; }
+.songlink { display: inline-flex; align-items: baseline; gap: 8px; border: 0; background: none; padding: 0; text-align: left; color: var(--ink); min-width: 0; }
+.songlink b { font: 700 13px var(--font-body); color: var(--ink-3); }
+.songlink span { font: 700 19px/1.2 var(--font-display); }
+.songlink:hover span { text-decoration: underline; text-underline-offset: 3px; }
+.m-album { font-size: 13px; color: var(--ink-3); margin: -4px 0 0; }
+.m-how { margin: 0; font-size: 15px; }
+.m-tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.cat-group { display: grid; gap: 2px; }
+.cat-group h3 { margin: 6px 0 2px; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; color: var(--ink-2); }
+.cat-group h3 .n { font: 400 13px var(--font-body); color: var(--ink-3); }
+.cat-group h3 i { width: 10px; height: 10px; border-radius: 50%; background: var(--c); }
+.ref-row {
+  display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 2px 10px; align-items: start;
+  padding: 8px 6px; margin-inline: -6px; border: 0; border-radius: 6px; background: transparent; text-align: left; color: var(--ink); width: calc(100% + 12px);
+}
+.ref-row:hover { background: var(--wash); }
+
+.ref-row .rr-name { font-weight: 700; font-size: 15px; min-width: 0; overflow-wrap: anywhere; }
+.ref-row .rr-n { font-weight: 400; font-size: 13px; color: var(--ink-3); margin-left: 6px; white-space: nowrap; }
+.ref-row .rr-quote { grid-column: 2 / -1; }
+.ref-row .tag { justify-self: end; }
+.ref-row .rr-how { grid-column: 2 / -1; font-size: 14px; color: var(--ink-2); }
+.ref-row .rr-how em { font-style: normal; color: var(--ink-3); margin-right: 6px; }
+
+@media (min-width: 721px) {
+  .stage.has-panel .map-controls { right: calc(var(--panel-w) + 16px); }
+  .stage.has-panel .filters { flex-wrap: wrap; overflow: visible; row-gap: 6px; }
+  .stage.has-panel .filters .sep { display: none; }
+  .stage.has-panel .zoombar { right: calc(var(--panel-w) + 12px); }
+  .stage.has-panel .list { padding-right: calc(var(--panel-w) + 28px); }
+}
+@media (max-width: 720px) {
+  :root { --ruler: 18px; }
+  .map-controls { top: max(28px, env(safe-area-inset-top)); left: max(26px, env(safe-area-inset-left)); right: max(10px, env(safe-area-inset-right)); gap: 8px; }
+  .tools { width: 100%; }
+  .search { flex: 1; width: auto; }
+  .seg button { padding: 0 10px; }
+  .seg .seg-t { display: none; }
+  .panel {
+    top: auto; left: 0; right: 0; width: auto; max-height: 66%;
+    border-radius: 14px 14px 3px 3px;
+  }
+  .panel-body { padding: 14px 16px 28px; }
+  .stage.has-panel .zoombar, .stage.has-panel .legend { display: none; }
+  .legend { left: calc(var(--ruler) + 6px); bottom: 8px; }
+  .zoombar { right: 8px; bottom: 8px; }
+  .zoombar button { width: 40px; height: 40px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <defs>
+    <symbol id="g-oxxxymiron" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="11.5" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5v4M8.5 21.5h7"/></g></symbol>
+    <symbol id="g-music" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5.5l11-2.5v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></g></symbol>
+    <symbol id="g-screen" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M7.5 4v16M16.5 4v16M3 9h4.5M3 15h4.5M16.5 9H21M16.5 15H21"/></g></symbol>
+    <symbol id="g-internet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 3.5v15l4-3.8 2.8 6 2.6-1.2-2.8-5.8 5.6-.4z"/></g></symbol>
+    <symbol id="g-ideas" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 18h5M10.5 21.5h3"/><path d="M12 2.5a6.2 6.2 0 0 0-3.7 11.2c.7.5 1.2 1.3 1.2 2.3v.5h5V16c0-1 .5-1.8 1.2-2.3A6.2 6.2 0 0 0 12 2.5z"/></g></symbol>
+    <symbol id="g-books" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 5.5c3-1.2 6.2-1 9.5 1 3.3-2 6.5-2.2 9.5-1v13.5c-3-1.2-6.2-1-9.5 1-3.3-2-6.5-2.2-9.5-1z"/><path d="M12 6.5v13.5"/></g></symbol>
+    <symbol id="g-games" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7.5h10a4.5 4.5 0 0 1 4.5 4.8l-.4 4a2.7 2.7 0 0 1-4.7 1.6L14.6 16H9.4l-1.8 1.9a2.7 2.7 0 0 1-4.7-1.6l-.4-4A4.5 4.5 0 0 1 7 7.5z"/><path d="M8 10.5v3.5M6.25 12.25h3.5"/></g><circle cx="15.5" cy="11" r="1.2" fill="currentColor"/><circle cx="17.8" cy="13.4" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="g-history" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18L12 3.5z"/><path d="M6 9v9M10 9v9M14 9v9M18 9v9M4 18h16M3 21.5h18"/></g></symbol>
+    <symbol id="g-brands" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12.2V4a1 1 0 0 1 1-1h8.2l9 9-9.2 9.2z"/><circle cx="7.8" cy="7.8" r="1.6"/></g></symbol>
+    <symbol id="g-myth" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g></symbol>
+    <symbol id="g-other" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="currentColor"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 20.5 20.5"/></g></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-fit" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/><path d="M9 4v13.5M15 6.5V20"/></g></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h12M9 12h12M9 18h12M4 6h.5M4 12h.5M4 18h.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<div class="app" id="app">
+  <main class="stage" id="stage">
+  <h1 class="visually-hidden">Карта отсылок Славы КПСС</h1>
+  <div class="map-controls" id="map-controls">
+    <div class="tools">
+      <div class="search" role="search">
+        <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>
+        <label class="visually-hidden" for="search">Поиск по песням и отсылкам</label>
+        <input id="search" type="search" autocomplete="off" spellcheck="false" placeholder="Найти песню или отсылку"
+               role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list">
+        <ul class="results" id="search-results" role="listbox" aria-label="Результаты поиска" hidden></ul>
+      </div>
+      <div class="seg" role="group" aria-label="Вид">
+        <button type="button" id="view-map" aria-pressed="true"><svg class="ico" aria-hidden="true"><use href="#i-map"/></svg><span class="seg-t">Карта</span></button>
+        <button type="button" id="view-list" aria-pressed="false"><svg class="ico" aria-hidden="true"><use href="#i-list"/></svg><span class="seg-t">Список</span></button>
+      </div>
+    </div>
+
+  <div class="filters" id="filters" role="toolbar" aria-label="Фильтры">
+    <label class="album-pick" id="album-pick" hidden>Альбом
+      <select id="album-select"></select>
+    </label>
+    <span class="sep" id="album-sep" hidden></span>
+    <label class="switch" title="Показывать вероятные, но не подтверждённые отсылки">
+      <input type="checkbox" id="toggle-possible" checked>
+      Спорные <span class="n" id="possible-n"></span>
+    </label>
+    <span class="sep"></span>
+    <div id="cat-chips" style="display:contents"></div>
+  </div>
+
+  <p class="map-notice" id="map-notice" role="status" hidden></p>
+  </div>
+    <div class="sheet" id="sheet">
+      <svg id="svg" role="group" aria-label="Карта: песни альбома и их отсылки"></svg>
+      <div class="ruler ruler-top" id="ruler-top" aria-hidden="true"></div>
+      <div class="ruler ruler-left" id="ruler-left" aria-hidden="true"></div>
+      <div class="corner" aria-hidden="true" title="Север">С</div>
+      <details class="legend" id="legend">
+        <summary>Условные обозначения</summary>
+        <ul>
+          <li><svg viewBox="0 0 40 26" aria-hidden="true"><circle cx="20" cy="13" r="10" style="fill:var(--accent)"/><text class="lg-num" x="20" y="13.5">02</text></svg>Трек альбома, номер показывает место в треклисте</li>
+          <li><svg viewBox="0 0 40 26" aria-hidden="true"><circle cx="17" cy="14" r="8" style="fill:var(--c-books)"/><use href="#g-books" x="12" y="9" width="10" height="10" style="color:var(--gi-books)"/><circle cx="26" cy="7" r="5.5" style="fill:var(--ink);stroke:var(--map);stroke-width:1.2"/><text class="lg-count" x="26" y="7.3">3</text></svg>Отсылка, число показывает, в скольких песнях она есть</li>
+          <li><svg viewBox="0 0 40 26" aria-hidden="true"><rect x="9" y="3" width="22" height="20" rx="3" style="fill:var(--grid-major)"/><circle cx="11" cy="5" r="3.2" style="fill:var(--c-history);stroke:var(--map);stroke-width:1.2"/></svg>Картинка отсылки, точка в углу показывает категорию</li>
+          <li><svg viewBox="0 0 40 26" aria-hidden="true"><path d="M2 13h36" style="stroke:var(--ink-2);stroke-width:1.5;stroke-dasharray:5 4"/></svg>Пунктир: спорная отсылка</li>
+          <li class="hint">Колесо или щипок меняют масштаб, перетаскивание сдвигает карту. Подписи отсылок появляются при приближении.</li>
+        </ul>
+      </details>
+      <div class="zoombar" role="group" aria-label="Масштаб">
+        <button type="button" id="zoom-in" aria-label="Приблизить" title="Приблизить"><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button>
+        <button type="button" id="zoom-out" aria-label="Отдалить" title="Отдалить"><svg class="ico" aria-hidden="true"><use href="#i-minus"/></svg></button>
+        <button type="button" id="zoom-fit" aria-label="Вписать карту в экран" title="Вписать"><svg class="ico" aria-hidden="true"><use href="#i-fit"/></svg></button>
+      </div>
+    </div>
+    <section class="list" id="list" hidden aria-label="Список песен и отсылок"><div class="list-inner" id="list-inner"></div></section>
+    <aside class="panel" id="panel" hidden aria-labelledby="p-title">
+      <div class="panel-bar">
+        <button type="button" class="icon-btn" id="panel-back" hidden><svg class="ico" aria-hidden="true"><use href="#i-back"/></svg><span id="panel-back-t">Назад</span></button>
+        <span></span>
+        <button type="button" class="icon-btn" id="panel-close" aria-label="Закрыть карточку" title="Закрыть (Esc)"><svg class="ico" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </div>
+      <div class="panel-body" id="panel-body"></div>
+    </aside>
+    <div class="status" id="status" role="status"><div class="status-box"><p>Загружаю карту…</p></div></div>
+  </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" integrity="sha512-vc58qvvBdrDR4etbxMdlTt4GBQk1qjvyORR2nrsPsFPyrs+/u5c3+1Ct6upOgdZoIl7eq6k3a1UPDSNAQi/32A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+(function () {
+  'use strict';
+
+  /* ── constants ──────────────────────────────────────── */
+  const CATS = [
+    ['oxxxymiron', 'Оксимирон и «Горгород»', 'Оксимирон'],
+    ['music', 'Музыка', 'Музыка'],
+    ['screen', 'Кино, сериалы, мультфильмы', 'Кино и ТВ'],
+    ['internet', 'Интернет, блогеры, мемы', 'Интернет'],
+    ['ideas', 'Философия и наука', 'Идеи'],
+    ['books', 'Литература', 'Литература'],
+    ['games', 'Видеоигры', 'Игры'],
+    ['history', 'История и политика', 'История'],
+    ['brands', 'Бренды и вещи', 'Бренды'],
+    ['myth', 'Мифы, религия, фольклор', 'Мифы'],
+    ['other', 'Без категории', 'Другое']
+  ].map(([key, name, short]) => ({ key, name, short }));
+  const CAT = Object.fromEntries(CATS.map((c) => [c.key, c]));
+  const GRID = 250;                       // world units per lettered square
+  const LETTERS = 'АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЭЮЯ'.split('');
+  const SONG_R = 18;                     // song dot radius (world units)
+  const CUT_L = 48, CUT_L_SHARED = 60;   // long side of a picture node; bigger when shared by 2+ songs
+
+  const mq = (q) => (window.matchMedia ? window.matchMedia(q) : { matches: false, addEventListener() {} });
+  const RM = mq('(prefers-reduced-motion: reduce)');
+  const MOBILE = mq('(max-width: 720px)');
+  const dur = (ms) => (RM.matches ? 0 : ms);
+
+  const store = {
+    get(k) { try { return window.localStorage.getItem('kpss-map:' + k); } catch (e) { return null; } },
+    set(k, v) { try { window.localStorage.setItem('kpss-map:' + k, v); } catch (e) { /* ignore */ } }
+  };
+
+  /* ── tiny DOM helpers (all data goes in via textContent) ── */
+  const $ = (s) => document.querySelector(s);
+  const SVGNS = 'http://www.w3.org/2000/svg';
+  function h(tag, props, ...kids) {
+    const el = document.createElement(tag);
+    if (props) {
+      for (const [k, v] of Object.entries(props)) {
+        if (v == null || v === false) continue;
+        if (k === 'class') el.className = v;
+        else if (k === 'text') el.textContent = v;
+        else if (k === 'style') for (const [p, pv] of Object.entries(v)) el.style.setProperty(p, pv);
+        else if (k.startsWith('on')) el.addEventListener(k.slice(2), v);
+        else el.setAttribute(k, v === true ? '' : v);
+      }
+    }
+    for (const kid of kids.flat()) {
+      if (kid == null || kid === false) continue;
+      el.append(kid.nodeType ? kid : document.createTextNode(String(kid)));
+    }
+    return el;
+  }
+  function icon(id, cls) {
+    const s = document.createElementNS(SVGNS, 'svg');
+    s.setAttribute('class', cls || 'ico');
+    s.setAttribute('aria-hidden', 'true');
+    const u = document.createElementNS(SVGNS, 'use');
+    u.setAttribute('href', '#' + id);
+    s.appendChild(u);
+    return s;
+  }
+  const catVars = (key) => ({ '--c': `var(--c-${key})`, '--gi': `var(--gi-${key})` });
+  const safeUrl = (u) => (typeof u === 'string' && /^https?:\/\//i.test(u.trim()) ? u.trim() : null);
+  const safeImg = (u) => {
+    if (typeof u !== 'string' || !u.trim()) return null;
+    u = u.trim();
+    if (/^data:image\//i.test(u)) return u;
+    if (/^[a-z][a-z0-9+.-]*:/i.test(u) || u.startsWith('//')) return null; // only files next to the page
+    return u;
+  };
+  const isSvgImg = (u) => /\.svg(\?|#|$)/i.test(u) || /^data:image\/svg/i.test(u);
+  const own = (o, k) => o != null && typeof o === 'object' && Object.prototype.hasOwnProperty.call(o, k); // = Object.hasOwn
+  // search normalisation: lower case, ё→е, every run of punctuation/space → one space («Горгород.fm» → «горгород fm»)
+  const norm = (s) => String(s || '').toLowerCase().replace(/ё/g, 'е').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+  const TR = { а: 'a', б: 'b', в: 'v', г: 'g', д: 'd', е: 'e', ж: 'zh', з: 'z', и: 'i', й: 'i', к: 'k', л: 'l', м: 'm', н: 'n', о: 'o', п: 'p', р: 'r', с: 's', т: 't', у: 'u', ф: 'f', х: 'h', ц: 'c', ч: 'ch', ш: 'sh', щ: 'sh', ъ: '', ы: 'y', ь: '', э: 'e', ю: 'yu', я: 'ya' };
+  // rough Latin skeleton so «оксимирон» meets «Oxxxymiron» and «икеа» meets «IKEA»
+  const lat = (s) => norm(s).replace(/[а-я]/g, (c) => (own(TR, c) ? TR[c] : c))
+    .replace(/x+/g, 'ks').replace(/[yj]/g, 'i').replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
+  const pad2 = (n) => (Number.isFinite(+n) ? String(n).padStart(2, '0') : String(n || ''));
+  function plural(n, one, few, many) {
+    const a = Math.abs(n) % 100, b = a % 10;
+    if (a > 10 && a < 20) return many;
+    if (b > 1 && b < 5) return few;
+    if (b === 1) return one;
+    return many;
+  }
+  const yearOf = (d) => (typeof d === 'string' && /^\d{4}/.test(d) ? d.slice(0, 4) : '');
+  const ellipsis = (s, n) => (s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s);
+  function squareName(col, row) {
+    if (col < 0 || row < 0) return '';
+    const L = LETTERS.length;
+    const letter = col < L ? LETTERS[col] : LETTERS[Math.floor(col / L) - 1] + LETTERS[col % L];
+    return `${letter}-${row + 1}`;
+  }
+
+  /* ── DOM refs ───────────────────────────────────────── */
+  const els = {
+    controls: $('#map-controls'), notice: $('#map-notice'),
+    search: $('#search'), results: $('#search-results'),
+    viewMap: $('#view-map'), viewList: $('#view-list'),
+    chips: $('#cat-chips'), possible: $('#toggle-possible'), possibleN: $('#possible-n'),
+    albumPick: $('#album-pick'), albumSel: $('#album-select'), albumSep: $('#album-sep'),
+    stage: $('#stage'), sheet: $('#sheet'), svg: $('#svg'),
+    rulerTop: $('#ruler-top'), rulerLeft: $('#ruler-left'), legend: $('#legend'),
+    list: $('#list'), listInner: $('#list-inner'),
+    panel: $('#panel'), panelBody: $('#panel-body'), panelBack: $('#panel-back'), panelBackT: $('#panel-back-t'), panelClose: $('#panel-close'),
+    status: $('#status'), zoomIn: $('#zoom-in'), zoomOut: $('#zoom-out'), zoomFit: $('#zoom-fit')
+  };
+
+  /* ── state ──────────────────────────────────────────── */
+  const state = {
+    album: 'all',
+    cats: new Set(CATS.map((c) => c.key)),
+    possible: true,
+    view: 'map',
+    selected: null,
+    hover: null,
+    history: []
+  };
+  const M = { albums: [], entities: {}, songs: [], ents: [], links: [], byId: new Map(), bounds: null, grid: { x0: 0, y0: 0 }, failed: [], noMap: false };
+  let hasMap = false;
+
+  function showStatus(title, lines) {
+    const box = h('div', { class: 'status-box' }, title ? h('h2', { text: title }) : null, (lines || []).map((l) => (l && l.nodeType ? l : h('p', { text: l }))));
+    els.status.replaceChildren(box);
+    els.status.hidden = false;
+  }
+
+  /* ── data loading ───────────────────────────────────── */
+  async function getJSON(path) {
+    let r;
+    try { r = await fetch(path, { cache: 'no-cache' }); }
+    catch (e) { throw new Error(`${path}: файл недоступен (${e.message})`); }
+    if (!r.ok) throw new Error(`${path}: ответ сервера ${r.status}`);
+    try { return await r.json(); }
+    catch (e) { throw new Error(`${path}: файл не читается как JSON (${e.message})`); }
+  }
+
+  async function load() {
+    const index = await getJSON('data/index.json');
+    const list = Array.isArray(index && index.albums) ? index.albums : [];
+    const ids = list.map((a) => (typeof a === 'string' ? a : a && a.id)).filter((x) => typeof x === 'string' && x);
+    if (!ids.length) throw new Error('data/index.json: список albums пуст');
+    const [entities, ...albums] = await Promise.all([
+      getJSON('data/entities.json'),
+      ...ids.map((id) => getJSON(`data/albums/${encodeURIComponent(id)}.json`).then((a) => ({ ok: true, a, id }), (err) => ({ ok: false, err, id })))
+    ]);
+    const good = albums.filter((x) => x.ok && x.a && Array.isArray(x.a.tracks));
+    const bad = albums.filter((x) => !(x.ok && x.a && Array.isArray(x.a.tracks)));
+    if (!good.length) throw new Error(bad.map((b) => (b.err ? b.err.message : `data/albums/${b.id}.json: нет массива tracks`)).join('; '));
+    return { entities: entities && typeof entities === 'object' ? entities : {}, albums: good.map((x) => Object.assign({ id: x.id }, x.a, { id: x.a.id || x.id })), bad };
+  }
+
+  /* ── graph model ────────────────────────────────────── */
+  function buildModel(data) {
+    M.entities = data.entities;
+    const entMap = new Map();
+    const trackIdCount = new Map();
+    data.albums.forEach((al) => (al.tracks || []).forEach((t) => trackIdCount.set(t.id, (trackIdCount.get(t.id) || 0) + 1)));
+
+    data.albums.forEach((al, ai) => {
+      const album = {
+        id: String(al.id), i: ai, title: al.title || al.id, artist: al.artist || '', released: al.released || '',
+        year: yearOf(al.released), genius: safeUrl(al.genius_url), about: al.about || '', sample: al.sample === true,
+        cover: safeImg(al.cover), coverCredit: al.cover_credit || '', songs: []
+      };
+      M.albums.push(album);
+      const tracks = (al.tracks || []).filter((t) => t && t.id).slice().sort((a, b) => (+a.n || 0) - (+b.n || 0));
+      tracks.forEach((t) => {
+        const key = String(t.id);
+        const song = {
+          type: 'song', id: `s:${album.id}:${key}`, key, album, n: t.n, title: t.title || key,
+          summary: t.summary || '', genius: safeUrl(t.genius_url), youtube: safeUrl(t.youtube_url),
+          token: trackIdCount.get(t.id) > 1 ? `${album.id}~${key}` : key, r: SONG_R, links: []
+        };
+        album.songs.push(song); M.songs.push(song); M.byId.set(song.id, song);
+        (Array.isArray(t.refs) ? t.refs : []).forEach((ref, ri) => {
+          if (!ref || typeof ref.entity !== 'string' || !ref.entity) return;
+          const slug = ref.entity;
+          let e = entMap.get(slug);
+          if (!e) {
+            const d = own(M.entities, slug) && M.entities[slug] && typeof M.entities[slug] === 'object' ? M.entities[slug] : { label: slug };
+            e = { type: 'entity', id: 'e:' + slug, slug, d, label: String(d.label || slug), cat: own(CAT, d.category) ? d.category : 'other', img: safeImg(d.img), links: [] };
+            e.cut = safeImg(d.cut);
+            if (e.cut) {
+              const cw = +d.cut_w, ch = +d.cut_h;
+              e.cutRatio = cw > 0 && ch > 0 ? Math.min(4, Math.max(0.25, cw / ch)) : 1;
+              e.cutKind = ['subject', 'card', 'logo'].includes(d.cut_kind) ? d.cut_kind : (isSvgImg(e.cut) ? 'logo' : 'subject');
+            }
+            entMap.set(slug, e); M.ents.push(e); M.byId.set(e.id, e);
+          }
+          let l = song.links.find((x) => x.ent === e);
+          if (l) { l.refs.push(ref); }
+          else {
+            l = { source: song, target: e, song, ent: e, refs: [ref], order: ri };
+            M.links.push(l); song.links.push(l); e.links.push(l);
+          }
+        });
+      });
+    });
+    M.links.forEach((l) => { l.possible = l.refs.every((r) => r.confidence === 'possible'); });
+    M.ents.forEach((e) => { e.shared = e.links.length > 1; geom(e); });
+  }
+
+  // node geometry: half extents (hw, hh), radius for camera fits (r) and collision radius (cr)
+  function geom(e) {
+    const n = e.links.length;
+    if (e.cut) {
+      const L = n > 1 ? CUT_L_SHARED : CUT_L;
+      const w = e.cutRatio >= 1 ? L : L * e.cutRatio, hgt = e.cutRatio >= 1 ? L / e.cutRatio : L;
+      e.hw = w / 2; e.hh = hgt / 2;
+      e.r = Math.max(e.hw, e.hh);
+      e.cr = Math.hypot(e.hw, e.hh) + 6;          // half diagonal + gap
+    } else {
+      e.r = 15 + (n > 1 ? 3 : 0) + Math.min(3, Math.max(0, n - 2));
+      e.hw = e.hh = e.r;
+      e.cr = e.r + 9;
+    }
+  }
+
+  /* ── layout: songs at fixed points in tracklist order (a serpentine), references by force ── */
+  function layout() {
+    const maxRefs = Math.max(4, ...M.songs.map((s) => s.links.length));
+    const colGap = Math.max(340, 2 * (72 + Math.sqrt(maxRefs) * 27));
+    const rowGap = colGap * 0.92;
+    const sr = els.sheet.getBoundingClientRect();
+    const aspect = sr.width > 0 && sr.height > 0 ? sr.width / sr.height : 1.6;
+    const portrait = aspect < 0.85;                 // phones: a tall two-column arrangement
+    M.albums.forEach((al) => {
+      const n = al.songs.length;
+      const cols = portrait ? Math.min(2, Math.max(1, n))
+        : (n <= 3 ? Math.max(1, n) : Math.min(5, Math.max(3, Math.round(Math.sqrt(n * 1.5)))));
+      const rows = Math.max(1, Math.ceil(n / cols));
+      al.songs.forEach((s, i) => {
+        const row = Math.floor(i / cols), c = i % cols;
+        const col = row % 2 ? cols - 1 - c : c;
+        let x = col * colGap;
+        const turnOut = (c === cols - 1 && i < n - 1) || (c === 0 && row > 0);
+        if (turnOut && cols > 1) x += (col === cols - 1 ? 1 : -1) * colGap * 0.14;
+        s.lx = x;
+        s.ly = row * rowGap + Math.sin((col + row * 2) * 1.35) * colGap * 0.07;
+      });
+      al.w = (cols - 1) * colGap; al.h = (rows - 1) * rowGap;
+    });
+    // album blocks: a grid whose shape follows the screen (side by side on landscape, stacked on portrait)
+    const nA = M.albums.length;
+    const bw = Math.max(...M.albums.map((a) => a.w)) + colGap * 1.7;
+    const bh = Math.max(...M.albums.map((a) => a.h)) + rowGap * 1.9;
+    const gc = Math.min(nA, Math.max(1, Math.round(Math.sqrt(nA * aspect * bh / bw))));
+    M.albums.forEach((al, i) => {
+      const ox = (i % gc) * bw, oy = Math.floor(i / gc) * bh;
+      al.songs.forEach((s) => { s.x = s.fx = s.lx + ox; s.y = s.fy = s.ly + oy; });
+      al.anchor = { x: ox - colGap * 0.42, y: oy - rowGap * 0.62 };
+    });
+
+    const rnd = d3.randomLcg(0.4242);
+    M.ents.forEach((e) => {
+      const ss = e.links.map((l) => l.song);
+      const mx = d3.mean(ss, (s) => s.x), my = d3.mean(ss, (s) => s.y);
+      const a = rnd() * Math.PI * 2, rr = ss.length > 1 ? 30 : 90 + rnd() * 60;
+      e.x = mx + Math.cos(a) * rr; e.y = my + Math.sin(a) * rr;
+    });
+    const sim = d3.forceSimulation([...M.songs, ...M.ents])
+      .randomSource(d3.randomLcg(0.1337))
+      .force('link', d3.forceLink(M.links).distance((l) => 64 + 15 * Math.sqrt(l.song.links.length)).strength((l) => 0.75 / Math.sqrt(l.ent.links.length)))
+      .force('charge', d3.forceManyBody().strength((d) => (d.type === 'song' ? -300 : -60)).distanceMax(320))
+      .force('collide', d3.forceCollide((d) => (d.type === 'song' ? d.r + 46 : d.cr)).iterations(2))
+      .stop();
+    const ticks = Math.ceil(Math.log(sim.alphaMin()) / Math.log(1 - sim.alphaDecay()));
+    sim.tick(ticks);
+
+    // An album owns its songs and references that do not connect to another album.
+    // Shared references remain between universes instead of stretching both covers.
+    M.albums.forEach((al) => {
+      const nodes = [...al.songs, ...M.ents.filter((e) => e.links.every((l) => l.song.album === al))];
+      const left = d3.min(nodes, (d) => d.x - d.r), right = d3.max(nodes, (d) => d.x + d.r);
+      const top = d3.min(nodes, (d) => d.y - d.r), bottom = d3.max(nodes, (d) => d.y + d.r);
+      al.universe = { x: (left + right) / 2, y: (top + bottom) / 2, size: Math.max(right - left, bottom - top) + 180 };
+    });
+
+    const all = [...M.songs, ...M.ents];
+    const pad = 160;
+    const x0 = d3.min(all, (d) => d.x - d.r) - pad, x1 = d3.max(all, (d) => d.x + d.r) + pad;
+    const y0 = Math.min(d3.min(all, (d) => d.y - d.r), ...(M.albums.length > 1 ? M.albums.map((a) => a.anchor.y - 80) : [Infinity])) - pad;
+    const y1 = d3.max(all, (d) => d.y + d.r) + pad;
+    M.bounds = { x0, y0, x1, y1 };
+    M.grid = { x0: Math.floor(x0 / GRID) * GRID, y0: Math.floor(y0 / GRID) * GRID };
+  }
+
+  /* ── SVG render ─────────────────────────────────────── */
+  let svg, vp, zoom, cur = null;
+  const sel = {};
+
+  function renderMap() {
+    svg = d3.select(els.svg);
+    svg.selectAll('*').remove();
+    const defs = svg.append('defs');
+    defs.append('clipPath').attr('id', 'clip-circle').attr('clipPathUnits', 'objectBoundingBox')
+      .append('circle').attr('cx', 0.5).attr('cy', 0.5).attr('r', 0.5);
+    const { x0, y0 } = M.grid;
+    const pMinor = defs.append('pattern').attr('id', 'grid-minor').attr('patternUnits', 'userSpaceOnUse')
+      .attr('x', x0).attr('y', y0).attr('width', GRID / 5).attr('height', GRID / 5);
+    pMinor.append('path').attr('d', `M${GRID / 5} 0H0V${GRID / 5}`).attr('fill', 'none').style('stroke', 'var(--grid-minor)').attr('stroke-width', 1);
+    const pMajor = defs.append('pattern').attr('id', 'grid-major').attr('patternUnits', 'userSpaceOnUse')
+      .attr('x', x0).attr('y', y0).attr('width', GRID).attr('height', GRID);
+    pMajor.append('path').attr('d', `M${GRID} 0H0V${GRID}`).attr('fill', 'none').style('stroke', 'var(--grid-major)').attr('stroke-width', 1.5);
+    // «sticker» for logo cut-outs: grow the alpha, fill it with --sticker, put the logo on top
+    const st = defs.append('filter').attr('id', 'sticker').attr('x', '-20%').attr('y', '-20%').attr('width', '140%').attr('height', '140%')
+      .attr('color-interpolation-filters', 'sRGB');
+    st.append('feMorphology').attr('in', 'SourceAlpha').attr('operator', 'dilate').attr('radius', 1.8).attr('result', 'grow');
+    st.append('feFlood').attr('class', 'sticker-flood').attr('result', 'ink');
+    st.append('feComposite').attr('in', 'ink').attr('in2', 'grow').attr('operator', 'in').attr('result', 'outline');
+    const stm = st.append('feMerge');
+    stm.append('feMergeNode').attr('in', 'outline');
+    stm.append('feMergeNode').attr('in', 'SourceGraphic');
+
+    vp = svg.append('g').attr('class', 'viewport');
+    const B = M.bounds, ext = 4000;
+    vp.append('rect').attr('class', 'bg').attr('x', B.x0 - ext).attr('y', B.y0 - ext)
+      .attr('width', B.x1 - B.x0 + ext * 2).attr('height', B.y1 - B.y0 + ext * 2).attr('fill', 'url(#grid-minor)');
+    vp.append('rect').attr('class', 'bg').attr('x', B.x0 - ext).attr('y', B.y0 - ext)
+      .attr('width', B.x1 - B.x0 + ext * 2).attr('height', B.y1 - B.y0 + ext * 2).attr('fill', 'url(#grid-major)');
+
+    // World-space covers are below every link and node, so pan/zoom stays continuous.
+    const universes = vp.append('g').attr('class', 'album-universes').attr('aria-hidden', 'true');
+    M.albums.forEach((al) => {
+      if (!al.cover) return;
+      const u = al.universe;
+      const g = universes.append('g').attr('class', 'album-universe').attr('data-album', al.id).attr('opacity', 0);
+      const clipId = `album-cover-clip-${al.i}`;
+      defs.append('clipPath').attr('id', clipId).append('rect')
+        .attr('x', u.x - u.size / 2).attr('y', u.y - u.size / 2)
+        .attr('width', u.size).attr('height', u.size).attr('rx', 28);
+      g.append('image').attr('class', 'album-cover').attr('href', al.cover)
+        .on('error', () => { g.remove(); al.universeG = null; al.overviewBlend = 0; scheduleFrame(); })
+        .attr('x', u.x - u.size / 2).attr('y', u.y - u.size / 2)
+        .attr('width', u.size).attr('height', u.size).attr('preserveAspectRatio', 'xMidYMid meet')
+        .attr('clip-path', `url(#${clipId})`).append('title').text([al.title, al.coverCredit].filter(Boolean).join(' · '));
+      g.append('text').attr('class', 'universe-title').attr('x', u.x).attr('y', u.y + u.size / 2 + 58).text(al.title);
+      g.append('text').attr('class', 'universe-meta').attr('x', u.x).attr('y', u.y + u.size / 2 + 96)
+        .text([al.artist, al.year].filter(Boolean).join(' · '));
+      al.universeG = g;
+    });
+
+    // album "district" names
+    const dist = vp.append('g').attr('class', 'districts');
+    M.albums.forEach((al) => {
+      if (M.albums.length < 2) { al.distG = null; return; }
+      const g = dist.append('g').attr('data-album', al.id);
+      g.append('text').attr('class', 'district').attr('x', al.anchor.x).attr('y', al.anchor.y).attr('font-size', 92).text(al.title);
+      const sub = [al.artist, al.year].filter(Boolean).join(', ');
+      if (sub) g.append('text').attr('class', 'district').attr('x', al.anchor.x + 4).attr('y', al.anchor.y + 52).attr('font-size', 34).text(sub);
+      al.distG = g.node();
+    });
+
+    sel.links = vp.append('g').attr('class', 'links').selectAll('line').data(M.links).join('line')
+      .attr('class', (l) => 'link' + (l.possible ? ' possible' : ''))
+      .attr('vector-effect', 'non-scaling-stroke')
+      .attr('x1', (l) => l.song.x).attr('y1', (l) => l.song.y).attr('x2', (l) => l.ent.x).attr('y2', (l) => l.ent.y)
+      .style('--c', (l) => `var(--c-${l.ent.cat})`);
+
+    // entities
+    sel.ents = vp.append('g').attr('class', 'ents').selectAll('g').data(M.ents).join('g')
+      .attr('class', (e) => 'node ent' + (e.shared ? ' shared' : ''))
+      .attr('transform', (e) => `translate(${e.x},${e.y})`)
+      .attr('tabindex', -1).attr('role', 'button') // keyboard reaches references through the song card
+      .attr('aria-label', (e) => `${e.label}: ${CAT[e.cat].name}, ${e.links.length} ${plural(e.links.length, 'песня', 'песни', 'песен')}`)
+      .style('--c', (e) => `var(--c-${e.cat})`).style('--gi', (e) => `var(--gi-${e.cat})`);
+    sel.ents.each(function (e) { drawEntity(d3.select(this), e); });
+
+    // songs
+    sel.songs = vp.append('g').attr('class', 'songs').selectAll('g').data(M.songs).join('g')
+      .attr('class', 'node song')
+      .attr('transform', (s) => `translate(${s.x},${s.y})`)
+      .attr('tabindex', 0).attr('role', 'button')
+      .attr('aria-label', (s) => `Трек ${s.n}: ${s.title}, ${s.links.length} ${plural(s.links.length, 'отсылка', 'отсылки', 'отсылок')}`);
+    sel.songs.append('circle').attr('class', 'hit').attr('r', SONG_R + 10);
+    sel.songs.append('circle').attr('class', 'focus-ring').attr('r', SONG_R + 8).attr('vector-effect', 'non-scaling-stroke');
+    sel.songs.append('circle').attr('class', 'sel-ring').attr('r', SONG_R + 4.5).attr('vector-effect', 'non-scaling-stroke');
+    sel.songs.append('circle').attr('class', 'song-disc').attr('r', SONG_R);
+    sel.songs.append('text').attr('class', 'song-num').attr('dy', '0.04em').text((s) => pad2(s.n));
+
+    // labels on top
+    const labels = vp.append('g').attr('class', 'labels');
+    labelsNode = labels.node();               // --k lives here: only labels restyle on zoom
+    sel.entLabels = labels.append('g').selectAll('text').data(M.ents).join('text')
+      .attr('class', 'lbl ent-lbl').attr('x', (e) => e.x).attr('y', (e) => e.y + e.hh + 5)
+      .text((e) => ellipsis(e.label, 30)).style('display', 'none');
+    sel.songLabels = labels.append('g').selectAll('text').data(M.songs).join('text')
+      .attr('class', 'lbl song-lbl').attr('x', (s) => s.x).attr('y', (s) => s.y + SONG_R + 8)
+      .text((s) => s.title);
+    M.ents.forEach((e, i) => { e.labelEl = sel.entLabels.nodes()[i]; e.el = sel.ents.nodes()[i]; });
+    M.songs.forEach((s, i) => { s.labelEl = sel.songLabels.nodes()[i]; s.el = sel.songs.nodes()[i]; });
+    M.links.forEach((l, i) => { l.el = sel.links.nodes()[i]; });
+
+    // interaction
+    const nodes = svg.selectAll('.node');
+    nodes.on('pointerenter', (ev, d) => { if (ev.pointerType === 'mouse') setHover(d); }) // a finger passing over a node is not a hover
+      .on('pointerleave', () => setHover(null))
+      .on('focus', (ev, d) => { if (keyboardFocus(ev.currentTarget)) { setHover(d); ensureOnScreen(d); } })
+      .on('blur', (ev, d) => { if (state.hover === d) setHover(null); })
+      .on('click', (ev, d) => {
+        ev.stopPropagation();
+        if (!clickAllowed(ev) || !interactive(d)) return;
+        select(d, { camera: true });
+      })
+      .on('keydown', (ev, d) => {
+        if ((ev.key === 'Enter' || ev.key === ' ') && interactive(d)) { ev.preventDefault(); select(d, { camera: true, focusPanel: true }); }
+      });
+    svg.on('click', (ev) => {
+      if (!clickAllowed(ev)) return;
+      if (ev.detail > 1) return;               // second click of a double click: keep the selection
+      if (!ev.target.closest('.node')) clearSelection();
+    });
+    trackGestures(els.svg);
+
+    zoom = d3.zoom().scaleExtent([0.06, 5])
+      .extent(() => [[0, 0], [Math.max(1, els.svg.clientWidth), Math.max(1, els.svg.clientHeight)]])
+      .on('zoom', (ev) => {
+        cur = ev.transform;
+        if (ev.sourceEvent) {                  // wheel / drag / pinch, not our own camera moves
+          userMoved = true;
+          const t = ev.sourceEvent.type;
+          if (t === 'wheel' || GESTURE.moved || GESTURE.multi) GESTURE.zoomT = performance.now();
+        }
+        vp.attr('transform', cur);
+        labelsNode.style.setProperty('--k', cur.k.toFixed(4));
+        scheduleFrame();
+      });
+    svg.call(zoom).on('dblclick.zoom', null);
+    cur = d3.zoomIdentity;
+  }
+  let labelsNode = null, userMoved = false;
+
+  /* Touch gestures. A tap counts only if one finger stayed down, moved < 8 px, lasted < 500 ms and no pan/zoom
+     happened in the last 300 ms. This is decided from pointer events, so it does not depend on whether the
+     browser fires a click after a pan. */
+  const GESTURE = { ids: new Set(), x: 0, y: 0, t: 0, moved: false, multi: false, tap: false, upT: 0, zoomT: 0 };
+  function trackGestures(el) {
+    const G = GESTURE;
+    el.addEventListener('pointerdown', (ev) => {
+      G.ids.add(ev.pointerId);
+      if (G.ids.size === 1) { G.x = ev.clientX; G.y = ev.clientY; G.t = performance.now(); G.moved = false; G.multi = false; G.tap = false; }
+      else G.multi = true;                       // any second finger cancels the tap
+    }, true);
+    el.addEventListener('pointermove', (ev) => {
+      if (G.ids.has(ev.pointerId) && Math.hypot(ev.clientX - G.x, ev.clientY - G.y) > 8) G.moved = true;
+    }, true);
+    const end = (ev) => {
+      if (!G.ids.delete(ev.pointerId)) return;
+      if (G.ids.size === 0) {
+        const now = performance.now();
+        G.tap = ev.type === 'pointerup' && !G.multi && !G.moved && now - G.t < 500;
+        G.upT = now;
+      }
+    };
+    el.addEventListener('pointerup', end, true);
+    el.addEventListener('pointercancel', end, true);
+  }
+  // used by click handlers: touch and pen clicks must come from a real tap; a mouse click is always fine
+  function clickAllowed(ev) {
+    if (ev.pointerType !== 'touch' && ev.pointerType !== 'pen') return true;
+    const G = GESTURE, now = performance.now();
+    const ok = G.tap && now - G.upT < 600 && now - G.zoomT > 300;
+    G.tap = false;                               // one tap, one click
+    return ok;
+  }
+  // while a song is selected, only its own references can be hovered or picked (other songs stay clickable)
+  function interactive(d) {
+    return !(d.type === 'entity' && relSet && !relSet.has(d));
+  }
+  const keyboardFocus = (el) => { try { return el.matches(':focus-visible'); } catch (e) { return true; } };
+
+  // keyboard focus on a stop that is off screen: pan to it, keep the zoom level
+  function ensureOnScreen(d) {
+    if (!cur || !zoom || state.view !== 'map') return;
+    const A = viewArea(), m = 30;
+    const [sx, sy] = cur.apply([d.x, d.y]);
+    if (sx >= A.x + m && sx <= A.x + A.w - m && sy >= A.y + m && sy <= A.y + A.h - m) return;
+    const k = cur.k;
+    applyTransform(d3.zoomIdentity.translate(A.x + A.w / 2 - d.x * k, A.y + A.h / 2 - d.y * k).scale(k), dur(300));
+  }
+
+  // a reference node is the cut-out picture itself (cut); otherwise a round photo (img); otherwise a category glyph.
+  // A broken cut falls back to img, a broken img to the glyph (the node is simply redrawn).
+  function drawEntity(g, e) {
+    g.selectAll('*').remove();
+    geom(e);
+    const n = e.links.length;
+    if (e.cut) {
+      const { hw, hh } = e;
+      g.append('rect').attr('class', 'hit').attr('x', -hw - 6).attr('y', -hh - 6).attr('width', hw * 2 + 12).attr('height', hh * 2 + 12);
+      g.append('rect').attr('class', 'focus-ring').attr('x', -hw - 5).attr('y', -hh - 5).attr('width', hw * 2 + 10).attr('height', hh * 2 + 10)
+        .attr('rx', 5).attr('vector-effect', 'non-scaling-stroke');
+      const img = g.append('g').attr('class', 'cut-g').append('image').attr('class', 'cut').attr('href', e.cut)
+        .attr('x', -hw).attr('y', -hh).attr('width', hw * 2).attr('height', hh * 2).attr('preserveAspectRatio', 'xMidYMid meet');
+      if (e.cutKind === 'logo') img.attr('filter', 'url(#sticker)');
+      onPicFail(img.node(), e.cut, () => { e.cut = null; drawEntity(g, e); scheduleFrame(); });
+      g.append('circle').attr('class', 'cat-dot').attr('cx', -hw + 2).attr('cy', -hh + 2).attr('r', 4.5);
+      if (n > 1) countBadge(g, hw - 2, -hh + 2, n);
+      return;
+    }
+    const r = e.r;
+    g.append('circle').attr('class', 'hit').attr('r', Math.max(r + 6, 22));
+    g.append('circle').attr('class', 'focus-ring').attr('r', r + 6).attr('vector-effect', 'non-scaling-stroke');
+    g.append('circle').attr('class', 'sel-ring').attr('r', r + 6).attr('vector-effect', 'non-scaling-stroke');
+    g.append('circle').attr('class', 'gap').attr('r', r + 2.5);
+    if (e.img) {
+      if (isSvgImg(e.img)) {
+        g.append('circle').attr('class', 'logo').attr('r', r);
+        const s = r * 1.22;
+        const im = g.append('image').attr('href', e.img).attr('x', -s / 2).attr('y', -s / 2).attr('width', s).attr('height', s)
+          .attr('preserveAspectRatio', 'xMidYMid meet');
+        onPicFail(im.node(), e.img, () => { e.img = null; drawEntity(g, e); });
+      } else {
+        g.append('circle').attr('class', 'disc').attr('r', r);
+        const im = g.append('image').attr('href', e.img).attr('x', -r).attr('y', -r).attr('width', r * 2).attr('height', r * 2)
+          .attr('preserveAspectRatio', 'xMidYMid slice').attr('clip-path', 'url(#clip-circle)');
+        onPicFail(im.node(), e.img, () => { e.img = null; drawEntity(g, e); });
+      }
+      g.append('circle').attr('class', 'ring').attr('r', r);
+    } else {
+      g.append('circle').attr('class', 'disc').attr('r', r);
+      const s = r * 1.15;
+      g.append('use').attr('class', 'glyph').attr('href', '#g-' + e.cat).attr('x', -s / 2).attr('y', -s / 2).attr('width', s).attr('height', s);
+    }
+    if (n > 1) countBadge(g, r * 0.74, -r * 0.74, n);
+  }
+  // a picture that fails is retried once (a load can be dropped mid-flight); only a second failure falls back
+  function onPicFail(el, url, giveUp) {
+    let tried = false;
+    el.addEventListener('error', () => {
+      if (tried) { giveUp(); return; }
+      tried = true;
+      setTimeout(() => {
+        if (!el.isConnected) return;
+        const attr = el instanceof SVGElement ? 'href' : 'src';
+        el.removeAttribute(attr);
+        el.setAttribute(attr, url);
+      }, 400);
+    });
+  }
+  // how many songs share this reference
+  function countBadge(g, x, y, n) {
+    const b = g.append('g').attr('class', 'count-g').attr('transform', `translate(${x},${y})`);
+    const t = String(n);
+    if (t.length > 1) b.append('rect').attr('class', 'count-bg').attr('x', -9).attr('y', -7.5).attr('width', 18).attr('height', 15).attr('rx', 7.5);
+    else b.append('circle').attr('class', 'count-bg').attr('r', 7.5);
+    b.append('text').attr('class', 'count-t').attr('dy', '0.05em').text(t);
+  }
+
+  /* ── visibility & filters ───────────────────────────── */
+  const inAlbum = (song) => state.album === 'all' || song.album.id === state.album;
+  const linkOk = (l) => inAlbum(l.song) && state.cats.has(l.ent.cat) && (state.possible || !l.possible);
+
+  function applyFilters() {
+    M.songs.forEach((s) => { s.vis = inAlbum(s); });
+    M.ents.forEach((e) => { e.visN = 0; });
+    M.links.forEach((l) => { l.vis = linkOk(l); if (l.vis) l.ent.visN++; });
+    M.ents.forEach((e) => { e.vis = e.visN > 0; });
+
+    if (hasMap) {
+      sel.links.classed('is-hidden', (l) => !l.vis);
+      sel.ents.classed('is-hidden', (e) => !e.vis);
+      sel.songs.classed('is-hidden', (s) => !s.vis);
+      sel.songLabels.classed('is-hidden', (s) => !s.vis);
+      M.albums.forEach((al) => {
+        const on = state.album === 'all' || state.album === al.id;
+        if (al.distG) al.distG.classList.toggle('is-hidden', !on);
+        if (al.universeG) al.universeG.classed('is-hidden', !on);
+      });
+    }
+
+    // counts: per category inside album scope (ignoring the category switch itself)
+    const counts = Object.fromEntries(CATS.map((c) => [c.key, new Set()]));
+    let possibleN = 0;
+    M.links.forEach((l) => {
+      if (!inAlbum(l.song)) return;
+      if (l.possible) possibleN++;
+      if (state.possible || !l.possible) counts[l.ent.cat].add(l.ent);
+    });
+    CATS.forEach((c) => {
+      const chip = chipEls[c.key];
+      if (!chip) return;
+      const n = counts[c.key].size;
+      chip.querySelector('.n').textContent = String(n);
+      chip.disabled = n === 0;
+      chip.hidden = c.key === 'other' && n === 0;
+    });
+    els.possibleN.textContent = String(possibleN);
+
+    if (state.selected && !state.selected.vis) clearSelection();
+    else {
+      refreshHighlight();
+      if (state.selected && !els.panel.hidden) renderPanel(state.selected, { keepScroll: true });
+    }
+    if (state.view === 'list') renderList();
+    scheduleFrame();
+  }
+
+  /* ── category chips ─────────────────────────────────── */
+  const chipEls = {};
+  function buildChips() {
+    els.chips.replaceChildren();
+    CATS.forEach((c) => {
+      const chip = h('button', {
+        type: 'button', class: 'chip', 'aria-pressed': 'true', title: c.name + ': показать или скрыть', style: catVars(c.key),
+        onclick: () => {
+          if (state.cats.has(c.key)) state.cats.delete(c.key); else state.cats.add(c.key);
+          chip.setAttribute('aria-pressed', String(state.cats.has(c.key)));
+          applyFilters();
+        },
+        ondblclick: (ev) => { // double click = only this category
+          ev.preventDefault();
+          const only = state.cats.size === 1 && state.cats.has(c.key);
+          state.cats = new Set(only ? CATS.map((x) => x.key) : [c.key]);
+          Object.entries(chipEls).forEach(([k, el]) => el.setAttribute('aria-pressed', String(state.cats.has(k))));
+          applyFilters();
+        }
+      }, h('span', { class: 'sw' }, icon('g-' + c.key)), c.short, h('span', { class: 'n', text: '0' }));
+      chipEls[c.key] = chip;
+      els.chips.append(chip);
+    });
+  }
+
+  /* ── highlight / hover / selection ──────────────────── */
+  function neighbours(node) {
+    const nodes = new Set([node]), links = new Set();
+    node.links.forEach((l) => { if (!l.vis) return; links.add(l); nodes.add(l.song); nodes.add(l.ent); });
+    return { nodes, links };
+  }
+  function setHover(d) {
+    if (d && !interactive(d)) return;
+    state.hover = d; refreshHighlight();
+  }
+  function refreshHighlight() {
+    if (!hasMap) return;
+    // a selected song locks the map to its own references; selecting a reference works as before
+    relSet = state.selected && state.selected.type === 'song' ? new Set(state.selected.links.filter((l) => l.vis).map((l) => l.ent)) : null;
+    if (state.hover && !interactive(state.hover)) state.hover = null;
+    const focus = state.hover || state.selected;
+    const nb = focus ? neighbours(focus) : null;
+    svg.classed('song-focus', !!relSet);
+    sel.ents.classed('rel', (e) => !!relSet && relSet.has(e));
+    svg.classed('focusing', !!focus);
+    sel.links.classed('lit', (l) => !!nb && nb.links.has(l));
+    sel.ents.classed('lit', (e) => !!nb && nb.nodes.has(e)).classed('sel', (e) => e === state.selected).classed('hov', (e) => e === state.hover);
+    sel.songs.classed('lit', (s) => !!nb && nb.nodes.has(s)).classed('sel', (s) => s === state.selected);
+    sel.songLabels.classed('lit', (s) => !!nb && nb.nodes.has(s));
+    sel.entLabels.classed('lit', (e) => !!nb && nb.nodes.has(e));
+    litSet = nb ? nb.nodes : null;
+    scheduleFrame();
+  }
+  let litSet = null, relSet = null;
+
+  function select(node, opts) {
+    opts = opts || {};
+    if (!node) return;
+    if (node.type === 'entity' && !node.vis) { // reveal what the user asked for
+      state.cats.add(node.cat);
+      if (chipEls[node.cat]) chipEls[node.cat].setAttribute('aria-pressed', 'true');
+      if (!node.links.some((l) => linkOk(l))) {
+        if (!state.possible) { state.possible = true; els.possible.checked = true; }
+        if (!node.links.some((l) => linkOk(l))) { state.album = 'all'; els.albumSel.value = 'all'; updateMapMetadata(); }
+      }
+      applyFilters();
+    }
+    if (node.type === 'song' && !node.vis) { state.album = 'all'; els.albumSel.value = 'all'; updateMapMetadata(); applyFilters(); }
+    if (opts.resetHistory) state.history = [];
+    if (opts.push !== false && state.selected && state.selected !== node && !els.panel.hidden) {
+      const H = state.history;
+      if (H[H.length - 1] !== state.selected) H.push(state.selected); // no consecutive duplicates
+      if (H.length > 20) H.splice(0, H.length - 20);                 // keep the last 20 steps
+    }
+    // remember who opened the card, to give focus back when it closes
+    if (els.panel.hidden) {
+      const a = document.activeElement;
+      panelOpener = a && a !== document.body && !els.panel.contains(a) ? a : null;
+    }
+    state.selected = node;
+    refreshHighlight();
+    renderPanel(node);
+    setHash(node.type === 'song' ? node.token : node.slug);
+    if (opts.camera && hasMap && state.view === 'map') {
+      const group = node.type === 'song'
+        ? [node, ...node.links.filter((l) => l.vis).map((l) => l.ent)]
+        : [node, ...node.links.filter((l) => l.vis).map((l) => l.song)];
+      fitTo(group, { animate: !opts.instant, maxK: node.type === 'song' ? 1.9 : 1.7, center: node });
+    }
+    if (opts.focusPanel) { const t = $('#p-title'); if (t) t.focus({ preventScroll: true }); }
+  }
+  let panelOpener = null;
+
+  function clearSelection(opts) {
+    if (!state.selected && els.panel.hidden) return;
+    const a = document.activeElement;
+    const focusWasInPanel = !!(opts && opts.restoreFocus) && (!a || a === document.body || els.panel.contains(a));
+    state.selected = null; state.history = [];
+    els.panel.hidden = true;
+    els.stage.classList.remove('has-panel');
+    refreshHighlight();
+    setHash('');
+    const back = panelOpener;
+    panelOpener = null;
+    if (focusWasInPanel && back && back.isConnected && back.getClientRects().length) {
+      try { back.focus({ preventScroll: true }); } catch (e) { /* ignore */ }
+    }
+  }
+
+  function setHash(token) {
+    try {
+      const base = window.location.href.split('#')[0];
+      const url = token ? base + '#' + encodeURIComponent(token) : base;
+      // a URL change makes Chrome drop picture loads that are still in flight, so only touch it when it really changes
+      if (url !== window.location.href) window.history.replaceState(null, '', url);
+    } catch (e) { /* sandboxed: ignore */ }
+  }
+  function nodeFromToken(tok) {
+    if (!tok) return null;
+    const s = M.songs.find((x) => x.token === tok) || M.songs.find((x) => x.key === tok);
+    if (s) return s;
+    return M.byId.get('e:' + tok) || null;
+  }
+
+  /* ── camera ─────────────────────────────────────────── */
+  function viewArea() {
+    const r = els.svg.getBoundingClientRect();
+    const ruler = parseFloat(getComputedStyle(els.sheet).getPropertyValue('--ruler')) || 22;
+    const controlsBottom = els.controls.getBoundingClientRect().bottom - r.top + 12;
+    let x = ruler, y = Math.max(ruler, controlsBottom), w = r.width - ruler, hgt = r.height - y;
+    if (!els.panel.hidden) {
+      const p = els.panel.getBoundingClientRect();
+      if (MOBILE.matches) hgt = Math.max(140, p.top - r.top - y);
+      else w = Math.max(200, p.left - r.left - x);
+    }
+    return { x, y, w, h: hgt };
+  }
+  function fitTo(nodes, opts) {
+    opts = opts || {};
+    nodes = nodes.filter(Boolean);
+    if (!nodes.length || !zoom) return;
+    const x0 = d3.min(nodes, (d) => d.x - d.r - 10), x1 = d3.max(nodes, (d) => d.x + d.r + 10);
+    const y0 = d3.min(nodes, (d) => d.y - d.r - 10), y1 = d3.max(nodes, (d) => d.y + d.r + (d.type === 'song' ? 46 : 26));
+    const A = viewArea();
+    if (A.w < 40 || A.h < 40) return;           // map is hidden (list view) — keep the camera
+    const pad = MOBILE.matches ? 18 : 40;
+    const bw = Math.max(1, x1 - x0), bh = Math.max(1, y1 - y0);
+    let k = Math.max(0.06, Math.min((A.w - pad * 2) / bw, (A.h - pad * 2) / bh, opts.maxK || 1.6));
+    let tx = A.x + (A.w - bw * k) / 2 - x0 * k;
+    let ty = A.y + (A.h - bh * k) / 2 - y0 * k;
+    const c = opts.center;
+    if (c && MOBILE.matches && k < 0.3) {       // phone: a widely spread group would shrink to dots — show the node itself
+      k = 0.5;
+      tx = A.x + A.w / 2 - c.x * k;
+      ty = A.y + A.h / 2 - c.y * k;
+    }
+    applyTransform(d3.zoomIdentity.translate(tx, ty).scale(k), opts.animate ? dur(650) : 0);
+  }
+  function applyTransform(t, ms) {
+    if (!Number.isFinite(t.k) || !Number.isFinite(t.x) || !Number.isFinite(t.y)) return;
+    if (ms && !els.sheet.hidden) svg.transition().duration(ms).ease(d3.easeCubicInOut).call(zoom.transform, t);
+    else svg.call(zoom.transform, t);
+  }
+  function zoomBy(f) { // around the centre of the visible part of the map (panel excluded)
+    if (!zoom || !cur) return;
+    const A = viewArea(), cx = A.x + A.w / 2, cy = A.y + A.h / 2;
+    const [wx, wy] = cur.invert([cx, cy]);
+    const k = Math.max(0.06, Math.min(5, cur.k * f));
+    userMoved = true;
+    applyTransform(d3.zoomIdentity.translate(cx - wx * k, cy - wy * k).scale(k), dur(280));
+  }
+  function fitVisible(animate) {
+    const nodes = [...M.songs.filter((s) => s.vis), ...M.ents.filter((e) => e.vis)];
+    if (M.albums.length > 1) M.albums.forEach((al) => {
+      if (state.album === 'all' || state.album === al.id) nodes.push({ x: al.anchor.x, y: al.anchor.y - 70, r: 0 }, { x: al.anchor.x + al.title.length * 60, y: al.anchor.y, r: 0 });
+    });
+    fitTo(nodes.length ? nodes : M.songs, { animate, maxK: 1.4 });
+  }
+
+  /* ── per-frame work: rulers + label culling ─────────── */
+  let frameQueued = false;
+  function scheduleFrame() {
+    if (frameQueued || !hasMap) return;
+    frameQueued = true;
+    requestAnimationFrame(() => { frameQueued = false; scaleNodes(); drawRulers(); placeLabels(); drawUniverses(); });
+  }
+  function drawUniverses() {
+    if (!cur) return;
+    const controlsBottom = parseFloat(els.stage.style.getPropertyValue('--controls-bottom')) || VIEW.ruler;
+    const screenSize = Math.max(1, Math.min(VIEW.w - VIEW.ruler, VIEW.h - controlsBottom));
+    M.albums.forEach((al) => {
+      if (!al.universeG) return;
+      const ratio = al.universe.size * cur.k / screenSize;
+      const t = Math.max(0, Math.min(1, (1.25 - ratio) / 0.7));
+      const blend = t * t * (3 - 2 * t);
+      al.overviewBlend = blend;
+      al.universeG.attr('opacity', blend * 0.92);
+      al.universeG.select('.universe-title').style('font-size', `${16 / cur.k}px`)
+        .attr('y', al.universe.y + al.universe.size / 2 + 25 / cur.k);
+      al.universeG.select('.universe-meta').style('font-size', `${11 / cur.k}px`)
+        .attr('y', al.universe.y + al.universe.size / 2 + 45 / cur.k);
+    });
+    const songBlend = (s) => s.album.overviewBlend || 0;
+    const entityBlend = (e) => d3.min(e.links.filter((l) => l.vis), (l) => songBlend(l.song)) || 0;
+    sel.links.attr('opacity', (l) => 1 - songBlend(l.song) * 0.94);
+    sel.ents.attr('opacity', (e) => 1 - entityBlend(e) * 0.92);
+    sel.songs.attr('opacity', (s) => 1 - songBlend(s) * 0.78);
+    sel.songLabels.attr('opacity', (s) => 1 - songBlend(s) * 0.9);
+    sel.entLabels.attr('opacity', (e) => 1 - entityBlend(e) * 0.9);
+  }
+  // semantic zoom: when zoomed far out, stops and references keep a readable minimum size
+  let lastSS = 1, lastES = 1;
+  const songScale = () => Math.min(2.6, Math.max(1, 0.72 / cur.k));
+  const entScale = () => Math.min(1.6, Math.max(1, 0.5 / cur.k));
+  let lastFar = null;
+  function scaleNodes() {
+    if (!cur) return;
+    const ss = songScale(), es = entScale();
+    const far = cur.k * es < 0.62;
+    if (far !== lastFar) { lastFar = far; svg.classed('far', far); }
+    if (Math.abs(ss - lastSS) > 0.004) { lastSS = ss; sel.songs.attr('transform', (d) => `translate(${d.x},${d.y}) scale(${ss})`); }
+    if (Math.abs(es - lastES) > 0.004) { lastES = es; sel.ents.attr('transform', (d) => `translate(${d.x},${d.y}) scale(${es})`); }
+  }
+  // sizes are cached (ResizeObserver / resize / view switch), so per-frame work never forces a layout
+  const VIEW = { w: 0, h: 0, ruler: 22 };
+  function measureView() {
+    const r = els.svg.getBoundingClientRect();
+    VIEW.w = r.width; VIEW.h = r.height;
+    els.stage.style.setProperty('--controls-bottom', `${els.controls.getBoundingClientRect().bottom - els.stage.getBoundingClientRect().top + 12}px`);
+    VIEW.ruler = parseFloat(getComputedStyle(els.sheet).getPropertyValue('--ruler')) || 22;
+  }
+  // ruler letters/numbers: a small pool of spans that are moved, not recreated
+  const rulerPool = { top: [], left: [] };
+  function setRuler(container, pool, items, prop) {
+    while (pool.length < items.length) { const sp = document.createElement('span'); container.appendChild(sp); pool.push(sp); }
+    pool.forEach((sp, i) => {
+      const it = items[i];
+      if (!it) { if (!sp.hidden) sp.hidden = true; return; }
+      if (sp.hidden) sp.hidden = false;
+      if (sp.textContent !== it.t) sp.textContent = it.t;
+      sp.style[prop] = it.v.toFixed(1) + 'px';
+    });
+  }
+  function drawRulers() {
+    if (!cur || state.view !== 'map') return;
+    if (!VIEW.w) measureView();
+    const { w: RW, h: RH, ruler } = VIEW;
+    const step = GRID * cur.k;
+    const top = [], left = [];
+    if (step >= 18) {
+      const c0 = Math.floor((-cur.x / cur.k - M.grid.x0) / GRID), c1 = Math.ceil(((RW - cur.x) / cur.k - M.grid.x0) / GRID);
+      for (let c = Math.max(0, c0); c <= c1; c++) {
+        const sx = (M.grid.x0 + (c + 0.5) * GRID) * cur.k + cur.x - ruler;
+        if (sx < 6 || sx > RW - ruler - 6) continue;
+        top.push({ v: sx, t: squareName(c, 0).split('-')[0] });
+      }
+      const r0 = Math.floor((-cur.y / cur.k - M.grid.y0) / GRID), r1 = Math.ceil(((RH - cur.y) / cur.k - M.grid.y0) / GRID);
+      for (let w = Math.max(0, r0); w <= r1; w++) {
+        const sy = (M.grid.y0 + (w + 0.5) * GRID) * cur.k + cur.y - ruler;
+        if (sy < 6 || sy > RH - ruler - 6) continue;
+        left.push({ v: sy, t: String(w + 1) });
+      }
+    }
+    setRuler(els.rulerTop, rulerPool.top, top, 'left');
+    setRuler(els.rulerLeft, rulerPool.left, left, 'top');
+  }
+
+  // label placement: greedy by priority against obstacles (song dots, reference pictures, placed labels),
+  // with a coarse screen grid so each test only looks at nearby boxes
+  function placeLabels() {
+    if (!cur) return;
+    if (!VIEW.w) measureView();
+    const k = cur.k, W = VIEW.w, H = VIEW.h;
+    const ss = songScale(), es = entScale();
+    const CELL = 80, grid = new Map();
+    const cells = (b, fn) => {
+      const x0 = Math.floor(b.x / CELL), x1 = Math.floor((b.x + b.w) / CELL), y0 = Math.floor(b.y / CELL), y1 = Math.floor((b.y + b.h) / CELL);
+      for (let cx = x0; cx <= x1; cx++) for (let cy = y0; cy <= y1; cy++) if (fn(cx * 4096 + cy) === true) return true;
+      return false;
+    };
+    const add = (b) => cells(b, (key) => { const a = grid.get(key); if (a) a.push(b); else grid.set(key, [b]); });
+    const hit = (b) => cells(b, (key) => {
+      const a = grid.get(key);
+      return !!a && a.some((o) => b.x < o.x + o.w && b.x + b.w > o.x && b.y < o.y + o.h && b.y + b.h > o.y);
+    });
+    const show = (el, on) => { const v = on ? '' : 'none'; if (el.style.display !== v) el.style.display = v; };
+    const setY = (el, node, y) => { if (node._ly !== y) { node._ly = y; el.setAttribute('y', y); } };
+    const fsE = 12, fsS = 15;
+    const lit = (n) => !!(litSet && litSet.has(n));
+    // song dots are obstacles; song titles are shown unless they would collide (selected / lit win)
+    const songs = M.songs.filter((s) => s.vis);
+    songs.forEach((s) => {
+      const R = SONG_R * ss * k;
+      add({ x: s.x * k + cur.x - R, y: s.y * k + cur.y - R, w: R * 2, h: R * 2 });
+    });
+    // song titles go before reference pictures become obstacles: a song name is never hidden by a dot
+    songs.slice().sort((a, b) => (+(b === state.selected) - +(a === state.selected)) || (+lit(b) - +lit(a)) || (a.album.i - b.album.i) || ((+a.n || 0) - (+b.n || 0)))
+      .forEach((s) => {
+        const y = s.y + SONG_R * ss + 7 / k;
+        setY(s.labelEl, s, y);
+        const sx = s.x * k + cur.x, sy = y * k + cur.y, w = s.title.length * fsS * 0.5 + 8;
+        const b = { x: sx - w / 2, y: sy, w, h: fsS * 1.35 };
+        const on = s === state.selected || s === state.hover || !hit(b);
+        if (on) add(b);
+        show(s.labelEl, on);
+      });
+    // reference pictures / circles on screen (their bbox) are obstacles too
+    M.ents.forEach((e) => {
+      if (!e.vis) return;
+      const hw = e.hw * es * k, hh = e.hh * es * k, sx = e.x * k + cur.x, sy = e.y * k + cur.y;
+      if (sx < -hw || sx > W + hw || sy < -hh || sy > H + hh) return;
+      add({ x: sx - hw, y: sy - hh, w: hw * 2, h: hh * 2 });
+    });
+    const cand = [];
+    M.ents.forEach((e) => {
+      if (!e.vis) { show(e.labelEl, false); return; }
+      const l = lit(e);
+      const pinned = e === state.selected || e === state.hover;
+      const want = pinned || l || k >= 1.3 || (k >= 0.75 && e.visN > 1);
+      if (!want) { show(e.labelEl, false); return; }
+      cand.push({ e, pinned, pri: (pinned ? 1e6 : 0) + (l ? 1e4 : 0) + e.visN * 100 - e.label.length });
+    });
+    cand.sort((a, b) => b.pri - a.pri);
+    cand.forEach((c) => {
+      const e = c.e;
+      const y = e.y + e.hh * es + 4 / k;                // under the bottom edge of the picture / circle
+      const sx = e.x * k + cur.x, sy = y * k + cur.y;
+      const w = e.labelEl.textContent.length * fsE * 0.56 + 6, b = { x: sx - w / 2, y: sy, w, h: fsE * 1.3 };
+      let on = !(sx < -w || sx > W + w || sy < -40 || sy > H + 40);
+      if (on && !c.pinned && hit(b)) on = false;
+      if (on) { add(b); setY(e.labelEl, e, y); }
+      show(e.labelEl, on);
+    });
+  }
+
+  /* ── panel ──────────────────────────────────────────── */
+  function picEl(e, extra) {
+    const vars = catVars(e.cat);
+    if (e.cut) {                       // the cut-out itself on a transparent background, sized by its proportions
+      const L = extra === 'mini' ? 30 : 96;
+      const w = e.cutRatio >= 1 ? L : Math.round(L * e.cutRatio), hgt = e.cutRatio >= 1 ? Math.round(L / e.cutRatio) : L;
+      const wrap = h('span', { class: 'cutpic' + (e.cutKind === 'logo' ? ' logo' : ''), style: Object.assign({ width: w + 'px', height: hgt + 'px' }, vars), 'aria-hidden': 'true' });
+      const img = h('img', { src: e.cut, alt: '', loading: 'lazy', decoding: 'async' });
+      onPicFail(img, e.cut, () => {
+        e.cut = null;                  // fall back to the round photo / glyph, here and on the map
+        wrap.replaceWith(picEl(e, extra));
+        if (e.el && hasMap) { drawEntity(d3.select(e.el), e); scheduleFrame(); }
+      });
+      wrap.append(img);
+      return wrap;
+    }
+    if (e.img) {
+      const wrap = h('span', { class: 'pic' + (isSvgImg(e.img) ? ' logo' : '') + (extra ? ' ' + extra : ''), style: vars, 'aria-hidden': 'true' });
+      const img = h('img', { src: e.img, alt: '', loading: 'lazy', decoding: 'async' });
+      onPicFail(img, e.img, () => { e.img = null; wrap.classList.remove('logo'); wrap.replaceChildren(icon('g-' + e.cat)); });
+      wrap.append(img);
+      return wrap;
+    }
+    return h('span', { class: 'pic' + (extra ? ' ' + extra : ''), style: vars, 'aria-hidden': 'true' }, icon('g-' + e.cat));
+  }
+  // text link to Genius / YouTube with the small external-link icon instead of a text arrow
+  function glink(href, text) {
+    return h('a', { class: 'glink', href, target: '_blank', rel: 'noopener noreferrer' }, text, icon('i-ext'));
+  }
+  function extLink(href, label) {
+    return h('a', { class: 'ext', href, target: '_blank', rel: 'noopener noreferrer' }, label, icon('i-ext'));
+  }
+  function creditEl(c) {
+    if (!c) return null;
+    const text = typeof c === 'string' ? c : c.text;
+    if (!text) return null;
+    const url = typeof c === 'object' ? safeUrl(c.url) : null;
+    return h('p', { class: 'p-credit' }, 'Изображение: ', url ? h('a', { href: url, target: '_blank', rel: 'noopener noreferrer', text }) : text);
+  }
+
+  function renderPanel(node, opts) {
+    const keep = !!(opts && opts.keepScroll) && !els.panel.hidden;
+    const top = els.panel.scrollTop;
+    const body = node.type === 'song' ? songPanel(node) : entityPanel(node);
+    els.panelBody.replaceChildren(...body);
+    const prev = state.history[state.history.length - 1];
+    els.panelBack.hidden = !prev;
+    if (prev) {
+      const name = prev.type === 'song' ? prev.title : prev.label;
+      els.panelBackT.textContent = ellipsis(name, 26);
+      els.panelBack.setAttribute('aria-label', 'Назад: ' + name);
+    } else els.panelBack.removeAttribute('aria-label');
+    els.panel.hidden = false;
+    els.panel.scrollTop = keep ? top : 0;
+    els.stage.classList.add('has-panel');
+  }
+
+  function entityPanel(e) {
+    const d = e.d || {};
+    const out = [];
+    out.push(h('div', { class: 'p-head' }, picEl(e),
+      h('div', null,
+        h('h2', { class: 'p-title', id: 'p-title', tabindex: '-1', text: e.label }),
+        h('span', { class: 'p-cat', style: catVars(e.cat) }, h('i'), CAT[e.cat].name))));
+    if (d.what) out.push(h('p', { class: 'p-text', text: d.what }));
+    const wiki = safeUrl(d.wiki);
+    if (wiki) out.push(h('div', { class: 'p-links' }, extLink(wiki, 'Википедия')));
+    const cr = e.cut || e.img ? creditEl(d.img_credit) : null;   // a cut-out is made from the same credited picture
+    if (cr) out.push(cr);
+    const links = e.links.filter((l) => l.vis)
+      .sort((a, b) => a.song.album.i - b.song.album.i || (+a.song.n || 0) - (+b.song.n || 0));
+    const hiddenN = e.links.length - links.length;
+    const multiAlbum = M.albums.length > 1;
+    const nSongs = links.length;
+    out.push(h('h3', { class: 'p-sec', text: `Где встречается: ${nSongs} ${plural(nSongs, 'трек', 'трека', 'треков')}` + (hiddenN ? `, ещё ${hiddenN} скрыто фильтрами` : '') }));
+    const ul = h('ul', { class: 'mentions' });
+    links.forEach((l) => {
+      l.refs.forEach((ref) => {
+        const li = h('li', { class: 'mention' });
+        li.append(h('div', { class: 'm-head' },
+          h('button', { type: 'button', class: 'songlink', onclick: () => select(l.song, { camera: true }) },
+            h('b', { text: pad2(l.song.n) }), h('span', { text: l.song.title }))));
+        if (multiAlbum) li.append(h('p', { class: 'm-album', text: [l.song.album.title, l.song.album.year].filter(Boolean).join(', ') }));
+        if (ref.how) li.append(h('p', { class: 'm-how', text: ref.how }));
+        if (typeof ref.line === 'string' && ref.line.trim()) li.append(h('blockquote', { class: 'quote', text: ref.line.trim() }));
+        const g = safeUrl(ref.genius_url) || l.song.genius;
+        const tags = h('div', { class: 'm-tags' });
+        if (ref.section) tags.append(h('span', { class: 'tag', text: ref.section }));
+        if (g) tags.append(glink(g, safeUrl(ref.genius_url) ? 'Строчка на Genius' : 'Текст песни на Genius'));
+        if (ref.confidence === 'possible') tags.append(h('span', { class: 'tag possible', text: 'спорная отсылка' }));
+        if (tags.childNodes.length) li.append(tags);
+        ul.append(li);
+      });
+    });
+    out.push(links.length ? ul : h('p', { class: 'l-empty', text: 'Под текущими фильтрами упоминаний нет.' }));
+    return out;
+  }
+
+  function songPanel(s) {
+    const out = [];
+    const al = s.album;
+    const kicker = `Трек ${pad2(s.n)}`;
+    out.push(h('div', { class: 'p-head' }, h('div', null,
+      h('p', { class: 'p-kicker', text: kicker }),
+      h('h2', { class: 'p-title song-t', id: 'p-title', tabindex: '-1', text: s.title }),
+      h('span', { class: 'p-cat', text: [al.artist, al.title, al.year].filter(Boolean).join(', ') }))));
+    if (s.summary) out.push(h('p', { class: 'p-text', text: s.summary }));
+    const lk = h('div', { class: 'p-links' });
+    if (s.genius) lk.append(extLink(s.genius, 'Genius'));
+    if (s.youtube) lk.append(extLink(s.youtube, 'YouTube'));
+    if (lk.childNodes.length) out.push(lk);
+
+    const vis = s.links.filter((l) => l.vis);
+    const hiddenN = s.links.length - vis.length;
+    out.push(h('h3', { class: 'p-sec', text: `Отсылки: ${vis.length}` + (hiddenN ? `, ещё ${hiddenN} скрыто фильтрами` : '') }));
+    CATS.forEach((c) => {
+      const group = vis.filter((l) => l.ent.cat === c.key).sort((a, b) => a.order - b.order);
+      if (!group.length) return;
+      const box = h('div', { class: 'cat-group', style: catVars(c.key) },
+        h('h3', null, h('i'), c.name, h('span', { class: 'n', text: String(group.length) })));
+      group.forEach((l) => {
+        const ref = l.refs[0];
+        const tags = [];
+        if (l.possible) tags.push(h('span', { class: 'tag possible', text: 'спорная' }));
+        else if (ref.section) tags.push(h('span', { class: 'tag', text: ref.section }));
+        box.append(h('button', { type: 'button', class: 'ref-row', onclick: () => select(l.ent, { camera: true }) },
+          h('span', { class: 'pic-slot' }, picEl(l.ent, 'mini')),
+          h('span', { class: 'rr-name' }, l.ent.label,
+            l.ent.links.length > 1 ? h('span', { class: 'rr-n', text: `${l.ent.links.length} ${plural(l.ent.links.length, 'песня', 'песни', 'песен')}` }) : null),
+          tags,
+          ref.how ? h('span', { class: 'rr-how' }, l.possible && ref.section ? h('em', { text: ref.section }) : null, ref.how) : null,
+          typeof ref.line === 'string' && ref.line.trim() ? h('span', { class: 'quote rr-quote', text: ref.line.trim() }) : null));
+      });
+      out.push(box);
+    });
+    if (!vis.length) out.push(h('p', { class: 'l-empty', text: 'Под текущими фильтрами отсылок нет.' }));
+    return out;
+  }
+
+  /* ── list view ──────────────────────────────────────── */
+  function renderList() {
+    const frag = document.createDocumentFragment();
+    M.albums.forEach((al) => {
+      if (state.album !== 'all' && state.album !== al.id) return;
+      frag.append(h('section', { class: 'l-album' },
+        h('h2', { text: al.title }),
+        h('p', { text: [al.artist, al.year].filter(Boolean).join(', ') + (al.about ? '. ' + al.about : '') })));
+      al.songs.forEach((s) => {
+        const art = h('article', { class: 'l-track' });
+        const head = h('div', { class: 'l-head' },
+          h('span', { class: 'l-num', text: pad2(s.n) }),
+          h('button', { type: 'button', class: 'l-title', text: s.title, onclick: () => select(s, { camera: false, focusPanel: true }) }));
+        if (s.genius) head.append(glink(s.genius, 'Genius'));
+        if (s.youtube) head.append(glink(s.youtube, 'YouTube'));
+        art.append(head);
+        if (s.summary) art.append(h('p', { class: 'l-summary', text: s.summary }));
+        const vis = s.links.filter((l) => l.vis).sort((a, b) => a.order - b.order);
+        if (!vis.length) art.append(h('p', { class: 'l-empty', text: 'Под текущими фильтрами отсылок нет.' }));
+        else {
+          const ul = h('ul', { class: 'l-refs' });
+          vis.forEach((l) => {
+            const ref = l.refs[0];
+            const meta = [CAT[l.ent.cat].short, ref.section, l.possible ? 'спорная' : ''].filter(Boolean).join(', ');
+            const g = safeUrl(ref.genius_url) || s.genius;
+            ul.append(h('li', { class: 'l-ref' },
+              h('span', { class: 'pic-slot' }, l.ent.cut ? picEl(l.ent, 'mini') : h('span', { class: 'dot', style: catVars(l.ent.cat), 'aria-hidden': 'true' }, icon('g-' + l.ent.cat))),
+              h('div', { class: 'l-ref-top' },
+                h('button', { type: 'button', class: 'l-ref-name', text: l.ent.label, onclick: () => select(l.ent, { camera: false, focusPanel: true }) }),
+                h('span', { class: 'l-ref-meta', text: meta })),
+              h('p', { class: 'l-ref-how' },
+                ref.how || '',
+                g ? h('span', null, ' ', glink(g, 'Genius')) : null),
+              typeof ref.line === 'string' && ref.line.trim() ? h('blockquote', { class: 'quote', text: ref.line.trim() }) : null));
+          });
+          art.append(ul);
+        }
+        frag.append(art);
+      });
+    });
+    els.listInner.replaceChildren(frag);
+  }
+
+  function setView(v, save) {
+    if (v === 'map' && !hasMap) v = 'list';
+    state.view = v;
+    els.viewMap.setAttribute('aria-pressed', String(v === 'map'));
+    els.viewList.setAttribute('aria-pressed', String(v === 'list'));
+    els.sheet.hidden = v !== 'map';
+    els.list.hidden = v !== 'list';
+    if (v === 'list') renderList();
+    else { measureView(); scheduleFrame(); }
+    if (save) store.set('view', v);
+  }
+
+  /* ── search ─────────────────────────────────────────── */
+  let results = [], active = -1;
+  function runSearch() {
+    const q = norm(els.search.value);
+    results = [];
+    if (q) {
+      const ql = lat(q);
+      const score = (names) => {
+        let best = 0;
+        names.forEach((name, i) => {
+          const n = norm(name), w = i === 0 ? 1 : 0.8;   // the main label outranks aliases and slugs
+          let sc = 0;
+          if (n.startsWith(q)) sc = 3;
+          else if ((' ' + n).includes(' ' + q)) sc = 2;                               // from the start of a word
+          else if (n.includes(q)) sc = 1;
+          else if (ql.length >= 2 && (' ' + lat(name)).includes(' ' + ql)) sc = 0.9; // transliteration, word start only
+          best = Math.max(best, sc * w);
+        });
+        return best;
+      };
+      M.songs.forEach((s) => { const sc = score([s.title, s.key]); if (sc) results.push({ node: s, sc: sc + 0.5 }); });
+      M.ents.forEach((e) => {
+        const aka = Array.isArray(e.d.aka) ? e.d.aka.filter((x) => typeof x === 'string') : [];
+        const sc = score([e.label, ...aka, e.slug.replace(/-/g, ' ')]);
+        if (sc) results.push({ node: e, sc });
+      });
+      results.sort((a, b) => b.sc - a.sc || (a.node.label || a.node.title).length - (b.node.label || b.node.title).length);
+      results = results.slice(0, 10);
+    }
+    active = results.length ? 0 : -1;
+    drawResults(q);
+  }
+  function drawResults(q) {
+    if (!q) {
+      els.results.hidden = true;
+      els.search.setAttribute('aria-expanded', 'false');
+      els.search.removeAttribute('aria-activedescendant');
+      return;
+    }
+    const items = results.map((r, i) => {
+      const n = r.node;
+      const isSong = n.type === 'song';
+      const li = h('li', { role: 'option', id: 'opt-' + i, 'aria-selected': String(i === active),
+        onmousedown: (ev) => { ev.preventDefault(); choose(i); } },
+        isSong ? h('span', { class: 'dot', style: { '--c': 'var(--accent)', '--gi': 'var(--accent-ink)' } }, h('span', { style: { font: '700 11px var(--font-display)' }, text: pad2(n.n) }))
+               : h('span', { class: 'dot', style: catVars(n.cat) }, icon('g-' + n.cat)),
+        h('span', { class: 'r-name', text: isSong ? n.title : n.label }),
+        h('span', { class: 'r-kind', text: isSong ? (M.albums.length > 1 ? n.album.title : 'песня') : CAT[n.cat].short }));
+      return li;
+    });
+    if (!items.length) items.push(h('li', { class: 'r-empty', role: 'option', 'aria-disabled': 'true', text: 'Ничего не нашлось' }));
+    els.results.replaceChildren(...items);
+    els.results.hidden = false;
+    els.search.setAttribute('aria-expanded', 'true');
+    if (active >= 0) els.search.setAttribute('aria-activedescendant', 'opt-' + active);
+    else els.search.removeAttribute('aria-activedescendant');
+  }
+  function choose(i) {
+    const r = results[i];
+    if (!r) return;
+    els.search.value = '';
+    drawResults('');
+    state.history = [];
+    select(r.node, { camera: true, push: false });
+  }
+
+  /* ── wire UI ────────────────────────────────────────── */
+  function wire() {
+    let blurTimer = 0;
+    els.search.addEventListener('input', () => { clearTimeout(blurTimer); runSearch(); });
+    els.search.addEventListener('keydown', (ev) => {
+      if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp') {
+        if (!results.length) return;
+        ev.preventDefault();
+        active = (active + (ev.key === 'ArrowDown' ? 1 : -1) + results.length) % results.length;
+        drawResults(norm(els.search.value));
+        const a = document.getElementById('opt-' + active);
+        if (a) a.scrollIntoView({ block: 'nearest' });
+      } else if (ev.key === 'Enter') {
+        if (active >= 0) { ev.preventDefault(); choose(active); }
+      } else if (ev.key === 'Escape') {
+        if (els.search.value) { ev.stopPropagation(); els.search.value = ''; drawResults(''); }
+      }
+    });
+    els.search.addEventListener('blur', () => { clearTimeout(blurTimer); blurTimer = setTimeout(() => drawResults(''), 120); });
+    els.search.addEventListener('focus', () => { clearTimeout(blurTimer); if (els.search.value) runSearch(); });
+
+    els.viewMap.addEventListener('click', () => setView('map', true));
+    els.viewList.addEventListener('click', () => setView('list', true));
+    els.possible.addEventListener('change', () => { state.possible = els.possible.checked; applyFilters(); });
+    els.albumSel.addEventListener('change', () => {
+      state.album = els.albumSel.value;
+      updateMapMetadata();
+      applyFilters();
+      if (hasMap) fitVisible(true);
+    });
+    els.panelClose.addEventListener('click', () => clearSelection({ restoreFocus: true }));
+    els.panelBack.addEventListener('click', () => {
+      const prev = state.history.pop();
+      if (prev) select(prev, { camera: true, push: false });
+    });
+    els.zoomIn.addEventListener('click', () => zoomBy(1.5));
+    els.zoomOut.addEventListener('click', () => zoomBy(1 / 1.5));
+    els.zoomFit.addEventListener('click', () => { if (zoom) { userMoved = false; fitVisible(true); } });
+    document.addEventListener('keydown', (ev) => {
+      if (ev.key !== 'Escape') return;
+      if (!els.results.hidden) { drawResults(''); return; }
+      if (state.selected || !els.panel.hidden) clearSelection({ restoreFocus: true });
+    });
+    window.addEventListener('resize', () => { measureView(); scheduleFrame(); });
+    window.addEventListener('hashchange', () => {
+      let tok = '';
+      try { tok = decodeURIComponent(window.location.hash.slice(1)); } catch (e) { return; }
+      if (!tok) { clearSelection(); return; }           // empty hash closes the card
+      const n = nodeFromToken(tok);                     // unknown token: ignore
+      if (n && n !== state.selected) select(n, { camera: true, push: false, resetHistory: true });
+    });
+  }
+
+  // the sheet can change size without a window resize (rotation, a host that reveals a hidden frame):
+  // redraw rulers/labels, and refit while the reader has not taken over the camera
+  function watchSheet() {
+    if (typeof window.ResizeObserver !== 'function') return;
+    let lastW = -1, lastH = -1;
+    new ResizeObserver(() => {
+      const w = els.sheet.clientWidth, hh = els.sheet.clientHeight;
+      if (w === lastW && hh === lastH) return;
+      lastW = w; lastH = hh;
+      measureView();
+      scheduleFrame();
+      if (!userMoved && !state.selected && w > 40 && hh > 40) fitVisible(false);
+    }).observe(els.sheet);
+    new ResizeObserver(() => {
+      measureView();
+      if (!userMoved && !state.selected) fitVisible(false);
+    }).observe(els.controls);
+  }
+
+  function updateMapMetadata() {
+    const one = state.album !== 'all' ? M.albums.find((a) => a.id === state.album) : (M.albums.length === 1 ? M.albums[0] : null);
+    document.title = one ? `${one.title}, карта отсылок КПСС` : 'Карта отсылок КПСС';
+    const notices = mapNotices();
+    els.notice.replaceChildren(...notices);
+    els.notice.hidden = !notices.length;
+  }
+  function mapNotices() {
+    const out = [];
+    if (M.failed.length) {
+      out.push(h('span', {
+        class: 'badge', title: 'Не удалось загрузить: ' + M.failed.map((f) => f.msg).join('; '),
+        text: `${plural(M.failed.length, 'не загрузился', 'не загрузились', 'не загрузились')} ${M.failed.length} ${plural(M.failed.length, 'альбом', 'альбома', 'альбомов')}: ${M.failed.map((f) => f.id).join(', ')}`
+      }));
+    }
+    if (M.noMap) out.push(h('span', { class: 'badge', text: 'карта недоступна, показан список' }));
+    return out;
+  }
+
+  function buildAlbumPicker() {
+    const multi = M.albums.length > 1;
+    els.albumPick.hidden = !multi;
+    els.albumSep.hidden = !multi;
+    els.albumSel.replaceChildren(h('option', { value: 'all', text: 'Все альбомы' }),
+      ...M.albums.map((a) => h('option', { value: a.id, text: [a.title, a.year && `(${a.year})`].filter(Boolean).join(' ') })));
+    els.albumSel.value = 'all';
+  }
+
+  /* ── boot ───────────────────────────────────────────── */
+  async function boot() {
+    let data;
+    try { data = await load(); }
+    catch (err) {
+      showStatus('Не удалось загрузить данные', [
+        String(err && err.message ? err.message : err),
+        'Страница читает файлы data/index.json, data/entities.json и data/albums/<id>.json, которые лежат рядом с ней. Проверьте, что они на месте и это корректный JSON, и обновите страницу.'
+      ]);
+      return;
+    }
+    try {
+      M.failed = data.bad.map((b) => ({ id: b.id, msg: b.err ? b.err.message : `data/albums/${b.id}.json: нет массива tracks` }));
+      buildModel(data);
+      buildChips();
+      buildAlbumPicker();
+
+      hasMap = typeof window.d3 !== 'undefined';
+      if (hasMap) {
+        try { layout(); renderMap(); }
+        catch (err) { hasMap = false; console.error(err); }
+      }
+      M.noMap = !hasMap;
+      updateMapMetadata();
+      wire();
+      applyFilters();
+      els.legend.open = store.get('legend') === 'open';
+      els.legend.addEventListener('toggle', () => store.set('legend', els.legend.open ? 'open' : 'closed'));
+
+      els.status.hidden = true;
+      if (hasMap) fitVisible(false);              // first frame: laid out and fitted, no animation
+      const saved = store.get('view');
+      setView(hasMap ? (saved === 'list' ? 'list' : 'map') : 'list', false);
+      if (!hasMap) els.viewMap.disabled = true;
+      if (hasMap) watchSheet();
+      if (M.failed.length) console.warn('Не загрузились альбомы:', M.failed.map((f) => f.msg).join('; '));
+
+      let tok = '';
+      try { tok = decodeURIComponent((window.location.hash || '').slice(1)); } catch (e) { tok = ''; }
+      const n = nodeFromToken(tok);
+      if (n) select(n, { camera: true, push: false, instant: true });
+    } catch (err) {
+      console.error(err);
+      showStatus('Не удалось построить карту', [
+        String(err && err.message ? err.message : err),
+        'Данные загрузились, но в них что-то не так. Проверьте файлы в папке data и обновите страницу.'
+      ]);
+    }
+  }
+
+  boot();
+})();
+</script>
+
+</body>
+</html>
